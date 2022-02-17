@@ -17,6 +17,5 @@ import footerVue from '../components/home/footer.vue'
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
 </style>
