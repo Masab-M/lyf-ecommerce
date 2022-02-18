@@ -1,6 +1,6 @@
 <template>
 <div class="ProductArcive">
-    <div class="row">
+    <div class="row container-fluid">
         <div class="col-md-12">
             <h2 class="head">{{archiveHeader}}</h2>
         </div>
@@ -22,6 +22,14 @@ import SingleArchive from "./SingleArchive.vue";
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+h2.head {
+    font-size: 29px;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
 
+.ProductArcive {
+    padding: 50px;
+}
 </style>

@@ -9,7 +9,6 @@
     </Slide>{{ slide }}
     <template #addons>
       <Navigation />
-      <Pagination />
     </template>
   </Carousel>
     </div>
@@ -27,7 +26,6 @@ import  slide1 from '../../assets/IMG/headeSlide.png';
   components: {
     Carousel,       
     Slide,
-    Pagination,
     Navigation,
   },
   data() {
@@ -39,6 +37,7 @@ import  slide1 from '../../assets/IMG/headeSlide.png';
 </script>
 
 <style scoped>
+
 .carousel__item {
   min-height: 200px;
   width: 100%;
