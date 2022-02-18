@@ -11,6 +11,7 @@ import HeaderCarousel from '../components/home/headerCarousel.vue'
 import ProductArchive from '../components/home/ProductArchive.vue'
 import secondaryNav from '../components/home/secondaryNav.vue'
 import footerVue from '../components/home/footer.vue'
+import '/src/assets/base.css';
     export default {
   components: { secondaryNav, HeaderCarousel, ProductArchive, footerVue },
        

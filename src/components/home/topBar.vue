@@ -17,4 +17,16 @@
 </script>
 
 <style scoped>
+.announce {
+    text-align: center;
+    background-color: var(--primary);
+}
+
+.announce p {
+    margin: 0;
+    padding: 0.438em;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--white);
+}
 </style>
