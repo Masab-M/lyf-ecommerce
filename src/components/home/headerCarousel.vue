@@ -51,7 +51,7 @@ import  slide1 from '../../assets/IMG/headeSlide.png';
 }
 
 .carousel__slide {
-  padding: 10px;
+  padding: 0px;
 }
 
 .carousel__prev,

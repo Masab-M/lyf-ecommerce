@@ -7,8 +7,10 @@
         <div class="col-md-3 col-sm-6 col-6" v-for="index in 4" :key="index">
             <SingleArchive :image="'./src/assets/IMG/product.png'" :like="0" :price="300" :pname="'Iphone'" :location="'pakistan'" :date="'30/12/2021'" ></SingleArchive>
         </div>
-        <div class="col-md-">
+        <div class="col-md-12">
+            <div class="loadBtn">
             <a href="#" class="btn loadmore">Load More</a>
+            </div>
         </div>
     </div>
 </div>
@@ -31,5 +33,12 @@ h2.head {
 
 .ProductArcive {
     padding: 50px;
+}
+.loadBtn {margin-top: 50px;text-align: center;}
+
+.loadBtn a.btn.loadmore {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 14px 26px;
 }
 </style>
