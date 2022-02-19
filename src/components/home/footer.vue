@@ -1,7 +1,7 @@
 <template>
 <section class="footer">
 <div class="row">
-<div class="col-md-3">
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
     <div class="logo">
         <img :src="logo[0]" alt="">
         <ul class="link">
@@ -10,7 +10,7 @@
         </ul>
     </div>
 </div>
-<div class="col-md-3">
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
     <ul class="footLinkas">
         <li class="linkH">
             POPULAR CATEGORIES
@@ -21,7 +21,7 @@
         <li>Pets</li>
     </ul>
 </div>
-<div class="col-md-3">
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
     <ul class="footLinkas">
         <li class="linkH">
             ABOUT US
@@ -32,7 +32,7 @@
         <li>Lyf for Businesses</li>
     </ul>
 </div>
-<div class="col-md-3">
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
     <div class="contactDetail">
         <h5>Contact Us!</h5>
         <form action="">
@@ -80,5 +80,70 @@ import logo1 from '/src/assets/IMG/logo.png'
 </script>
 
 <style scoped>
+section.footer {
+    background-color: var(--bg-color);
+    padding: 45px 11.438em;
+}
 
+ul.link {
+    padding: 0px;
+    list-style: none;
+}
+
+ul.link li {
+    font-size: 13px;
+    color: var(--para-color);
+    margin-bottom: 12px;
+}
+
+.logo ul.link {margin-top: 15px;}
+
+ul.footLinkas li {
+    font-size: 13px;
+    color: var(--para-color);
+    margin-bottom: 12px;
+}
+
+ul.footLinkas {
+    margin-top: 15px;
+    padding: 0px;
+    list-style: none;
+}
+li.linkH{
+font-size: 20px !important;
+font-weight: 600;
+}
+.contactDetail {
+    margin-top: 15px;
+}
+
+.contactDetail h5 {
+    font-size: 20px;
+}
+form .form-group {display: flex;background-color: var(--white);
+width: fit-content;
+padding: 12px 17px;
+border-radius: 50px;
+}
+
+.form-group input {
+    background-color: transparent;
+    border: none;
+}
+.form-group a.sendEmail {
+    background-color: var(--secondary);
+    padding: 7px 20px;
+    border-radius: 50px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul.socialL {
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    font-size: 24px;
+    justify-content: space-between;
+    color: var(--primary);
+}
 </style>

@@ -57,7 +57,10 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.pImg img {
+    width: 270px;
+    height: 158px;
+}
 .metaData span:first-child {
     text-transform: capitalize;
     font-size: 13px;
@@ -82,5 +85,6 @@
     box-shadow: 0px 0px 5px #00000047;
     width: fit-content;
     position:relative;
+    margin-top:30px;
 }
 </style>
