@@ -1,12 +1,12 @@
 <template>
 <div class="row">
     <div class="col-md-12">
- <Carousel>
+ <Carousel :items-to-show="1" :wrap-around="true">
     <Slide v-for="slide in slides" :key="slide">
       <div class="carousel__item">
           <img :src="slide.image" class="img-fluid" :alt="slide.image">
           </div>
-    </Slide>{{ slide }}
+    </Slide>
     <template #addons>
       <Navigation />
     </template>
@@ -22,7 +22,7 @@ import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import  slide1 from '../../assets/IMG/headeSlide.png';
     export default defineComponent({
-  name: 'Basic',
+  name: 'WrapAround',
   components: {
     Carousel,       
     Slide,
@@ -36,7 +36,7 @@ import  slide1 from '../../assets/IMG/headeSlide.png';
 });
 </script>
 
-<style scoped>
+<style>
 
 .carousel__item {
   min-height: 200px;
@@ -59,4 +59,11 @@ import  slide1 from '../../assets/IMG/headeSlide.png';
   box-sizing: content-box;
   border: 5px solid white;
 }
+.carousel .carousel__next{
+  right:30px !important ;
+}
+.carousel__prev{
+  left:30px !important;
+}
+
 </style>

@@ -34,11 +34,15 @@ h2.head {
 .ProductArcive {
     padding: 50px;
 }
-.loadBtn {margin-top: 50px;text-align: center;}
+.loadBtn {
+    text-align: center;
+    margin-top: 50px;
+}
 
-.loadBtn a.btn.loadmore {
+a.btn.loadmore {
     background-color: var(--secondary);
     color: var(--white);
-    padding: 14px 26px;
+    font-size: 17px;
+    padding: 13px 26px;
 }
 </style>
