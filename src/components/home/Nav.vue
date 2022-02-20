@@ -2,9 +2,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="../../assets/IMG/logo.png" alt="" />
-      </a>
+            <router-link class="navbar-brand" :to="'/'"><img src="../../assets/IMG/logo.png" alt="" /></router-link>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -41,14 +40,11 @@
         </form>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link btn login" aria-current="page" href="#"
-              >Login</a
-            >
+            <router-link class="nav-link btn login" :to="'/signin'">Login</router-link>
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link signup btn" aria-current="page" href="#"
-              >Sign Up</a
-            >
+            <router-link class="nav-link btn signup" :to="'/signup'">Sign Up</router-link>
           </li>
         </ul>
       </div>
