@@ -1,7 +1,7 @@
 <template>
 <div class="archiveProduct">
 <div class="pImg">
-    <img v-bind:src="'./src/assets/IMG/' + image"  alt="">
+    <img :src="'/src/assets/IMG/' + image"  alt="">
     <div class="like">
           <font-awesome-icon icon="heart" />
     </div>
