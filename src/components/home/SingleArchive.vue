@@ -1,7 +1,7 @@
 <template>
 <div class="archiveProduct">
 <div class="pImg">
-    <img :src="image" alt="">
+    <img v-bind:src="'./src/assets/IMG/' + image"  alt="">
     <div class="like">
           <font-awesome-icon icon="heart" />
     </div>
@@ -26,6 +26,7 @@
 </template>
 
 <script>
+
     export default {
         props:['like','price','pname','location','date','image']
     }
