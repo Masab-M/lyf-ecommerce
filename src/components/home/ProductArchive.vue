@@ -5,7 +5,7 @@
             <h2 class="head">{{archiveHeader}}</h2>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" v-for="index in 4" :key="index">
-            <SingleArchive :image="'product.png'" :like="0" :price="300" :pname="'Iphone'" :location="'pakistan'" :date="'30/12/2021'" ></SingleArchive>
+            <SingleArchive :image="'@/assets/IMG/product.png'" :like="0" :price="300" :pname="'Iphone'" :location="'pakistan'" :date="'30/12/2021'" ></SingleArchive>
         </div>
         <div class="col-md-12">
             <div class="loadBtn">
