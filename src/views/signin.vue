@@ -1,4 +1,5 @@
 <template>
+<Nav></Nav>
     <section class="signupSection">
         <div class="row signupSection">
             <div class="col-md-6">
@@ -41,12 +42,14 @@
                             <div class="form-group">
                                 <input type="password" name id />
                             </div>
+                            <div class="forget">
+                                <a href="#" class="forget">Forget Password</a>
+                            </div>
                             <div class="regBtn">
-                                <a href="#" class="regBtn">register</a>
+                                <a href="#" class="regBtn">Login</a>
                             </div>
                             <div class="otherSignUp">
-                                <h5>Have an account login here</h5>
-                                <label for>or register by</label>
+                                <label for> or login by</label>
                                 <ul class="opt">
                                     <li>
                                         <font-awesome-icon :icon="['fab', 'facebook-f']" />
@@ -104,8 +107,10 @@
 
 <script>
 import RegForm from "../components/register.vue/regForm.vue";
+import SideCarousel from "../components/register.vue/sideCarousel.vue";
+import Nav from "../components/home/Nav.vue";
     export default {
-    components: { RegForm }
+    components: { RegForm, SideCarousel, Nav }
 }
 </script>
 

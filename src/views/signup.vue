@@ -1,4 +1,5 @@
 <template>
+<Nav></Nav>
     <section class="signupSection">
         <div class="row signupSection">
             <div class="col-md-6">
@@ -109,8 +110,9 @@
 import RegForm from "../components/register.vue/regForm.vue";
 import RegForm1 from "../components/register.vue/regForm.vue";
 import SideCarousel from "../components/register.vue/sideCarousel.vue";
+import Nav from "../components/home/Nav.vue";
 export default {
-    components: { RegForm, RegForm1, SideCarousel },
+    components: { RegForm, RegForm1, SideCarousel, Nav },
 };
 </script>
 
