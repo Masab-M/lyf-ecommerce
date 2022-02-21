@@ -19,4 +19,14 @@ export default {
 </script>
 
 <style scoped>
+.logo img {
+    width: 80px;
+    margin-bottom: 24px;
+}
+
+.signHead h3 {
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
 </style>

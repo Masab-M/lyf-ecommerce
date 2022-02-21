@@ -2,7 +2,7 @@
 <Nav></Nav>
     <section class="signupSection">
         <div class="row signupSection">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <RegForm :regHead="'Sign In'"></RegForm>
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -37,10 +37,10 @@
                     >
                         <form action id="signInForm" class="personalForm">
                             <div class="form-group">
-                                <input type="email" name id />
+                                <input type="email" name id placeholder="Email" />
                             </div>
                             <div class="form-group">
-                                <input type="password" name id />
+                                <input type="password" name id  placeholder="Password"/>
                             </div>
                             <div class="forget">
                                 <a href="#" class="forget">Forget Password</a>
@@ -69,16 +69,13 @@
                     >
                     <form action class="personalForm">
                             <div class="form-group">
-                                <input type="text" name id />
+                                <input type="email" name id placeholder="Email" />
                             </div>
                             <div class="form-group">
-                                <input type="email" name id />
-                            </div>
-                            <div class="form-group">
-                                <input type="password" name id />
+                                <input type="password" name id placeholder="Password"/>
                             </div>
                             <div class="regBtn">
-                                <a href="#" class="regBtn">register</a>
+                                <a href="#" class="regBtn">Login</a>
                             </div>
                             <div class="otherSignUp">
                                 <h5>Have an account login here</h5>
@@ -96,7 +93,7 @@
                         </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="sideCarous">
                     <SideCarousel></SideCarousel>
                 </div>
@@ -109,11 +106,99 @@
 import RegForm from "../components/register.vue/regForm.vue";
 import SideCarousel from "../components/register.vue/sideCarousel.vue";
 import Nav from "../components/home/Nav.vue";
+import '/src/assets/base.css';
     export default {
     components: { RegForm, SideCarousel, Nav }
 }
 </script>
 
 <style scoped>
+section{
+    background-color: var(--bg-color);
+    padding: 26px;
+}
+div#nav-tab {
+    border-bottom: none !important;
+    margin-bottom: 27px;
+    justify-content: space-around;
+}
+
+.nav-tabs button#nav-profile-tab {
+    border: none;
+}
+
+button#nav-home-tab {
+    border: none ;
+}
+
+.nav-tabs .nav-link{
+    font-size: 15px;
+    color: var(--black) !important;
+    font-weight: 500;
+    width:50%;
+    border-bottom: 1px solid transparent !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--secondary) !important;
+    border-bottom: 2px solid var(--secondary) !important;
+}
+form .form-group input {
+    padding: 0px 6px 16px 0px;
+    font-size: 12px;
+    color:#292929;
+    outline: none;
+    border: none;
+    width:100%;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 10px;
+}
+section .signupSection{
+    margin: 0px auto;
+    background-color: var(--white);
+    width: 75%;
+    padding: 26px 28px 45px 70px;
+    border-radius: 20px;
+}
+.regBtn {
+    background-color: var(--secondary);
+    text-align: center;
+    border-radius: 50px;
+    padding: 12px;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.otherSignUp h5 {
+    font-size: 13px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.otherSignUp {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.otherSignUp label {font-size: 12px;}
+
+.otherSignUp .opt {
+    margin-top: 17px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    color: var(--primary);
+}
+.forget {
+    text-align: end;
+    font-size: 12px;
+    color: #a1a1a1;
+    text-decoration: none;
+}
 
 </style>
