@@ -168,4 +168,7 @@ ul.navbar-nav {
 ul.navbar-nav li {
     margin-left:20px;
 }
+.dropdown.userDetials img {
+    border-radius: 100px;
+}
 </style>
