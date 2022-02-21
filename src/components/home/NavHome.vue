@@ -156,4 +156,16 @@ ul li a.signup {
   box-shadow: 0px 1px 20px -13px #8989897a;
   border-radius: 5px;
 } */
+ul.navbar-nav li>svg {
+    font-size: 20px;
+}
+
+ul.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+ul.navbar-nav li {
+    margin: auto 20px;
+}
 </style>

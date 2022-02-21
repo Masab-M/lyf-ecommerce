@@ -30,7 +30,7 @@ const router = createRouter({
 
         // UserPosts will be rendered inside User's <router-view>
         // when /users/:username/posts is matched
-        { path: 'itemDetails/:id', component: adDetailVue },
+        { path: 'itemDetails/:id/:subId', component: adDetailVue },
       ]
     },
     {
