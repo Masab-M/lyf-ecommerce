@@ -5,7 +5,7 @@
             <h4>Post Your Ads</h4>
             <div class="row">
                 <h5>What your Offering</h5>
-                <div class="col-md-3" v-for="cat in category" :key="cat" >
+                <div class="col-md-3 col-sm-3 col-3" v-for="cat in category" :key="cat" >
                     <router-link class="nav-link signup" :to="`/newItem/itemCategory/${cat.id}`"> 
                     <div class="singleOffer" >
                         <div class="icon">

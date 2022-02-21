@@ -157,7 +157,7 @@ ul li a.signup {
   border-radius: 5px;
 } */
 ul.navbar-nav li>svg {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 ul.navbar-nav {
@@ -166,6 +166,6 @@ ul.navbar-nav {
 }
 
 ul.navbar-nav li {
-    margin: auto 20px;
+    margin-left:20px;
 }
 </style>
