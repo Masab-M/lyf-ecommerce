@@ -21,6 +21,7 @@ export default {
 <style scoped>
 .logo img {
     width: 80px;
+    margin-top: 65px;
     margin-bottom: 24px;
 }
 
