@@ -3,7 +3,8 @@
     <div class="centerDiv">
  <div class="row head">
         <div class="col-md-6">
-            <font-awesome-icon icon="arrow-left"/>
+            <a @click="$router.go(-1)">
+            <font-awesome-icon icon="arrow-left"/></a>
         </div>
         <div class="col-md-6">
             <div class="headtext">

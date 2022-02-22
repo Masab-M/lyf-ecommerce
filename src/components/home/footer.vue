@@ -82,22 +82,22 @@ import logo1 from '/src/assets/IMG/logo.png'
 <style scoped>
 @media (min-width:320px)  { 
     section.footer {
-    padding: 45px 11.438em;
+    padding: 45px 3.438em;
 }
     /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  {
      section.footer {
-    padding: 45px 11.438em;
+    padding: 45px 3.438em;
 }
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px)  {
      section.footer {
-    padding: 45px 11.438em;
+    padding: 45px 5.438em;
 }
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { 
      section.footer {
-    padding: 45px 11.438em;
+    padding: 45px 45px 5.438em;
 }
     /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { 
@@ -112,7 +112,6 @@ import logo1 from '/src/assets/IMG/logo.png'
     /* hi-res laptops and desktops */ }
 section.footer {
     background-color: var(--bg-color);
-    padding: 45px 11.438em;
 }
 
 ul.link {
@@ -157,8 +156,10 @@ border-radius: 50px;
 }
 
 .form-group input {
-    background-color: transparent;
+      background-color: transparent;
     border: none;
+    width: 173px;
+    outline:none;
 }
 .form-group a.sendEmail {
     background-color: var(--secondary);

@@ -117,6 +117,13 @@ section{
     background-color: var(--bg-color);
     padding: 26px;
 }
+section .signupSection{
+    margin: 0px auto;
+    background-color: var(--white);
+    width: 75%;
+    padding: 26px 28px 45px 70px;
+    border-radius: 20px;
+}
 div#nav-tab {
     border-bottom: none !important;
     margin-bottom: 27px;
@@ -153,13 +160,7 @@ form .form-group input {
     border-bottom: 1px solid #c5c5c5;
     margin-bottom: 10px;
 }
-section .signupSection{
-    margin: 0px auto;
-    background-color: var(--white);
-    width: 75%;
-    padding: 26px 28px 45px 70px;
-    border-radius: 20px;
-}
+
 .regBtn {
     background-color: var(--secondary);
     text-align: center;

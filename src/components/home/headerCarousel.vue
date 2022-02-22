@@ -4,7 +4,7 @@
  <Carousel :items-to-show="1" :wrap-around="true">
     <Slide v-for="slide in slides" :key="slide">
       <div class="carousel__item">
-          <img :src="slide.image" class="img-fluid" :alt="slide.image">
+          <img :src="slide.image" class="img-fluid headerCarousel" :alt="slide.image">
           </div>
     </Slide>
     <template #addons>
@@ -37,7 +37,9 @@ import  slide1 from '../../assets/IMG/headeSlide.png';
 </script>
 
 <style>
-
+img.headerCarousel{
+  width: 100vw !important;
+}
 .carousel__item {
   min-height: 200px;
   width: 100%;

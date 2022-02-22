@@ -1,8 +1,7 @@
 <template>
 <Nav></Nav>
     <section class="signupSection">
-        <div class="centerDiv">
-            <div class="row signupSection">
+        <div class="row signupSection">
             <div class="col-md-4">
                 <RegForm1 :regHead="'SignUp'"></RegForm1>
                 <nav>
@@ -104,7 +103,6 @@
                 </div>
             </div>
         </div>
-        </div>
         
     </section>
 </template>
@@ -121,11 +119,11 @@ export default {
 </script>
 
 <style scoped>
-section
-{
+section{
     background-color: var(--bg-color);
+    padding: 26px;
 }
-section .centerDiv {
+section .signupSection{
     margin: 0px auto;
     background-color: var(--white);
     width: 75%;
@@ -196,10 +194,14 @@ form .form-group input {
 .otherSignUp label {font-size: 12px;}
 
 .otherSignUp .opt {
-    margin-top: 17px;
+       margin-top: 17px;
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 0;
     color: var(--primary);
+}
+.otherSignUp .opt li{
+    margin:  0px 10px;
 }
 </style>

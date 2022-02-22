@@ -2,8 +2,8 @@
 <div class="archiveProduct">
 <div class="pImg">
     <img src="../../assets/IMG/product.png"  alt="">
-    <div class="like">
-          <font-awesome-icon icon="heart" />
+    <div class="like" @click="active = !active" :aria-pressed="active ? 'true' : 'false'">
+          <font-awesome-icon icon="heart" :class="{ red: active }"/>
     </div>
 </div>
 <div class="details">
@@ -15,7 +15,7 @@
     </h5>
     <div class="metaData">
         <span>
-            {{location}}
+           <font-awesome-icon icon="location-dot"/> {{location}}
         </span>
         <span>
             {{date}}
@@ -28,7 +28,12 @@
 <script>
 
     export default {
-        props:['like','price','pname','location','date','image']
+        props:['like','price','pname','location','date','image'],
+         data () {
+     return {
+       active: false
+     }
+  }
     }
 </script>
 
@@ -45,11 +50,14 @@
 }
 
 .details h5.name {
+    
     font-size: 16px;
     font-weight: normal;
     color: #363636;
     margin-bottom: 0px;
+    text-align: left;
     text-transform: capitalize;
+
 }
 
 .metaData {
@@ -57,6 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color:#000;
 }
 .pImg img {
     width: 270px;
@@ -77,6 +86,11 @@
     position: absolute;
     top: 10px;
     right: 10px;
+       -webkit-transition: color 1000ms linear;
+    -moz-transition: color 1000ms linear;
+    -o-transition: color 1000ms linear;
+    -ms-transition: color 1000ms linear;
+    transition: color 1000ms linear;
     background-color: var(--white);
     border-radius: 100px;
     padding: 3px 7px;
@@ -87,5 +101,9 @@
     width: fit-content;
     position:relative;
     margin-top:30px;
+}
+.like .red {
+    color: red;
+    transition: color 0.6 ease;
 }
 </style>

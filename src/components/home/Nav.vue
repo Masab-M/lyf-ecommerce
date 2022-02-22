@@ -13,7 +13,8 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"> </span>
+        <span class="navbar-toggler-icon">
+          <font-awesome-icon icon="align-right"/> </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <form class="d-flex me-auto mb-2 mb-lg-0">
@@ -27,7 +28,7 @@
           </div>
           <div class="form-group search">
             <input
-              class="form-control me-2"
+              class="form-control"
               type="search"
               placeholder="Search"
               aria-label="Search"
@@ -73,7 +74,7 @@ a.navbar-brand img {
   width:100%;
   background: none;
   border:none;
-  outline: transparent;
+  outline: none;
 }
 .form-group.search button{
   background-color: var(--primary);
@@ -93,9 +94,14 @@ a.navbar-brand img {
   box-shadow: 0px 1px 20px -13px #8989897a;
   border-radius: 5px;
   font-size: 14px;
+  outline:none;
   font-weight: 500;
   background-color:var(--white);
  width: 95%;
+}
+button.navbar-toggler.collapsed
+{
+  outline:none;
 }
 form.d-flex
 {

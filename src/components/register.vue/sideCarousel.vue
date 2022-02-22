@@ -37,6 +37,7 @@ export default defineComponent({
   data() {
     return {
       slides: [{ image: slide1 }, { image: slide1 }],
+      
     };
   },
 });

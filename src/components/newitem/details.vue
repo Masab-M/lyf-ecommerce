@@ -18,6 +18,32 @@
               <div class="detailHead">
                 <h5>INCLUDE SOME DETAILS</h5>
               </div>
+              <div class="form-group options">
+                <label for="">Condition</label>
+                <div class="button">
+                  <input type="radio" id="a25" name="check-substitution-2" />
+                  <label class="btn btn-default" for="a25">Used</label>
+                </div>
+                <div class="button">
+                  <input type="radio" id="a50" name="check-substitution-2" />
+                  <label class="btn btn-default" for="a50">New</label>
+                </div>
+              </div>
+              <div class="form-group options">
+                <label for="">Type</label>
+                <div class="button">
+                  <input type="radio" id="type1" name="type" />
+                  <label class="btn btn-default" for="type1">Sony</label>
+                </div>
+                <div class="button">
+                  <input type="radio" id="type2" name="type" />
+                  <label class="btn btn-default" for="type2">Apple</label>
+                </div>
+                <div class="button">
+                  <input type="radio" id="type3" name="type" />
+                  <label class="btn btn-default" for="type3">Samsung</label>
+                </div>
+              </div>
               <div class="form-group">
                 <label for="">Ad title</label>
                 <input type="text" name="" id="" />
@@ -56,7 +82,7 @@
               </div>
               <div class="form-group fileUpload">
                 <label>
-                    <font-awesome-icon :icon="['fas','camera']" />
+                  <font-awesome-icon :icon="['fas', 'camera']" />
                   <input type="file" size="60" />
                 </label>
               </div>
@@ -331,21 +357,58 @@ label.loc {
   color: var(--white);
   text-decoration: none;
 }
-.fileUpload label{
-    padding: 24px 30px;
-    font-size: 30px;
-    display: table;
-    color: #000;
-     }
-
-
+.fileUpload label {
+  padding: 24px 30px;
+  font-size: 30px;
+  display: table;
+  color: #000;
+}
 
 input[type="file"] {
-    display: none;
+  display: none;
 }
 .form-group.fileUpload {
+  border-radius: 20px;
+  box-shadow: 4px 2px 20px -1px #dfdfdf;
+  width: fit-content;
+}
+.button {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+}
+
+.button label,
+.button input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.button input[type="radio"]:checked + label {
+ background: var(--secondary);
     border-radius: 20px;
-    box-shadow: 4px 2px 20px -1px #dfdfdf;
-    width: fit-content;
+    color: var(--white);
+}
+
+.button label {
+ cursor: pointer;
+    z-index: 90;
+    border: 1px solid var(--secondary);
+    line-height: 1.8em;
+    border-radius: 100px;
+}
+.form-group.options {
+    display: flow-root;
 }
 </style>
