@@ -2,7 +2,7 @@
 <Nav></Nav>
     <section class="signupSection">
         <div class="row signupSection">
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
                 <RegForm :regHead="'Sign In'"></RegForm>
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -93,8 +93,8 @@
                         </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="sideCarous">
+            <div class="col-xl-8 col-lg-6">
+                <div class="sideCarous d-none d-sm-none d-md-none d-lg-block">
                     <SideCarousel></SideCarousel>
                 </div>
             </div>
@@ -117,11 +117,41 @@ section{
     background-color: var(--bg-color);
     padding: 26px;
 }
+@media (min-width:320px)  { 
+    section .signupSection{
+    padding: 26px 28px 45px 33px;
+    }
+    /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+     section .signupSection{
+    padding: 26px 28px 45px 70px;
+    }
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+     section .signupSection{
+    padding: 26px 28px 45px 70px;
+    }
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+     section .signupSection{
+    padding: 26px 28px 45px 70px;
+    }
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+     section .signupSection{
+    padding: 26px 28px 45px 70px;
+    }
+    /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+     section .signupSection{
+    padding: 26px 28px 45px 70px;
+    }
+    /* hi-res laptops and desktops */ }
+
 section .signupSection{
     margin: 0px auto;
     background-color: var(--white);
     width: 75%;
-    padding: 26px 28px 45px 70px;
     border-radius: 20px;
 }
 div#nav-tab {

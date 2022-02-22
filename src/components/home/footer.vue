@@ -151,15 +151,15 @@ font-weight: 600;
 }
 form .form-group {display: flex;background-color: var(--white);
 width: fit-content;
-padding: 12px 17px;
 border-radius: 50px;
 }
 
 .form-group input {
-      background-color: transparent;
+     background-color:transparent;
     border: none;
     width: 173px;
-    outline:none;
+    outline: none;
+    padding: 0px 18px;
 }
 .form-group a.sendEmail {
     background-color: var(--secondary);
