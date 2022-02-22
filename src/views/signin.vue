@@ -155,7 +155,6 @@ section .signupSection{
     border-radius: 20px;
 }
 div#nav-tab {
-    border-bottom: none !important;
     margin-bottom: 27px;
     justify-content: space-around;
 }

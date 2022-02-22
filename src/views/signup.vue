@@ -3,7 +3,7 @@
     <section class="signupSection">
         <div class="row signupSection">
             <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-                <RegForm1 :regHead="'SignUp'"></RegForm1>
+                <RegForm1 :regHead="'Sign Up'"></RegForm1>
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <button
@@ -160,7 +160,6 @@ section .signupSection{
     border-radius: 20px;
 }
 div#nav-tab {
-    border-bottom: none !important;
     margin-bottom: 27px;
     justify-content: space-around;
 }

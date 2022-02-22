@@ -132,7 +132,7 @@ form.d-flex {
 ul li a.login {
   font-size: 18px;
     color: var(--black);
-    padding: 12px 28px;
+    padding: 12px 24px;
 }
 ul li a.signup {
   font-size: 16px;
@@ -140,7 +140,7 @@ ul li a.signup {
   color: var(--black);
   border: 2px solid var(--secondary);
   border-radius: 50px;
- padding: 12px 28px;
+ padding: 12px 24px;
 }
 select {
   font-family: "Poppins", "fontAwesome";
