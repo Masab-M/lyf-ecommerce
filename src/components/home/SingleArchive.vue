@@ -8,7 +8,7 @@
 </div>
 <div class="details">
     <h4 class="price">
-        {{price}}
+        <span>$</span> {{price}}
     </h4>
     <h5 class="name">
         {{pname}}
@@ -44,9 +44,11 @@
 }
 
 .details .price {
-    font-size: 22px;
+   font-size: 22px;
+    color: var(--black);
     font-weight: bold;
     margin-bottom: 3px;
+    text-align: left;
 }
 
 .details h5.name {

@@ -37,7 +37,7 @@
         <h5>Contact Us!</h5>
         <form action="">
             <div class="form-group">
-                <input type="text" name="" id="">
+                <input type="text" name="" placeholder="Email" id="">
                 <a href="#" class="sendEmail">Send</a>
             </div>
         </form>

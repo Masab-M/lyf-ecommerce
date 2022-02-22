@@ -62,7 +62,11 @@ export default defineComponent({
 .carousel__slide {
   padding: 0px;
 }
-
+.createAcc h5 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 44px;
+}
 .carousel__prev,
 .carousel__next {
   box-sizing: content-box;

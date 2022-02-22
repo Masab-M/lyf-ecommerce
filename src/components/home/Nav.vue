@@ -44,12 +44,12 @@
         </form>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link btn login" :to="'/signin'"
+            <router-link class=" btn login" :to="'/signin'"
               >Login</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link btn signup" :to="'/signup'"
+            <router-link class=" btn signup" :to="'/signup'"
               >Sign Up</router-link
             >
           </li>
@@ -82,11 +82,14 @@ a.navbar-brand img {
   border: none;
   outline: none;
 }
+.form-group.search button svg {
+    font-size: 24px;
+}
 .form-group.search button {
   background-color: var(--primary);
   border-radius: 5px;
   color: var(--white);
-  padding: 0.875em 0.9em;
+  padding: 14px 15px 15px 16px;
   font-size: large;
 }
 .form-group.select-Country {
@@ -104,6 +107,22 @@ a.navbar-brand img {
   background-color: var(--white);
   width: 95%;
 }
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.select-Country {
+  position: relative;
+}
+
+.select-Country::after {
+     content: "▼";
+    font-size: 1rem;
+    top: 18px;
+    color: #7f7f7f;
+    right: 26px;
+    position: absolute;
+}
 button.navbar-toggler.collapsed {
   outline: none;
 }
@@ -112,8 +131,8 @@ form.d-flex {
 }
 ul li a.login {
   font-size: 18px;
-  font-weight: 400;
-  color: var(--black);
+    color: var(--black);
+    padding: 12px 28px;
 }
 ul li a.signup {
   font-size: 16px;
@@ -121,12 +140,13 @@ ul li a.signup {
   color: var(--black);
   border: 2px solid var(--secondary);
   border-radius: 50px;
-  padding: 9px;
+ padding: 12px 28px;
 }
 select {
   font-family: "Poppins", "fontAwesome";
   font-weight: 900;
-}
+  color: #7f7f7f;
+  }
 /* form.d-flex .form-group {
   padding: 1em 0.813em;
   margin-right: 0.813em;
