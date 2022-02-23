@@ -142,7 +142,7 @@ ul li a.signup {
   border-radius: 50px;
  padding: 12px 24px;
 }
-select {
+select,option {
   font-family: "Poppins", "fontAwesome";
   font-weight: 900;
   color: #7f7f7f;

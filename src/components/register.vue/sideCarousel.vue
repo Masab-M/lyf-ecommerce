@@ -47,18 +47,6 @@ export default defineComponent({
 .carousel__item img.regImg {
   width: 400px;
 }
-.carousel__item {
-  min-height: 200px;
-  width: 100%;
-  margin: auto;
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .carousel__slide {
   padding: 0px;
 }
@@ -66,11 +54,6 @@ export default defineComponent({
     font-size: 24px;
     font-weight: 800;
     margin-top: 44px;
-}
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
 }
 .carousel .carousel__next {
   right: 30px !important ;

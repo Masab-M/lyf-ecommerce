@@ -10,7 +10,7 @@
     <Slide v-for="index in 10" :key="index">
         
       <div class="carousel__item">
-          <SingleArchive :image="'@/assets/IMG/product.png'" :like="0" :price="300" :pname="'Iphone'" :location="'pakistan'" :date="'30/12/2021'" ></SingleArchive>
+          <SingleArchive :image="'@/assets/IMG/product.png'" :like="0" :price="300" :pname="'Iphone'" :location="'pakistan'" :date="'FEB 25'" ></SingleArchive>
     </div>
     </Slide>
     <template #addons>

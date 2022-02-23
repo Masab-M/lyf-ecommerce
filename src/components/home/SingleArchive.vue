@@ -41,6 +41,7 @@
 
 .details {
     padding: 11px 9px 9px 13px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .details .price {
@@ -70,8 +71,9 @@
     color:#000;
 }
 .pImg img {
-    width: 270px;
+        width: 270px;
     height: 158px;
+    border-radius: 5px 5px 0px 0px;
 }
 .metaData span:first-child {
     text-transform: capitalize;
@@ -101,8 +103,9 @@
     border-radius: 5px;
     box-shadow: 0px 0px 5px #00000047;
     width: fit-content;
-    position:relative;
-    margin-top:30px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .like .red {
     color: red;

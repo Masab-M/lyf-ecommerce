@@ -36,7 +36,7 @@ import  slide1 from '../../assets/IMG/headeSlide.png';
 });
 </script>
 
-<style>
+<style scoped>
 img.headerCarousel{
   width: 100vw !important;
 }
