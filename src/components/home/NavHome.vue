@@ -1,10 +1,7 @@
 <template>
-  <link
+    <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
   />
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -29,10 +26,9 @@
         <form class="d-flex me-auto mb-2 mb-lg-0">
           <div class="form-group select-Country">
             <select name="" id="">
-              <option value="">&#xf3c5; Srilanka</option>
-              <option value="">Srilanka</option>
-              <option value="">Srilanka</option>
-              <option value="">Srilanka</option>
+              <option value="fa-map-marker">&#xf041; Srilanka</option>
+              <option value="fa-map-marker">&#xf041; Srilanka</option>
+              <option value="fa-map-marker">&#xf041; Srilanka</option>
             </select>
           </div>
           <div class="form-group search">
@@ -80,7 +76,7 @@
             <font-awesome-icon :icon="['far', 'globe']" />
           </li>
           <li class="nav-item">
-            <router-link class="nav-link signup" :to="'/newItem'"
+            <router-link class=" signup" :to="'/newItem'"
         > <font-awesome-icon :icon="['fas', 'add']" />
                   Sell
                   </router-link>
@@ -138,18 +134,17 @@ a.navbar-brand img {
 form.d-flex {
   width: 70%;
 }
-ul li a.login {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--black);
-}
+
 ul li a.signup {
-  font-size: 16px;
-  font-weight: normal;
-  color: var(--black);
-  border: 2px solid var(--secondary);
-  border-radius: 50px;
-  padding: 9px;
+        font-size: 16px;
+    color: var(--black);
+    border: 2px solid var(--secondary);
+    border-radius: 50px;
+    padding: 9px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 /* form.d-flex .form-group {
   padding: 1em 0.813em;
@@ -172,5 +167,25 @@ ul.navbar-nav li {
 }
 .dropdown.userDetials img {
     border-radius: 100px;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.select-Country {
+  position: relative;
+}
+select,option {
+  font-family: "Poppins", "fontAwesome";
+  font-weight: 900;
+  color: #7f7f7f;
+  }
+.select-Country::after {
+     content: "▼";
+    font-size: 1rem;
+    top: 18px;
+    color: #7f7f7f;
+    right: 26px;
+    position: absolute;
 }
 </style>

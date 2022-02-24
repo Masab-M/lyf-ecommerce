@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-6">
             <div class="interFaceImg">
-                <img src="../../assets/IMG/appinterface.png" alt="">
+                <img src="../../assets/IMG/appinterface.png" class="img-fluid" alt="">
             </div>
         </div>
         <div class="col-md-3">
