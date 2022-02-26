@@ -7,6 +7,8 @@ import UploadAdVue from "../views/UploadAd.vue";
 import offervue from "../components/newitem/offer.vue"
 import adCatvue from "../components/newitem/subcat.vue"
 import adDetailVue from "../components/newitem/details.vue";
+import chatVue from "../views/chat.vue";
+import item from "../views/Item.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -47,6 +49,16 @@ const router = createRouter({
       path: "/signup",
       name: "signup",
       component: signupVue,
+    },
+    {
+      path: "/inbox",
+      name: "chat",
+      component: chatVue,
+    },
+    {
+      path: "/item",
+      name: "item",
+      component: item,
     },
     // {
     //   path: "/about",

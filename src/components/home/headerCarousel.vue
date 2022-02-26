@@ -41,7 +41,6 @@ img.headerCarousel{
   width: 100vw !important;
 }
 .carousel__item {
-  min-height: 200px;
   width: 100%;
   margin:auto;
   color:  var(--vc-clr-white);

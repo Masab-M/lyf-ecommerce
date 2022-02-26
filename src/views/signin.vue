@@ -115,11 +115,11 @@ import '/src/assets/base.css';
 <style scoped>
 section{
     background-color: var(--bg-color);
-    padding: 26px;
+    padding-top:26px;
 }
 @media (min-width:320px)  { 
     section .signupSection{
-    padding: 26px 28px 45px 33px;
+    padding: 26px 28px 45px 10px;
     }
     /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { 

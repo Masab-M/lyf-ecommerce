@@ -23,7 +23,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <form class="d-flex me-auto mb-2 mb-lg-0">
-          <div class="form-group select-Country">
+          <div class="form-group mb-sm-10 select-Country">
             <select name="">
               <option value="fa-map-marker">&#xf041; Srilanka</option>
               <option value="fa-map-marker">&#xf041; Srilanka</option>
@@ -63,16 +63,108 @@ export default {};
 </script>
 
 <style lang="css" scoped>
+@media (min-width:320px)  {
+  form.d-flex{
+    flex-direction: column;
+}
+ul.navbar-nav
+{
+  width: fit-content;
+}
+.form-group.select-Country {
+    width: 100%;
+}
+.form-group.search {
+    width: 100%;
+}
+ul.navbar-nav
+{
+  width: fit-content;
+}
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  {
+   form.d-flex{
+    flex-direction: column;
+}
+ul.navbar-nav
+{
+  width: fit-content;
+}
+.form-group.select-Country {
+    width: 100%;
+}
+.form-group.search {
+    width: 100%;
+}
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  {
+   form.d-flex{
+    flex-direction: column;
+}
+ul.navbar-nav
+{
+  width: fit-content;
+}
+.form-group.select-Country {
+    width: 100%;
+}
+.form-group.search {
+    width: 100%;
+}
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+   form.d-flex{
+    flex-direction: row;
+}
+ul.navbar-nav
+{
+  width: 30%;
+}
+.form-group.search {
+    width: 60%;
+}
+.form-group.select-Country {
+    width: 30%;
+}
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+   form.d-flex{
+    flex-direction: row;
+}
+ul.navbar-nav
+{
+  width: fit-content;
+}
+.form-group.search {
+    width: 70%;
+}
+.form-group.select-Country {
+    width: 30%;
+}
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+   form.d-flex{
+    flex-direction: row;
+}
+ul.navbar-nav
+{
+  width: fit-content;
+}
+.form-group.select-Country {
+    width: 30%;
+}
+  /* hi-res laptops and desktops */ }
+
 nav.navbar {
   background-color: var(--bg-color) !important;
   padding: 0.688em 1.125em;
 }
+
 a.navbar-brand img {
   width: 100px;
 }
 .form-group.search {
   display: flex;
-  width: 70%;
   border-radius: 5px;
   background-color: var(--white);
 }
@@ -92,9 +184,7 @@ a.navbar-brand img {
   padding: 14px 15px 15px 16px;
   font-size: large;
 }
-.form-group.select-Country {
-  width: 30%;
-}
+
 .form-group.select-Country select {
   padding: 1.4em 0.813em;
   margin-right: 0.813em;
@@ -114,7 +204,6 @@ select {
 .select-Country {
   position: relative;
 }
-
 .select-Country::after {
      content: "▼";
     font-size: 1rem;
