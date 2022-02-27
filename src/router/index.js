@@ -9,6 +9,9 @@ import adCatvue from "../components/newitem/subcat.vue"
 import adDetailVue from "../components/newitem/details.vue";
 import chatVue from "../views/chat.vue";
 import item from "../views/Item.vue";
+import liveitemVue from "../components/Item/liveitem.vue";
+import InprocessVue from "../components/Item/Inprocess.vue";
+import rejectedVue from "../components/Item/rejected.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -59,6 +62,19 @@ const router = createRouter({
       path: "/item",
       name: "item",
       component: item,
+      children: [
+        // UserHome will be rendered inside User's <router-view>
+        // when /users/:username is matched
+        { path: '', component: liveitemVue },
+
+        // UserProfile will be rendered inside User's <router-view>
+        // when /users/:username/profile is matched
+        { path: 'pending', component: InprocessVue },
+
+        // UserPosts will be rendered inside User's <router-view>
+        // when /users/:username/posts is matched
+        { path: 'rejected', component: rejectedVue },
+      ]
     },
     // {
     //   path: "/about",

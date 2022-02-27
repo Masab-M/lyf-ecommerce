@@ -181,8 +181,9 @@ select,option {
   color: #7f7f7f;
   }
 .select-Country::after {
-     content: "▼";
+     content: "";
     font-size: 1rem;
+    font-family: "fontAwesome";
     top: 18px;
     color: #7f7f7f;
     right: 26px;
