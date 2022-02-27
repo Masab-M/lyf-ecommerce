@@ -1,5 +1,5 @@
 <template>
-  <div class="row archiveItems">
+  <div class="row archiveItems itemsreject">
 <archive-item :cat="'rejected'" />
 <archive-item :cat="'rejected'" />
 <archive-item :cat="'rejected'" />

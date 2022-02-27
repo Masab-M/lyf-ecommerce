@@ -98,7 +98,8 @@ nav.navbar {
 a.navbar-brand img {
   width: 100px;
 }
-.form-group.search {
+
+  .form-group.search {
   display: flex;
   width: 70%;
   border-radius: 5px;

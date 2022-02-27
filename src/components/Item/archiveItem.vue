@@ -57,7 +57,13 @@ export default {
   height: 121px;
 }
 
+.archiveItems.itemslive .itemHead {
+    background-color: #E8F5E5;
+}
 
+.archiveItems.itemsreject .itemHead {
+    background-color: #fff0ec;
+}
 
 a.btn.boast {
   font-size: 15px;
