@@ -43,6 +43,49 @@ export default {
 </script>
 
 <style scoped>
+@media (min-width:320px)  {
+  .row.filter input {
+    width: 238px;
+}
+ul.itemSections a {
+  padding: 0px;
+}
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { 
+    .row.filter input {
+    width: 300px;
+}
+ul.itemSections a {
+  padding: 0px 12px;
+}
+  /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { 
+    .row.filter input {
+    width: 300px;
+}
+ul.itemSections a {
+  padding: 0px 12px;
+}
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { 
+    .row.filter input {
+    width: 300px;
+}ul.itemSections a {
+  padding: 0px 12px;
+}
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    .row.filter input {
+    width: 300px;
+}ul.itemSections a {
+  padding: 0px 12px;
+}
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+    .row.filter input {
+    width: 300px;
+}
+  /* hi-res laptops and desktops */ }
 select {
   -webkit-appearance: none;
   appearance: none;
@@ -110,7 +153,6 @@ ul.itemSections {
 }
 
 ul.itemSections a {
-  padding: 0px 12px;
   margin-right: 36px;
 }
 ul.itemSections a:last-child {

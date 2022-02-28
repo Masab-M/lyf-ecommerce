@@ -1,45 +1,42 @@
 <template>
-
   <div class="col-md-4">
-      <div class="item">
-        <div class="itemHead">
-          <div class="from">
-            <label for="">From :</label>
-            <span>24 Mar 21</span>
-          </div>
-          <div class="more">
-            <font-awesome-icon icon="ellipsis-vertical" />
-          </div>
+    <div class="item">
+      <div class="itemHead">
+        <div class="from">
+          <label for="">From :</label>
+          <span>24 Mar 21</span>
         </div>
-        <div class="itemDetails">
-          <div class="itemImg">
-            <img src="../../assets/IMG/itemImage.jpg" alt="" />
-          </div>
-          <div class="mainDetails">
-            <h5>Honda Car</h5>
-            <p>$ 40,000</p>
-            <a href="#" class="btn singleItem">View Ad</a>
-          </div>
+        <div class="more">
+          <font-awesome-icon icon="ellipsis-vertical" />
         </div>
-        <div class="statusDetails">
-          <div class="status">
-            <a href="#" v-if="cat == 'pending'" class="btn pending">Pending</a>
-            <a href="#" v-if="cat == 'rejected'" class="btn rejected"
-              >Rejected</a
-            >
-            <a href="#" v-if="cat == 'live'" class="btn live">Live</a>
-            <a href="#" v-if="cat == 'live'" class="btn boast">
-              <font-awesome-icon icon="bolt-lightning" /> Boast</a
-            >
-          </div>
-          <div class="statusIns">
-            <p v-if="cat == 'pending'">Your Ads Will Be Approve In A While</p>
-            <p v-if="cat == 'live'">Your Ads Is Approved By Our Admins</p>
-            <p v-if="cat == 'rejected'">Your Ads Is Rejected By Our Admins</p>
-          </div>
+      </div>
+      <div class="itemDetails">
+        <div class="itemImg">
+          <img src="../../assets/IMG/itemImage.jpg" alt="" />
+        </div>
+        <div class="mainDetails">
+          <h5>Honda Car</h5>
+          <p>$ 40,000</p>
+          <a href="#" class="btn singleItem">View Ad</a>
+        </div>
+      </div>
+      <div class="statusDetails">
+        <div class="status">
+          <a href="#" v-if="cat == 'pending'" class="btn pending">Pending</a>
+          <a href="#" v-if="cat == 'rejected'" class="btn rejected">Rejected</a>
+          <a href="#" v-if="cat == 'live'" class="btn live">Live</a>
+          <a href="#" v-if="cat == 'live'" class="btn boast">
+            <font-awesome-icon icon="bolt-lightning" /> Boast</a
+          >
+        </div>
+        <div class="statusIns">
+          <p v-if="cat == 'pending'">Your Ads Will Be Approve In A While</p>
+          <p v-if="cat == 'live'">Your Ads Is Approved By Our Admins</p>
+          <p v-if="cat == 'rejected'">Your Ads Is Rejected By Our Admins</p>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -52,17 +49,84 @@ export default {
 </script>
 
 <style scoped>
-.itemImg img {
-  width: 158px;
-  height: 121px;
+@media (min-width: 320px) {
+  .itemImg img {
+width: 100%;
+    height: 140px;
+  }
+  .itemDetails {
+      flex-direction: column;
 }
 
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  .itemImg img {
+    width: 158px;
+    height: 121px;
+  }
+  .itemDetails {
+      flex-direction: column;
+      
+}
+
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  .itemImg img {width: 100%;
+    height: 121px;
+  }
+  .itemDetails {
+      flex-direction: column;
+      
+}
+
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  .itemImg img {
+    width: 158px;
+    height: 121px;
+  }
+  .itemDetails {
+      flex-direction: row;
+      
+}
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  .itemImg img {
+    width: 158px;
+    height: 121px;
+  }
+  .itemDetails {
+      flex-direction: row;
+      
+}
+
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  .itemImg img {
+    width: 158px;
+    height: 121px;
+  }
+  .itemDetails {
+      flex-direction: row;
+      
+}
+
+  /* hi-res laptops and desktops */
+}
+
+
 .archiveItems.itemslive .itemHead {
-    background-color: #E8F5E5;
+  background-color: #e8f5e5;
 }
 
 .archiveItems.itemsreject .itemHead {
-    background-color: #fff0ec;
+  background-color: #fff0ec;
 }
 
 a.btn.boast {
