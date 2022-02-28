@@ -58,6 +58,10 @@ width: 100%;
       flex-direction: column;
 }
 
+a.btn.singleItem {
+  padding: 10px 28px;
+}
+
 a.btn.boast {
   padding: 7px 19px;
 }
@@ -83,6 +87,9 @@ a.btn.live {
   padding: 8px 41px;
 }
 
+a.btn.singleItem {
+  padding: 10px 28px;
+}
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width: 641px) {
@@ -99,6 +106,9 @@ a.btn.live {
   padding: 8px 25px;
 }
 
+a.btn.singleItem {
+  padding: 10px 28px;
+}
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 @media (min-width: 961px) {
@@ -117,6 +127,9 @@ a.btn.live {
   padding: 8px 41px;
 }
 
+a.btn.singleItem {
+  padding: 10px 14px;
+}
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
@@ -134,6 +147,9 @@ a.btn.boast {
   padding: 8px 41px;
 }
 
+a.btn.singleItem {
+  padding: 10px 28px;
+}
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1281px) {
@@ -149,6 +165,10 @@ a.btn.boast {
   padding: 7px 19px;
 }a.btn.live {
   padding: 8px 41px;
+}
+
+a.btn.singleItem {
+  padding: 10px 28px;
 }
   /* hi-res laptops and desktops */
 }
@@ -212,7 +232,6 @@ a.btn.rejected {
 }
 
 a.btn.singleItem {
-  padding: 10px 28px;
   text-transform: capitalize;
   border: 1px solid;
   font-size: 15px;
