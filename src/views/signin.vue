@@ -221,8 +221,14 @@ form .form-group input {
     margin-top: 17px;
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    padding: 0;
+    justify-content: center;
     color: var(--primary);
+}
+
+.otherSignUp .opt li{
+    margin: 0 10px;
+    cursor: pointer;
 }
 .forget {
     text-align: end;

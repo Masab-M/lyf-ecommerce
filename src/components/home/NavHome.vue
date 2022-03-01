@@ -190,4 +190,72 @@ select,option {
     right: 26px;
     position: absolute;
 }
+
+@media (min-width:320px)  {
+  form.d-flex{
+    flex-direction: column;
+}
+
+.form-group.select-Country {
+    width: 100%;
+}
+.form-group.search {
+    width: 100%;
+}
+
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  {
+   form.d-flex{
+    flex-direction: column;
+}
+.form-group.select-Country {
+    width: 100%;
+}
+.form-group.search {
+    width: 100%;
+}
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  {
+   form.d-flex{
+    flex-direction: column;
+}
+.form-group.select-Country {
+    width: 100%;
+}
+.form-group.search {
+    width: 100%;
+}
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+   form.d-flex{
+    flex-direction: row;
+}
+.form-group.search {
+    width: 60%;
+}
+.form-group.select-Country {
+    width: 30%;
+}
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+   form.d-flex{
+    flex-direction: row;
+}
+.form-group.search {
+    width: 70%;
+}
+.form-group.select-Country {
+    width: 30%;
+}
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+   form.d-flex{
+    flex-direction: row;
+}
+
+.form-group.select-Country {
+    width: 30%;
+}
+  /* hi-res laptops and desktops */ }
+
 </style>

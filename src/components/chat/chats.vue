@@ -20,16 +20,17 @@
               </div>
           </div>
       </div>
+      <ChatArchive/>
     </div>
 </template>
 
 <script>
+import ChatArchive from "./chatArchive.vue"
 export default {
-    setup () {
-        
-
-        return {}
-    }
+    setup() {
+        return {};
+    },
+    components: { ChatArchive }
 }
 </script>
 
