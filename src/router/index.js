@@ -12,6 +12,9 @@ import item from "../views/Item.vue";
 import liveitemVue from "../components/Item/liveitem.vue";
 import InprocessVue from "../components/Item/Inprocess.vue";
 import rejectedVue from "../components/Item/rejected.vue";
+import archiveComponentVue from "../components/chat/archiveComponent.vue";
+import messageVue from "../components/chat/message.vue";
+import empteymessageVue from "../components/chat/empteymessage.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -32,7 +35,7 @@ const router = createRouter({
         // UserProfile will be rendered inside User's <router-view>
         // when /users/:username/profile is matched
         { path: 'itemCategory/:id', component: adCatvue },
-
+        
         // UserPosts will be rendered inside User's <router-view>
         // when /users/:username/posts is matched
         { path: 'itemDetails/:id/:subId', component: adDetailVue },
@@ -57,6 +60,42 @@ const router = createRouter({
       path: "/inbox",
       name: "chat",
       component: chatVue,
+      children: [
+        // UserHome will be rendered inside User's <router-view>
+        // when /users/:username is matched
+        { path: '',   components: {
+          default: chatVue,
+          chat: archiveComponentVue,
+          message: empteymessageVue
+        },
+      },
+        { path: 'all',   components: {
+          default: chatVue,
+          chat: archiveComponentVue,
+          message: empteymessageVue,
+        }},
+
+        // UserProfile will be rendered inside User's <router-view>
+        // when /users/:username/profile is matched
+        { path: 'tag', components: {
+          default: chatVue,
+          chat: archiveComponentVue,
+          message: empteymessageVue
+        }},
+
+        // UserPosts will be rendered inside User's <router-view>
+        // when /users/:username/posts is matched
+        { path: 'unread',components: {
+          default: chatVue,
+          chat: archiveComponentVue,
+          message: empteymessageVue
+        } },
+        { path: ':id',components: {
+          default: chatVue,
+          chat: archiveComponentVue,
+          message: messageVue
+        } }
+      ]
     },
     {
       path: "/item",

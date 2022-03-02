@@ -68,7 +68,7 @@ props: ["archiveHeader"],
       },
       // 1024 and up
       1024: {
-        itemsToShow: 4,
+        itemsToShow: 4.2,
         snapAlign: 'start',
       },
       1440:{

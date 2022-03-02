@@ -150,7 +150,7 @@ export default {
 </script>
 
 <style scoped>
-/* checkbox slider */
+  /* checkbox slider */
 .switch {
   display: inline-block;
   height: 15px;
