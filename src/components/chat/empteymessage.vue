@@ -30,6 +30,15 @@ export default {
 <style scoped>
 
 
+
+.mobileChat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 @media (min-width:320px)  { 
   .mobileChat{
     display:none;
@@ -48,24 +57,15 @@ export default {
 @media (min-width:961px)  { 
 
   .mobileChat{
-    display:block;
+    display:flex;
   }/* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { 
     .mobileChat{
-    display:block;
+    display:flex;
   }/* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { 
       
   .mobileChat{
-    display:block;
+    display:flex;
   }/* hi-res laptops and desktops */ }
-.mobileChat {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 </style>
