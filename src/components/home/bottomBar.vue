@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row container-fluid">
         <div class="col-md-6">
             <span class="location">
                 Srilanka

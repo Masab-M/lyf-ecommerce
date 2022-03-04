@@ -53,10 +53,9 @@
 }
 
 .details h5.name {
-    
-    font-size: 16px;
-    font-weight: normal;
-    color: #363636;
+font-size: 13px;
+    font-weight: 500;
+    color: #363636ba;
     margin-bottom: 0px;
     text-align: left;
     text-transform: capitalize;
@@ -76,9 +75,9 @@
     border-radius: 5px 5px 0px 0px;
 }
 .metaData span:first-child {
-    text-transform: capitalize;
+     text-transform: capitalize;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .metaData span:last-child {

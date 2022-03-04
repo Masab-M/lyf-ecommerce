@@ -9,6 +9,7 @@ import adCatvue from "../components/newitem/subcat.vue"
 import adDetailVue from "../components/newitem/details.vue";
 import chatVue from "../views/chat.vue";
 import item from "../views/Item.vue";
+import company from "../views/company.vue";
 import liveitemVue from "../components/Item/liveitem.vue";
 import InprocessVue from "../components/Item/Inprocess.vue";
 import rejectedVue from "../components/Item/rejected.vue";
@@ -22,6 +23,11 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: Home,
+    },
+    {
+      path: "/company/:id",
+      name: "company",
+      component: company,
     },
     {
       path: "/newItem",
