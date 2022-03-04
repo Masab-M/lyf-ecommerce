@@ -29,8 +29,13 @@ export default {
     position: absolute;
     z-index: -1;
 }
+.coverimage img {
+    width: 100vw;
+}
 
 .row.page {
-    margin-top: 323px;
+margin-top: 23%;
+    padding-right: 0px;
 }
+
 </style>

@@ -13,6 +13,7 @@
                     <img src="../../assets/IMG/Icon material-verified-user.png" alt="">
                 </div>
                 <div class="ratingReview">
+                    
                     <span>
                         5.0
                     </span>
@@ -35,7 +36,7 @@
             </div>
         </div>
         <div class="companyDesc">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus estLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam </p>
+            <p class="display-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus estLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam </p>
         </div>
 </section>
 
@@ -93,15 +94,16 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 section.sideDetails {
-    padding: 28px 55px;
+padding: 28px 10%;
     background-color: var(--white);
     border-radius: 9px;
     border: 1px solid #70707066;
+    margin-bottom: 20px;
 }
 
 .profilImg img {
+    max-width: 100%;
     width: 196px;
-    height: 196px;
     border-radius: 100px;
 }
 
@@ -109,22 +111,36 @@ section.sideDetails {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.headDetails {
-    padding-left: 30px;
-}
+.profilImg
+{
+    position: relative;
+    padding-right: 30px;
 
+}
+.status {
+    width: 40px;
+    height: 40px;
+    bottom: 5px;
+    position: absolute;
+    background-color: #00CF15;
+    border-radius: 50px;
+    border: 5px solid #fff;
+    right: 42px;
+}
 .name h3 {
     font-size: 32px;
     font-weight: 500;
     color: #363636;
 }
 
-.name {
+.name { 
     display: flex;
     align-items: center;
-    margin-bottom: 44px;
+    margin-bottom: 10%;
+
 }
 
 .name img {
@@ -140,10 +156,15 @@ section.sideDetails {
 .ratingReview {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
-.ratingReview span.text {margin-left: 12px;margin-right: 23px;}
-
+.ratingReview span.text {margin-right: 23px;}
+.ratingReview span:first-child
+{
+    margin-right: 12px;
+}
 .companyDesc p {
     font-weight: 400;
     margin-top: 38px;
@@ -151,5 +172,46 @@ section.sideDetails {
     color: #363636;
     line-height: 3;
 }
-
+@media (min-width:320px)  { 
+    .companyDesc p {
+        font-size: 12px;
+    line-height: 2;
+}
+    /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+    
+    .companyDesc p {
+        font-size: 12px;
+    line-height: 2;
+}
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+    
+    .companyDesc p {
+        font-size: 12px;
+    line-height: 2;
+}
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+    
+    .companyDesc p {
+        font-size: 14px;
+    line-height: 2;
+}
+    
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    
+    .companyDesc p {
+        font-size: 16px;
+    line-height: 3;
+}
+    /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+    
+    .companyDesc p {
+        font-size: 16px;
+    line-height: 3;
+}
+    /* hi-res laptops and desktops */ }
 </style>

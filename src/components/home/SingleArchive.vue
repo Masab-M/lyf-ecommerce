@@ -70,7 +70,7 @@ font-size: 13px;
     color:#000;
 }
 .pImg img {
-        width: 270px;
+    width: -webkit-fill-available;
     height: 158px;
     border-radius: 5px 5px 0px 0px;
 }
@@ -99,9 +99,9 @@ font-size: 13px;
     padding: 3px 7px;
 }
 .archiveProduct {
-    border-radius: 5px;
+ border-radius: 5px;
     box-shadow: 0px 0px 5px #00000047;
-    width: fit-content;
+    width: -webkit-fill-available;
     position: relative;
     margin-top: 30px;
     margin-bottom: 10px;
