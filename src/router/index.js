@@ -18,6 +18,10 @@ import messageVue from "../components/chat/message.vue";
 import empteymessageVue from "../components/chat/empteymessage.vue";
 import profileVue from "../views/profile.vue";
 import singleitemVue from "../views/singleitem.vue";
+import EditProfile from "../components/setting/editprofile.vue";
+import password from "../components/setting/changePassword.vue";
+import privacy from "../components/setting/privacy.vue";
+import settingVue from "../views/setting.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -35,6 +39,19 @@ const router = createRouter({
       path: "/user/:id",
       name: "profile",
       component: profileVue,
+    },
+    {
+      path: "/edit/:id",
+      name: "setting",
+      component: settingVue,
+      children:[
+        { path: 'profile', component: EditProfile },
+        { path: '', component: EditProfile },
+        { path: 'password', component: password },
+        { path: 'privacy', component: privacy },
+
+
+      ]
     },
     {
       path: "/item/:id",

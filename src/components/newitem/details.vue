@@ -44,7 +44,7 @@
                   <label class="btn btn-default" for="type3">Samsung</label>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group" >
                 <label for="">Ad title</label>
                 <input type="text" name="" id="" />
                 <div class="ins">

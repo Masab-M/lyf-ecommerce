@@ -27,6 +27,8 @@ import { defineComponent } from "vue";
 import { Carousel, Pagination, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 import slide1 from "../../assets/IMG/signup.png";
+import slide2 from "../../assets/IMG/signupsliderimage2.png";
+import slide3 from "../../assets/IMG/signupsliderimage3.png";
 export default defineComponent({
   name: "WrapAround",
   components: {
@@ -36,7 +38,7 @@ export default defineComponent({
   },
   data() {
     return {
-      slides: [{ image: slide1 }, { image: slide1 }],
+      slides: [{ image: slide1 }, { image: slide2 }, { image: slide3 }],
       
     };
   },
@@ -60,5 +62,8 @@ export default defineComponent({
 }
 .carousel__prev {
   left: 30px !important;
+}
+.carousel__pagination-button--active {
+    background-color: #000;
 }
 </style>

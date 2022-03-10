@@ -1,7 +1,10 @@
 <template>
   <div class="profilImg">
                 <img src="https://picsum.photos/196/196" alt="">
-                <div class="status">
+                <div class="editImg">
+                <font-awesome-icon v-if="userView" icon="pen-to-square"/>
+                </div>
+                <div v-if="!userView" class="status">
 
                 </div>            
     </div>
@@ -22,7 +25,9 @@ import metaDetails from "../company/meta_Details.vue"
 import Link from "../company/link.vue";
 export default {
     setup() {
-        return {};
+        return {
+            userView:true
+        };
     },
     components: { metaDetails, Link }
 }
@@ -70,5 +75,23 @@ text-align: center;
     border-radius: 50px;
     border: 5px solid #fff;
     right: 42px;
+}
+.profilImg .editImg {
+border-radius: 0px 0px 100px 100px;
+    width: -webkit-fill-available;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 196px;
+    left: 16%;
+    right: 16%;
+    background: #0000005c;
+    justify-content: space-around;
+    align-items: center;
+}
+.editImg svg {
+    font-size: 40px;
+    color: #fff;
 }
 </style>

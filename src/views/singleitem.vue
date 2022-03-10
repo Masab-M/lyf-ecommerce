@@ -18,7 +18,8 @@
 <Related/>  
 </div>
 <div class="col-md-4">
-
+<Rating/>
+<PostReview/>
 </div>
 </div>
 </template>
@@ -33,8 +34,10 @@ import SellerInfo from '../components/singleItem/sellerInfo.vue'
 import CompanyLocation from '../components/company/companyLocation.vue'
 import ItemDesc from '../components/singleItem/itemDesc.vue'
 import Related from '../components/singleItem/related.vue'
+import Rating from '../components/singleItem/rating.vue'
+import PostReview from '../components/singleItem/postReview.vue'
 export default {
-  components: { NavHome, SecondaryNav, ItemGallery, DetailItem, MainDetail, SellerInfo, CompanyLocation, ItemDesc, Related },
+  components: { NavHome, SecondaryNav, ItemGallery, DetailItem, MainDetail, SellerInfo, CompanyLocation, ItemDesc, Related, Rating, PostReview },
     setup () {
         
 
