@@ -22,6 +22,7 @@ import EditProfile from "../components/setting/editprofile.vue";
 import password from "../components/setting/changePassword.vue";
 import privacy from "../components/setting/privacy.vue";
 import settingVue from "../views/setting.vue";
+import favouritesVue from "../views/favourites.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -29,6 +30,11 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: Home,
+    },
+    {
+      path: "/wishlist",
+      name: "fav",
+      component: favouritesVue,
     },
     {
       path: "/company/:id",
@@ -49,8 +55,6 @@ const router = createRouter({
         { path: '', component: EditProfile },
         { path: 'password', component: password },
         { path: 'privacy', component: privacy },
-
-
       ]
     },
     {
