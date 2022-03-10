@@ -25,5 +25,7 @@ export default {
 </script>
 
 <style scoped>
-
+.row.search {
+    padding: 46px 0px;
+}
 </style>

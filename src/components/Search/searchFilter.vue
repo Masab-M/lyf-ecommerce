@@ -3,6 +3,7 @@
     <div class="HeadFilter">
         <h5>FILTER YOUR SEARCH</h5>
     </div>
+    <div class="singleFilter">
 <p>
   <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
   <span>Product Name</span>
@@ -13,14 +14,13 @@
   <div class="card card-body">
     <div class="form-group">
         <input type="text" placeholder="Iphone 12 Pro Max" name="" id="">
-         <font-awseome-icon icon="caret-down"/>
+         <font-awesome-icon icon="magnifying-glass"/>
     </div>
   </div>
 </div>
-<div class="decbtn">
-    <a href="#" class="btn buy">Buy</a>
-    <a href="#" class="btn rent">Rent</a>
-</div>
+    </div>
+
+<div class="singleFilter">
 <p>
   <a class="btn" data-bs-toggle="collapse" href="#location" role="button" aria-expanded="false" aria-controls="location">
   <span>Location</span>
@@ -51,6 +51,12 @@
     </div>
   </div>
 </div>
+</div>
+<div class="decbtn">
+    <a href="#" class="btn buy">Buy</a>
+    <a href="#" class="btn rent">Rent</a>
+</div>
+<div class="singleFilter">
 <p>
   <a class="btn" data-bs-toggle="collapse" href="#date" role="button" aria-expanded="false" aria-controls="date">
   <span>Date</span>
@@ -66,6 +72,8 @@
    
   </div>
 </div>
+</div>
+<div class="singleFi">
 <p>
   <a class="btn" data-bs-toggle="collapse" href="#PriceRange" role="button" aria-expanded="false" aria-controls="PriceRange">
   <span>Price Range</span>
@@ -83,6 +91,8 @@
     </div>
   </div>
 </div>
+</div>
+
 <div class="applybtn">
     <a href="#" class="btn">Apply</a>
 </div>
@@ -283,7 +293,15 @@ export default {
     cursor: pointer;
     height: 0.5rem;
   }
+.singleFilter {
+    padding: 17px 29px;
+    border-bottom: 1px solid #d7d7d7;
+}
 
+div#collapseExample .card {
+    border: none;
+    padding: 0;
+}
   .track,
   .track-highlight {
     display: block;
@@ -322,4 +340,30 @@ export default {
     transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease;
     transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
   }
+
+  .HeadFilter h5 {
+    padding: 17px 29px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #363636;
+    background: #F7F7F7;
+}
+
+section.filterSearch p a {
+        display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+.form-group input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+section.filterSearch p a span {
+    font-size: 19px;
+}
+
 </style>
