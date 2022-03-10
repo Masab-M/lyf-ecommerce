@@ -131,14 +131,14 @@ select {
     position: relative;
 }
 
-.sort select {
-    background: none;
-    border: none;
-    color: #7f7f7f;
-    font-size: 13px;
-    outline: none;
-    padding: 10px 20px 10px 10px;
-}
+  .sort select {
+      background: none;
+      border: none;
+      color: #7f7f7f;
+      font-size: 13px;
+      outline: none;
+      padding: 10px 20px 10px 10px;
+  }
 ul.itemSections {
   padding: 0px;
   border-bottom: 1px solid #e5e5e5;
