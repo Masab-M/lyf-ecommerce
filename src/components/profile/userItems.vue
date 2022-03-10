@@ -24,7 +24,7 @@ export default {
         
 
         return {
-            user:true,
+            user:false,
         }
     },
     components: { SingleArchive }

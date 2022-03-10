@@ -26,7 +26,7 @@ import Link from "../company/link.vue";
 export default {
     setup() {
         return {
-            userView:true
+            userView:false
         };
     },
     components: { metaDetails, Link }
