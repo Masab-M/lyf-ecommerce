@@ -19,7 +19,10 @@
   </div>
 </div>
     </div>
-
+<div class="decbtn">
+    <a href="#" class="btn buy">Buy</a>
+    <a href="#" class="btn rent">Rent</a>
+</div>
 <div class="singleFilter">
 <p>
   <a class="btn" data-bs-toggle="collapse" href="#location" role="button" aria-expanded="false" aria-controls="location">
@@ -31,7 +34,7 @@
   <div class="card card-body">
     <div class="form-group">
         <input type="text" placeholder="Srilanka" name="" id="">
-         <font-awseome-icon icon="caret-down"/>
+         <font-awesome-icon icon="magnifying-glass"/>
     </div>
     <div class="checkLocation">
         <div class="Location">
@@ -52,10 +55,7 @@
   </div>
 </div>
 </div>
-<div class="decbtn">
-    <a href="#" class="btn buy">Buy</a>
-    <a href="#" class="btn rent">Rent</a>
-</div>
+
 <div class="singleFilter">
 <p>
   <a class="btn" data-bs-toggle="collapse" href="#date" role="button" aria-expanded="false" aria-controls="date">
@@ -73,7 +73,7 @@
   </div>
 </div>
 </div>
-<div class="singleFi">
+<div class="singleFilter priceFilter">
 <p>
   <a class="btn" data-bs-toggle="collapse" href="#PriceRange" role="button" aria-expanded="false" aria-controls="PriceRange">
   <span>Price Range</span>
@@ -278,7 +278,7 @@ export default {
 
 .range-value{
     position: absolute;
-    top: -2rem;
+    top:1rem;
   }
   .range-value.min{
     left: 0;
@@ -293,21 +293,39 @@ export default {
     cursor: pointer;
     height: 0.5rem;
   }
-.singleFilter {
-    padding: 17px 29px;
-    border-bottom: 1px solid #d7d7d7;
+  .applybtn a.btn {
+  padding: 9px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 31px;
+    background-color: #fc6748;
+}
+section.filterSearch {
+    border: 1px solid #f7f7f7;
 }
 
+.applybtn {
+    padding: 0px 9px;
+}
+.filterSearch .singleFilter {
+    padding: 17px 29px;
+    border-bottom: 1px solid #f7f7f7;
+}
+button.track-btn.track1 {
+    border: 2px solid #FC6749;
+    background: #fff;
+}
 div#collapseExample .card {
     border: none;
     padding: 0;
 }
   .track,
   .track-highlight {
-    display: block;
+display: block;
     position: absolute;
     width: 100%;
-    height: 0.5rem;
+    height: 5px;
   }
 
   .track{
@@ -315,30 +333,31 @@ div#collapseExample .card {
   }
 
   .track-highlight{
-    background-color: black;
-    z-index: 2;
+  background-color: #FC6748;
+    z-index: 2
   }
 
   .track-btn{
-    -webkit-appearance: none;
+     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-color: #FC6749;
     outline: none;
     cursor: pointer;
     display: block;
     position: absolute;
     z-index: 2;
-    width: 1.5rem;
-    height: 1.5rem;
-    top: calc(-50% - 0.25rem);
-    margin-left: -1rem;
+    width: 1rem;
+    height: 1rem;
+    top: calc(-20% - 0.25rem);
+    margin-left: -0.5rem;
     border: none;
-    background-color: black;
     -ms-touch-action: pan-x;
     touch-action: pan-x;
     transition: box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
     transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease;
     transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
+    border-radius: 100px;
   }
 
   .HeadFilter h5 {
@@ -364,6 +383,67 @@ section.filterSearch p a {
 
 section.filterSearch p a span {
     font-size: 19px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group svg {color: #FC6748;top: 13px;position: absolute;left: 0px;}
+
+.form-group input {
+    padding: 10px 10px 10px 25px;
+}
+.Location label {
+    font-size: 16px;
+    color: #5B595D;
+    padding-left: 8px;
+}
+
+.filterSearch .priceFilter {
+    border: none;
+}
+.checkLocation {
+    
+    margin-top: 30px;
+    height: 105px;
+    overflow: auto;
+
+}
+
+.checkLocation .Location {
+    margin-bottom: 6px;
+}
+.card.card-body
+{
+    border: none;
+    padding: 0;
+}
+.decbtn {
+    display: flex;
+    justify-content: space-around;
+    padding: 31px 11px;
+}
+div#PriceRange {
+    margin-bottom: 86px;
+}
+.decbtn a {
+    font-size: 15px;
+    padding: 9px 49px;
+}
+
+a.btn.buy {
+    background: #FC6748;
+    color: #fff;
+}
+
+a.btn.rent {
+    color: #FC6748;
+    border: 1px solid;
+}
+
+input[type="date"] {
+    padding: 10px;
 }
 
 </style>

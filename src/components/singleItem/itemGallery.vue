@@ -1,4 +1,5 @@
 <template>
+<section class="Gallery">
   <swiper
     :style="{
       '--swiper-navigation-color': '#fff',
@@ -46,6 +47,8 @@
         src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide
     >
   </swiper>
+</section>
+
 </template>
 <script>
 // Import Swiper Vue.js components
@@ -85,9 +88,26 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 0px;
+  left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+left: 0px;
+    right: auto;
+}
+.swiper-button-next, .swiper-button-prev
+{
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.438) !important;
+    top: 22px !important;
+    width: 50px;
 
-
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 28px;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -108,12 +128,6 @@ export default {
   align-items: center;
 }
 
-
-
-body {
-  background: #000;
-  color: #000;
-}
 
 .swiper {
   width: 100%;
@@ -155,6 +169,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper-thumbs{
+  padding: 13px 30px;
+}
+section.Gallery {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #00000029;
 }
 
 </style>

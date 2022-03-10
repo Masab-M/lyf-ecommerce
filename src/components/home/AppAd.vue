@@ -1,6 +1,6 @@
 <template>
 <section :class="{ lessadd: active }">
-<div class="row">
+<div class="row container-fluid">
        <div class="col-md-2">
            <span class="more btn" @click="active = !active" :aria-pressed="active ? 'true' : 'false'" >More <font-awesome-icon icon="angle-up"/></span>
        </div>

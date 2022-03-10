@@ -70,3 +70,17 @@ export default defineComponent({
   }),
 });
 </script>
+<style scoped>
+section.relatedItems {
+   padding: 24px 17px;
+    margin-bottom: 46px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #00000029;
+}
+
+section.relatedItems h5 {
+    font-weight: 400;
+    font-size: 18px;
+}
+</style>

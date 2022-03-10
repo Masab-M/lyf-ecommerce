@@ -1,6 +1,6 @@
 <template>
 <Nav-home/>
-<div class="row search">
+<div class="row search container-fluid"> 
     <div class="col-md-3">
 <SearchFilter/>
     </div>
@@ -8,14 +8,16 @@
         <Searchitems/>
     </div>
 </div>
+<Footer/>
 </template>
 
 <script>
 import NavHome from '../components/home/NavHome.vue'
 import Searchitems from '../components/Search/searchitems.vue'
 import SearchFilter from '../components/Search/searchFilter.vue'
+import Footer from '../components/home/footer.vue'
 export default {
-  components: { NavHome, Searchitems, SearchFilter },
+  components: { NavHome, Searchitems, SearchFilter, Footer },
     setup () {
         
 

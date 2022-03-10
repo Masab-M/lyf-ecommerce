@@ -22,6 +22,7 @@
 <PostReview/>
 </div>
 </div>
+<Footer/>
 </template>
 
 <script>
@@ -36,8 +37,9 @@ import ItemDesc from '../components/singleItem/itemDesc.vue'
 import Related from '../components/singleItem/related.vue'
 import Rating from '../components/singleItem/rating.vue'
 import PostReview from '../components/singleItem/postReview.vue'
+import Footer from '../components/home/footer.vue'
 export default {
-  components: { NavHome, SecondaryNav, ItemGallery, DetailItem, MainDetail, SellerInfo, CompanyLocation, ItemDesc, Related, Rating, PostReview },
+  components: { NavHome, SecondaryNav, ItemGallery, DetailItem, MainDetail, SellerInfo, CompanyLocation, ItemDesc, Related, Rating, PostReview, Footer },
     setup () {
         
 

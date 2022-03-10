@@ -73,7 +73,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <font-awesome-icon :icon="['far', 'globe']" />
+            <font-awesome-icon icon="globe" />
           </li>
           <li class="nav-item">
             <router-link class=" signup" :to="'/newItem'"

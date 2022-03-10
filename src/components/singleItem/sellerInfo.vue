@@ -50,4 +50,87 @@ export default {
 
 <style scoped>
 
+.sectionHead {
+    display: flex;
+    justify-content: space-between;
+}
+.itemSeller {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #00000029;
+    padding: 18px 23px;
+    margin-bottom: 22px;
+}
+
+.sectionHead h5 {
+    font-size: 18px;
+    color: #363636;
+}
+
+.status span {
+    color: #363636;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.sellerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name h5 {
+    color: #363636;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.name span {
+    font-size: 15px;
+    color: #363636a6;
+}
+
+.details img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    margin-right: 13px;
+}
+
+.cntctBtn a.btn {
+    margin-bottom: 26px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 100%;
+    background: #FC6748;
+    margin-top: 21px;
+    color: #fff;
+}
+
+
+.cntctNo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.nmbr {
+    color: #363636ad;
+    font-size: 13px;
+}
+
+.nmbr svg {
+    color: #fc6748;
+}
+
+.shwNo span {
+    font-size: 14px;
+    color: #363636;
+}
 </style>
