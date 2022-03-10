@@ -12,13 +12,14 @@
     </div>
     </div>
     </section>
+    <Footer/>
 </template>
-
 <script>
+import Footer from '../components/home/footer.vue'
 import SingleArchive from "../components/home/SingleArchive.vue"
 
 export default {
-    components: { SingleArchive },
+    components: { SingleArchive, Footer },
     setup () {
         
 
