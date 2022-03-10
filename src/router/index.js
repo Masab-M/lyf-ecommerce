@@ -23,6 +23,7 @@ import password from "../components/setting/changePassword.vue";
 import privacy from "../components/setting/privacy.vue";
 import settingVue from "../views/setting.vue";
 import favouritesVue from "../views/favourites.vue";
+import search from "../views/search.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -31,6 +32,11 @@ const router = createRouter({
       name: "home",
       component: Home,
     },
+    {
+      path: "/search",
+      name: "search",
+      props: route => ({ query: route.query.q }),
+      component:    search },
     {
       path: "/wishlist",
       name: "fav",
