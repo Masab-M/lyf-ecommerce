@@ -1,5 +1,5 @@
 <template>
-<section class="ratings">
+<section class="ratingstar">
     <div class="ratings">
         <h5>Ratings</h5>
              <fieldset class="rating">
@@ -62,5 +62,17 @@ export default {
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
 
+section.ratingstar {
+    padding: 24px 17px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #00000029;
+}
 </style>
