@@ -76,7 +76,7 @@
             <font-awesome-icon icon="globe" />
           </li>
           <li class="nav-item">
-            <router-link class=" signup" :to="'/newItem'"
+            <router-link class="sell signup" :to="'/newItem'"
         > <font-awesome-icon :icon="['fas', 'add']" />
                   Sell
                   </router-link>
@@ -135,7 +135,9 @@ a.navbar-brand img {
 form.d-flex {
   width: 70%;
 }
-
+.sell{
+  background-color: #fff;
+}
 ul li a.signup {
       font-size: 17px;
     color: var(--black);

@@ -47,7 +47,7 @@
 
       <div class="modal-body">
        <h5>Import picture from facebook</h5>
-       Import your picture easily from facebook by pressing the upload button
+      <p>Import your picture easily from facebook by pressing the upload button</p>
       </div>
       <div class="modal-footer">
           <button type="button" class="btn ">Upload</button>
@@ -131,5 +131,41 @@ ul a {
     margin-bottom: 17px;
     border-radius: 5px;
 }
+.modal-body h5 {
+    color: #002F34;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+}
 
+.modal-body p {
+    opacity: 50%;
+    font-size: 14px;
+    margin-bottom: 33px;
+    color: #002F34;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-content {
+    padding: 22px;
+}
+
+.modal-footer {
+    border: none;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.modal-footer button:first-child {color: #fff;padding: 13px 65px;text-align: center;background: #FC6748;border-radius: 5px;}
+
+.modal-footer button:last-child {
+    color: #443688;
+    padding: 13px 74px;
+    border: 2px solid;
+    font-weight: 500;
+}
 </style>

@@ -51,10 +51,10 @@ export default {
 <style scoped>
  /* checkbox slider */
 .switch {
-  display: inline-block;
-  height: 15px;
-  position: relative;
-  width: 30px;
+    display: inline-block;
+    height: 23px;
+    position: relative;
+    width: 41px;
 }
 
 .switch input {
@@ -76,11 +76,11 @@ export default {
   background-color: #fff;
   bottom: 2px;
   content: "";
-  height: 12px;
+  height: 19px;
   left: 2px;
   position: absolute;
   transition: 0.4s;
-  width: 12px;
+  width: 19px;
 }
 
 input:checked + .slider {
@@ -97,5 +97,48 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+section.setting {
+    border-radius: 5px;
+    border: 1px solid #70707066;
+    
+}
+section.notification {
+  margin-top: 17px;
+    border-radius: 5px;
+    border: 1px solid #70707066;
+}
+
+.headText h5 {
+    padding: 15px 24px;
+    border-bottom: 1px solid #70707066;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.showAds {
+    padding: 38px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.notify {
+    display: flex;
+    padding: 31px 0px;
+    margin: 0px 19px;
+    border-bottom: 1px solid #70707066;
+    justify-content: space-between;
+}
+
+.data span {
+    display: block;
+    color: #36363673;
+}
+
+.data label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #363636;
 }
 </style>

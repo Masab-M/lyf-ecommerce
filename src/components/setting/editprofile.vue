@@ -1,10 +1,11 @@
 <template>
-<section>
+<section class="ProfileHead">
     <div class="headText">
         Edit Profile
     </div>
-    <div class="row profiledetails">
-        <div class="col-md-4">
+    <section class="profilesetting">
+  <div class="row profiledetails ">
+        <div class="col-md-3">
              <div class="profilImg">
                 <img src="https://picsum.photos/196/196" alt="">
                 <div class="editImg" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -12,7 +13,7 @@
                 </div>          
     </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <div class="form-group">
                 <div class="input">
                 <input type="text" placeholder="Kosala H." >
@@ -22,14 +23,16 @@
             </div>
              <div class="form-group">
                 <div class="input">
-                <textarea name="" id="" cols="10" rows="4" placeholder="Something about you"></textarea>
+                <textarea name="" id="" cols="21" rows="4" placeholder="Something about you"></textarea>
                 <span>0 / 30</span>
                 </div>
                 <label for="">Give description about yourself</label>
             </div>
         </div>
     </div>
-    <div class="contact row">
+    </section>
+  <section class="contactInfo">
+         <div class="contact row">
         <div class="col-md-12">
             <div class="HeadText">
                 Contact Information
@@ -55,22 +58,39 @@
             </div>
         </div>
     </div>
-    <div class="option row">
+  </section>
+ 
+    <section class="optSocial">
+            <div class="option row">
         <div class="col-md-12">
             <div class="HeadText">
                 Optional Information
             </div>
-            <div class="links">
+            <div class="row links">
+                <div class="col-md-6">
                 <label for="">Facebook</label>
-                <a href="#" class="btn connect active">Connect</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="btn connect active">Connect</a>
+                </div>
             </div>
-             <div class="links">
-                <label for="">Google</label>
+            <div class="">
+                
+            </div>
+             <div class="row links">
+                 <div class="col-md-6">
+                     <label for="">Google</label>
+                 </div>
+                <div class="col-md-6">
                 <a href="#" class="btn connect">Disconnect</a>
+
+                </div>
             </div>
 
         </div>
     </div>
+    </section>
+
     <div class="submitBtn">
         <a href="#" class="btn secondary">Discard</a>
         <a href="#" class="btn primary">Save Changes</a>
@@ -103,6 +123,99 @@ text-align: center;
     font-size: 40px;
     color: #fff;
 }
+section.contactInfo {
+        padding: 25px 23px;
+    border-bottom: 1px solid #70707066;
+}
+section.optSocial {
+    padding: 46px 23px;
+}
+
+.links label {
+    font-size: 17px;
+    color: #363636;
+}
+
+
+
+.links a {
+    font-size: 16px;
+}
+
+a.btn.connect.active {
+    padding: 8px 31px;
+    border-radius: 5px;
+    color: #fc6748;
+    border: 1px solid;
+    background: none;
+}
+.links {
+    margin-bottom: 44px;
+}
+.submitBtn {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    padding: 0px 21px;
+}
+
+.submitBtn .secondary {
+    padding: 13px 60px;
+    font-size: 16px;
+    color: #443688;
+    border: 1px solid;
+    font-weight: 500px;
+
+    border-radius: 5px;
+}
+
+.submitBtn .primary {
+    font-size: 16px;
+    padding: 13px 33px;
+    border-radius: 5px;
+    background: #443688;
+    color: #fff;
+    font-weight: 500px;
+}
+a.btn.connect {
+    color: #fff;
+    padding: 8px 20px;
+    background: #fc6748;
+}
+.HeadText {
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #363636;
+}
+
+.prefix {
+    margin-right: 10px;
+    position: relative;
+    flex: 50%;
+}
+
+.prefix span {
+    position: absolute;
+    left: 8px;
+    top: 13px;
+    color: #36363673;
+}
+
+.prefix input {padding-left: 40px !important;}
+
+.prefix svg {
+    position: absolute;
+    left: 10px;
+    color: #36363673;
+    top: 14px;
+}
+
+input[type="email"] {
+      flex: 53%;
+    margin-right: 10px;
+}
 .profilImg .editImg {
 border-radius: 0px 0px 100px 100px;
     width: -webkit-fill-available;
@@ -110,11 +223,64 @@ border-radius: 0px 0px 100px 100px;
     display: flex;
     position: absolute;
     bottom: 0px;
-    width: 196px;
-    left: 9%;
-    right: 16%;
+    width: 166px;
+    left: 0%;
+    /* right: 16%; */
     background: #0000005c;
     justify-content: space-around;
+    align-items: center;;
+}
+.input textarea {
+    background: #F7F7F7;
+    border: none;
+    padding: 11px 15px;
+    border-radius: 5px;
+}
+section.ProfileHead {
+    border-radius: 5px;
+    border: 1px solid #70707066;
+}
+
+.headText {
+    padding: 12px 23px;
+    border-bottom: 1px solid #70707066;
+    font-size: 21px;
+    color: #363636;
+    font-weight: 500;
+}
+
+section.profilesetting {
+    padding: 60px 2px 30px 20px;
+    border-bottom: 1px solid #70707066;
+}
+.form-group input {
+    background: #F7F7F7;
+    border: none;
+    padding: 11px 15px;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
     align-items: center;
 }
+
+.form-group label {
+        font-size: 13px;
+    color: #363636ad;
+    flex: 50%;
+}
+
+.input span {
+   font-size: 12px;
+    display: flex;
+    color: #36363673;
+    justify-content: flex-end;
+}
+.input {
+    margin-right: 25px;
+}
+
 </style>

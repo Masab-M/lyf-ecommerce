@@ -153,9 +153,9 @@ export default {
   /* checkbox slider */
 .switch {
   display: inline-block;
-  height: 15px;
+  height: 23px;
   position: relative;
-  width: 30px;
+  width: 41px;
 }
 
 .switch input {
@@ -177,11 +177,11 @@ export default {
   background-color: #fff;
   bottom: 2px;
   content: "";
-  height: 12px;
+  height: 19px;
   left: 2px;
   position: absolute;
   transition: 0.4s;
-  width: 12px;
+  width: 19px;
 }
 
 input:checked + .slider {

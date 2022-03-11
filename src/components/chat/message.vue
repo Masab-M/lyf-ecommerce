@@ -256,6 +256,7 @@ ul.headIcons {
     border: none;
     font-size: 14px;
     padding-right: 27px;
+    outline: none;
 }
 
 .othercontent svg {
