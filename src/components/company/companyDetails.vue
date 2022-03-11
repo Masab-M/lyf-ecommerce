@@ -10,7 +10,7 @@
             <div class="headDetails">
                 <div class="name">
                     <h3>Bohemia Corp.</h3>
-                    <img src="../../assets/IMG/Icon material-verified-user.png" alt="">
+                    <img src="../../assets/IMG/Iconmaterial-verified-user.png" alt="">
                 </div>
                 <div class="ratingReview">
                     
