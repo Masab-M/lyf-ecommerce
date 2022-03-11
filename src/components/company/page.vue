@@ -1,6 +1,6 @@
 <template>
 <div class="coverimage">
-    <img src="../../assets/IMG/Mask Group 41.png" class="img-fluid" alt="">
+    <img src="../../assets/IMG/MaskGroup41.png" class="img-fluid" alt="">
 </div>
 <div class="row container-fluid page">
     <div class="col-md-8">
