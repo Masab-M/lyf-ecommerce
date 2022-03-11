@@ -1,9 +1,13 @@
 <template>
+
 <NavHome/>
+
 <section class="faqs">
     <div class="row container-fluid">
         <div class="col-md-6">
+            <div class="illustration d-none d-sm-none d-md-none d-lg-block" >
             <img src="../assets/IMG/FaQ.png" alt="">
+            </div>
         </div>
         <div class="col-md-6">
             <h1>F .A .Q</h1>
@@ -18,19 +22,41 @@
         </div>
     </div>
 </section>
+<Footer/>
 </template>
 
 <script>
 import NavHome from "../components/home/NavHome.vue"
 import SingleFaqs from "../components/Faqs/singleFaqs.vue"
+import BottomBar from "../components/home/bottomBar.vue";
+import Footer from "../components/home/footer.vue";
 export default {
     setup() {
         return {};
     },
-    components: { NavHome, SingleFaqs }
+    components: { NavHome, SingleFaqs, BottomBar, Footer }
 }
 </script>
 
 <style scoped>
+section.faqs {
+    background: #443688;
+    padding: 64px;
+}
+.illustration {
+    text-align: center;
+}
 
+.faqs h1 {font-size: 74px;/* text-align: center; */color: #fff;font-weight: bold;}
+
+section.faqs .row {
+    display: flex;
+    align-items: center;
+}
+section.faqs img {
+    width: 319px;
+}
+section.singleFaqs{
+margin-top:55px;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
-<div class="row">
-    <div class="col-md-12">
+<section>
+
  <Carousel :items-to-show="1" :wrap-around="true">
     <Slide v-for="slide in slides" :key="slide">
       <div class="carousel__item">
@@ -11,8 +11,9 @@
       <Navigation />
     </template>
   </Carousel>
-    </div>
-</div>
+
+</section>
+
   
 </template>
 

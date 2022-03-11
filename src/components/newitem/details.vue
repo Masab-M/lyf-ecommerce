@@ -90,12 +90,14 @@
                 <h5>UPLOAD PHOTOS</h5>
               </div>
               <div class="form-group locationField">
-                <select name="" id="">
-                  <option value="">&#xf3c5; Srilanka</option>
-                  <option value="">Srilanka</option>
-                  <option value="">Srilanka</option>
-                  <option value="">Srilanka</option>
-                </select>
+                <div class="selectField">
+ <select name="" id="">
+              <option value="fa-map-marker">&#xf041; Srilanka</option>
+              <option value="fa-map-marker">&#xf041; Srilanka</option>
+              <option value="fa-map-marker">&#xf041; Srilanka</option>
+            </select>
+                </div>
+               
               </div>
               <div class="form-group sameLoc">
                 <input type="checkbox" name="" id="" />
@@ -248,6 +250,7 @@ form.postDetails {
   margin-bottom: 22px;
   padding: 0px 16px;
 }
+
 .inputDetails,
 .priceDetails,
 .uploadDetials,
@@ -313,17 +316,29 @@ span.rstag {
   position: relative;
 }
 .form-group.sameLoc {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+        margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+
+select,option {
+  font-family: "Poppins", "fontAwesome";
+  font-weight: 900;
+  color: #7f7f7f;
+  }
+  
 .form-group.sameLoc input {
   width: fit-content;
 }
 
 label.loc {
-  margin-left: 32px;
+  margin-left: 14px;
+  color: #FC6748;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
 }
 
 .priceDetails .form-group input {
@@ -331,10 +346,60 @@ label.loc {
 }
 
 .form-group select {
-  padding: 11px;
-  width: 60%;
+      outline: none;
+    padding: 11px;
+    border-radius: 5px;
+    background: none;
+    width: 100%;
+    border: 1px solid #70707066;
+}
+.sameLoc input[type="checkbox"] {
+-webkit-appearance: none;
+    appearance: none;
+    /* background-color: #FC6748; */
+    margin: 0;
+    font: inherit;
+    /* color: currentColor; */
+    width: 1.4em;
+    height: 1em;
+    border: 1px solid #FC6748;
+    border-radius: 4px;
+    display: grid;
+    place-content: center;
 }
 
+.sameLoc input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: #fff;
+}
+
+.sameLoc input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+.sameLoc input[type="checkbox"]:checked {
+    background-color: #FC6748;
+  
+}
+
+.sameLoc input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid transparent;
+  outline-offset: max(2px, 0.15em);
+}
+
+.sameLoc input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+    background-color: #FC6748;
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
 .preDetails span {
   font-size: 13px;
   color: #9d9d9d;
@@ -400,7 +465,7 @@ input[type="file"] {
     border-radius: 20px;
     color: var(--white);
 }
-
+.form-group {width: 60%;}
 .button label {
  cursor: pointer;
     z-index: 90;
@@ -411,4 +476,23 @@ input[type="file"] {
 .form-group.options {
     display: flow-root;
 }
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.selectField {
+  position: relative;
+}
+
+.selectField::after {
+     content: "";
+    font-size: 1rem;
+    font-family: "fontAwesome";
+    top: 10px;
+    color: #7f7f7f;
+    right: 26px;
+    position: absolute;
+}
+
 </style>

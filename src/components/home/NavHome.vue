@@ -76,18 +76,21 @@
             <font-awesome-icon icon="globe" />
           </li>
           <li class="nav-item">
-            <router-link class="sell signup" :to="'/newItem'"
+            <a class="sell signup" data-bs-toggle="modal" data-bs-target="#exampleModal"
         > <font-awesome-icon :icon="['fas', 'add']" />
                   Sell
-                  </router-link>
+                  </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <new-component/>
 </template>
 <script>
-export default {};
+import newComponent from '../newitem/newComponent.vue';
+export default {
+  components: { newComponent },};
 </script>
 
 <style lang="css" scoped>
@@ -181,11 +184,7 @@ select {
 .select-Country {
   position: relative;
 }
-select,option {
-  font-family: "Poppins", "fontAwesome";
-  font-weight: 900;
-  color: #7f7f7f;
-  }
+
 .select-Country::after {
      content: "";
     font-size: 1rem;
@@ -195,7 +194,11 @@ select,option {
     right: 26px;
     position: absolute;
 }
-
+select,option {
+  font-family: "Poppins", "fontAwesome";
+  font-weight: 900;
+  color: #7f7f7f;
+  }
 @media (min-width:320px)  {
   form.d-flex{
     flex-direction: column;

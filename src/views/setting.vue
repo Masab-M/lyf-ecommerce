@@ -1,5 +1,5 @@
 <template>
-<Nav/>
+<NavHome/>
 <div class="row container-fluid setting">
 <div class="col-md-4">
 <ul>
@@ -97,9 +97,9 @@
 
 <script>
 import Footer from '../components/home/footer.vue'
-import Nav from '../components/home/Nav.vue'
+import NavHome from '../components/home/NavHome.vue'
 export default {
-  components: { Nav, Footer },
+  components: {Footer, NavHome },
     setup () {
         
 

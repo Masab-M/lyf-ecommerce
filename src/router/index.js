@@ -4,8 +4,6 @@ import home2Vue from "../views/home2.vue";
 import signinVue from "../views/signin.vue";
 import signupVue from "../views/signup.vue";
 import UploadAdVue from "../views/UploadAd.vue";
-import offervue from "../components/newitem/offer.vue"
-import adCatvue from "../components/newitem/subcat.vue"
 import adDetailVue from "../components/newitem/details.vue";
 import chatVue from "../views/chat.vue";
 import item from "../views/Item.vue";
@@ -79,13 +77,7 @@ const router = createRouter({
       name: "newItem",
       component: UploadAdVue,
       children: [
-        // UserHome will be rendered inside User's <router-view>
-        // when /users/:username is matched
-        { path: '', component: offervue },
-
-        // UserProfile will be rendered inside User's <router-view>
-        // when /users/:username/profile is matched
-        { path: 'itemCategory/:id', component: adCatvue },
+       
         
         // UserPosts will be rendered inside User's <router-view>
         // when /users/:username/posts is matched

@@ -4,6 +4,7 @@
 <header-carousel></header-carousel>
 <product-archive :archiveHeader="'Top Ads'" ></product-archive>
 <product-archive :archiveHeader="'Sponsored Ads'" ></product-archive>
+<product-archive :archiveHeader="'Recent     Ads'" ></product-archive>
 <footer-vue></footer-vue>
 </template>
 

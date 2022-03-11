@@ -149,9 +149,12 @@ font-weight: 600;
 .contactDetail h5 {
     font-size: 20px;
 }
-form .form-group {display: flex;background-color: var(--white);
-width: fit-content;
-border-radius: 50px;
+form .form-group {display: flex;
+    background-color: var(--white);
+    width: fit-content;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px #00000029;
 }
 
 .form-group input {
