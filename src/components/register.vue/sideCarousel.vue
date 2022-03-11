@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-md-12">
-      <Carousel :items-to-show="1" :wrap-around="true">
+      <Carousel :autoplay="2000" :items-to-show="1" :wrap-around="true">
         <Slide v-for="slide in slides" :key="slide">
           <div class="carousel__item">
             <img

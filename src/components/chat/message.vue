@@ -1,14 +1,14 @@
 <template>
 <section :class="{ mobileChat: !params.hasOwnProperty('id')}">
 <div class="row msgHead">
-    <div class="col-md-6">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
         <div class="userDetail">
             
             <img src="https://picsum.photos/50/50" alt="">
             <h5>David Jason</h5>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
         <ul class="headIcons">
             <li>
                 <font-awesome-icon icon="font-awesome"/>
@@ -62,7 +62,7 @@
     </div>
 </div>
 <div class="row newmsg">
-    <div class="col-md-11">
+    <div class="col-xl-11 col-lg-10 col-md-10 col-sm-10 col-9">
         <div class="form-group">
             <input type="text" placeholder="Send Message" name="" id="">
         </div>
@@ -71,7 +71,7 @@
             <font-awesome-icon icon="paperclip"/>
         </div>
     </div>
-    <div class="col-md-1">
+    <div class="col-xl-1 col-lg-2 col-md-1 col-sm-2 col-3">
         <div class="sendBtn">
             <font-awesome-icon icon="paper-plane"/>
         </div>
