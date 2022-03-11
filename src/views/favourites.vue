@@ -1,4 +1,5 @@
 <template>
+<NavHome/>
 <section class="wishlist">
 <div class="headText">
     <h5>FAVOURITES</h5>
@@ -17,9 +18,10 @@
 <script>
 import Footer from '../components/home/footer.vue'
 import SingleArchive from "../components/home/SingleArchive.vue"
+import NavHome from '../components/home/NavHome.vue'
 
 export default {
-    components: { SingleArchive, Footer },
+    components: { SingleArchive, Footer, NavHome },
     setup () {
         
 
