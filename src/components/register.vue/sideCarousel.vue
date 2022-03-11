@@ -1,15 +1,12 @@
 <template>
-  <div class="row">
-    <div class="col-md-12">
-      <Carousel :autoplay="2000" :items-to-show="1" :wrap-around="true">
+  
+      <Carousel :items-to-show="1" :wrap-around="true">
         <Slide v-for="slide in slides" :key="slide">
-          <div class="carousel__item">
             <img
               :src="slide.image"
               class="img-fluid regImg"
               :alt="slide.image"
             />
-          </div>
         </Slide>
         <template #addons>
           <div class="createAcc">
@@ -18,8 +15,7 @@
           <Pagination />
         </template>
       </Carousel>
-    </div>
-  </div>
+  
 </template>
 
 <script>
@@ -46,16 +42,18 @@ export default defineComponent({
 </script>
 
 <style>
-.carousel__item img.regImg {
-  width: 400px;
+
+img.regImg {
+  width: 500px;
 }
 .carousel__slide {
   padding: 0px;
 }
 .createAcc h5 {
-    font-size: 24px;
+        font-size: 24px;
     font-weight: 800;
     margin-top: 44px;
+    margin-bottom: 40px;
 }
 .carousel .carousel__next {
   right: 30px !important ;
@@ -66,4 +64,15 @@ export default defineComponent({
 .carousel__pagination-button--active {
     background-color: #000;
 }
+ol.carousel__pagination {
+    padding-bottom: 48px;
+}
+.carousel {
+    position: relative;
+    border-radius: 70px;
+    box-shadow: 0px 0px 13px #e5e5e5bd;
+    width: 500px;
+    margin-left: auto;
+}
+
 </style>

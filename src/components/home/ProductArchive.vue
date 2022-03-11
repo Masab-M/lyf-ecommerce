@@ -85,7 +85,7 @@ props: ["archiveHeader"],
 });
 </script>
 
-<style>
+<style scoped>
 /* img.headerCarousel{
   width: 100vw !important;
 }
@@ -140,5 +140,14 @@ a.btn.loadmore {
     font-size: 17px;
     padding: 13px 26px;
 }
-
+ol.carousel__pagination {
+    padding-bottom: 0px;
+}
+.carousel {
+    position: relative;
+    border-radius: 0px;
+    box-shadow:none;
+    width: auto;
+    margin: 0px;
+}
 </style>

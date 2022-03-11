@@ -67,5 +67,14 @@ img.headerCarousel{
 .carousel__prev{
   left:30px !important;
 }
-
+ol.carousel__pagination {
+    padding-bottom: 0px;
+}
+.carousel {
+    position: relative;
+    border-radius: 0px;
+    box-shadow:none;
+    width: auto;
+    margin: 0px;
+}
 </style>

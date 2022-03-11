@@ -100,6 +100,7 @@
             </div>
         </div>
     </section>
+    <Footer/>
 </template>
 
 <script>
@@ -107,15 +108,18 @@ import RegForm from "../components/register.vue/regForm.vue";
 import SideCarousel from "../components/register.vue/sideCarousel.vue";
 import Nav from "../components/home/Nav.vue";
 import '/src/assets/base.css';
+import Footer from "../components/home/footer.vue";
     export default {
-    components: { RegForm, SideCarousel, Nav }
+    components: { RegForm, SideCarousel, Nav, Footer }
 }
 </script>
 
 <style scoped>
-section{
+section.signupSection{
     background-color: var(--bg-color);
     padding-top:26px;
+
+    padding-bottom: 77px;
 }
 @media (min-width:320px)  { 
     section .signupSection{
@@ -124,7 +128,7 @@ section{
     /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { 
      section .signupSection{
-    padding: 26px 28px 45px 70px;
+    padding: 26px 28px 45px 10px;
     }
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px)  { 
@@ -149,10 +153,12 @@ section{
     /* hi-res laptops and desktops */ }
 
 section .signupSection{
+
     margin: 0px auto;
     background-color: var(--white);
     width: 75%;
     border-radius: 20px;
+
 }
 div#nav-tab {
     margin-bottom: 27px;

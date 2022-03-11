@@ -83,4 +83,14 @@ section.relatedItems h5 {
     font-weight: 400;
     font-size: 18px;
 }
+ol.carousel__pagination {
+    padding-bottom: 0px;
+}
+.carousel {
+    position: relative;
+    border-radius: 0px;
+    box-shadow:none;
+    width: auto;
+    margin: 0px;
+}
 </style>
