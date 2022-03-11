@@ -1,5 +1,6 @@
 <template>
-    <div class="row container-fluid">
+<section class="bottomBar">
+   <div class="row container-fluid">
         <div class="col-md-6">
             <span class="location">
                 Srilanka
@@ -14,6 +15,8 @@
             </div>
         </div>
     </div>
+</section>
+ 
 </template>
 
 <script>
@@ -25,6 +28,9 @@
 <style scoped>
 .row {
     padding: 10px 55px;
+    
+}
+section.bottomBar{
     background-color: var(--primary);
 }
 span.location {

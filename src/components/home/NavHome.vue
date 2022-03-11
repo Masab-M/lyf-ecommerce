@@ -137,15 +137,18 @@ form.d-flex {
 }
 
 ul li a.signup {
-        font-size: 16px;
+      font-size: 17px;
     color: var(--black);
     border: 2px solid var(--secondary);
     border-radius: 50px;
-    padding: 9px 20px;
+    padding: 14px 27px;
     text-decoration: none;
     font-weight: 600;
     display: flex;
     align-items: center;
+}
+ul li a.signup svg{
+  margin-right: 6px;
 }
 /* form.d-flex .form-group {
   padding: 1em 0.813em;

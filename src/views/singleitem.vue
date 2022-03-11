@@ -9,7 +9,7 @@
 <div class="col-md-4">
 <MainDetail/>
 <SellerInfo/>
-<CompanyLocation/>
+<Location/>
 </div>
 </div>
 <div class="row container-fluid">
@@ -38,8 +38,9 @@ import Related from '../components/singleItem/related.vue'
 import Rating from '../components/singleItem/rating.vue'
 import PostReview from '../components/singleItem/postReview.vue'
 import Footer from '../components/home/footer.vue'
+import Location from '../components/singleItem/location.vue'
 export default {
-  components: { NavHome, SecondaryNav, ItemGallery, DetailItem, MainDetail, SellerInfo, CompanyLocation, ItemDesc, Related, Rating, PostReview, Footer },
+  components: { NavHome, SecondaryNav, ItemGallery, DetailItem, MainDetail, SellerInfo, CompanyLocation, ItemDesc, Related, Rating, PostReview, Footer, Location },
     setup () {
         
 
