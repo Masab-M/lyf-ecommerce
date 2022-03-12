@@ -165,13 +165,13 @@ ul li a.nav-link {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  width: 237px;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    width: 237px;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 99999;
 }
 
 /* Links inside the dropdown */
@@ -180,6 +180,7 @@ ul li a.nav-link {
 color: black;
     padding: 12px 16px;
     text-decoration: none;
+    border-bottom:2px solid transparent;
     font-size: 12px;
     display: flex;
     justify-content: flex-start;
@@ -188,12 +189,31 @@ color: black;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.nav-link.dropbtn{
+  transition: 0.6s ease;
+}
+.nav-link.dropbtn:after {
+    content: "";
+    display: block;
+    bottom: 0px;
+    width: 0px;
+    /* position: absolute; */
+    height: 3px;
+    border-radius: 100px;
+    background: #fc6748;
+}
+.nav-link.dropbtn:hover::after{
+
+   width: inherit;
+} 
+.dropdown-content a:hover {
+    border-bottom: 2px solid;
+    color: #fc6748;
 }
 </style>

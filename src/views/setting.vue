@@ -4,19 +4,19 @@
 <div class="col-md-4">
 <ul>
     
-        <router-link tag="li" active-class="active"  to="profile">
+        <router-link tag="li" active-class="active"  :to="{ name: 'Profile', params: { id: $route.params.id } }">
         <font-awesome-icon icon="user"/>
         Edit Profile</router-link>
  
 
-         <router-link tag="li" active-class="active"  to="password">
+         <router-link tag="li" active-class="active"  :to="{ name: 'Password', params: { id: $route.params.id } }">
         <font-awesome-icon icon="unlock-keyhole"/>
         Change Password</router-link>
  
 
-         <router-link tag="li" active-class="active"  to="privacy">
+         <router-link tag="li" active-class="active"  :to="{ name: 'Privacy', params: { id: $route.params.id } }">
         <font-awesome-icon icon="fingerprint"/>
-        Privacy</router-link>
+        Notification</router-link>
  
 
    <a href="#">
@@ -41,7 +41,7 @@
  
 </ul>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="editImageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
 
@@ -98,6 +98,9 @@
 <script>
 import Footer from '../components/home/footer.vue'
 import NavHome from '../components/home/NavHome.vue'
+import { useRoute } from 'vue-router';
+const route = useRoute()
+
 export default {
   components: {Footer, NavHome },
     setup () {

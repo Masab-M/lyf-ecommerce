@@ -59,12 +59,18 @@ const router = createRouter({
     {
       path: "/edit/:id",
       name: "setting",
+      props: true,
       component: settingVue,
       children:[
-        { path: 'profile', component: EditProfile },
-        { path: '', component: EditProfile },
-        { path: 'password', component: password },
-        { path: 'privacy', component: privacy },
+        {
+          path: "/",
+          redirect: {
+            name: "Profile"
+          }
+        },
+        { path: 'profile', name: "Profile", component: EditProfile },
+        { path: 'password', name:"Password", component: password },
+        { path: 'privacy', name:"Privacy", component: privacy },
       ]
     },
     {

@@ -8,7 +8,7 @@
         <div class="col-md-3">
              <div class="profilImg">
                 <img src="https://picsum.photos/196/196" alt="">
-                <div class="editImg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="editImg" data-bs-toggle="modal" data-bs-target="#editImageModal">
                 <font-awesome-icon icon="pen-to-square"/>
                 </div>          
     </div>
