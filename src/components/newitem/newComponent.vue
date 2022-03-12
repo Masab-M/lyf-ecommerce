@@ -31,9 +31,12 @@
                   >
                     <div class="singleOffer">
                       <div class="icon">
-                        <font-awesome-icon
-                          :icon="['fas', 'mobile-screen-button']"
+                        <div class="bgIcon">
+  <font-awesome-icon
+                          :icon="['fas', cat.iconName]"
                         />
+                        </div>
+                      
                       </div>
                       <div class="text">
                         <h5>{{ cat.title }}</h5>
@@ -150,31 +153,31 @@ export default {
         {
           id: 2,
           title: "VEHICLES",
-          iconName: "mobile-screen-button",
+          iconName: "car-side",
           iconClass: "",
         },
         {
           id: 3,
-          title: "VEHICLES",
-          iconName: "mobile-screen-button",
+          title: "REAL ESTATE",
+          iconName: "sign-hanging",
           iconClass: "",
         },
         {
           id: 4,
           title: "SPORTS",
-          iconName: "mobile-screen-button",
+          iconName: "basketball",
           iconClass: "",
         },
         {
           id: 5,
           title: "PETS",
-          iconName: "mobile-screen-button",
+          iconName: "paw",
           iconClass: "",
         },
         {
           id: 5,
           title: "MORE CATEGORIES",
-          iconName: "mobile-screen-button",
+          iconName: "grip",
           iconClass: "",
         },
       ],
@@ -221,12 +224,22 @@ button.btn-close {
     top: 10px;
 }
 .icon svg {
-  background-color: var(--primary);
-  padding: 13px 15px;
-  border-radius: 100px;
-  color: var(--white);
+  padding: 18px 0px;
+    display: flex;
+    border-radius: 100px;
+    margin: auto;
+    color: var(--white);
+    align-items: center;
 }
-
+.bgIcon {
+    width: 52px;
+    text-align: center;
+    height: 52px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    background: #443688;
+}
 .text h5 {
   font-size: 11px;
   text-align: center;

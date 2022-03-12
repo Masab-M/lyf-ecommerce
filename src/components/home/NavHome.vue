@@ -45,7 +45,7 @@
         </form>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link  :to="'/wishlist'"
+            <router-link  class="fav" :to="'/wishlist'"
         >  <font-awesome-icon :icon="['far', 'heart']" />
         </router-link>
           
@@ -83,13 +83,16 @@
           </li>
           <li class="nav-item">
             <div class="dropdown userDetials" style="margin: 10px">
-              <img
+              <div class=" dropdown-toggle"      data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img
                 src="https://picsum.photos/50/50"
                 alt=""
-                class="avatar dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                class="avatar"
+          
               />
+              </div>
+              
               <div
                 class="dropdown-menu userprofile"
                 aria-labelledby="dropdownMenuButton1"
@@ -144,7 +147,35 @@ Dark Mode
             </div>
           </li>
           <li class="nav-item">
-            <font-awesome-icon icon="globe" />
+             <div class="dropdown">
+            <font-awesome-icon icon="globe" id="language" data-bs-toggle="dropdown" aria-expanded="false"  />
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start lang" aria-labelledby="language">
+              <div class="preferedLang">
+                <p>
+                  <font-awesome-icon icon="globe"/>
+                  <span>Language</span>
+                </p>
+                </div>
+                <div class="otherlang">
+                  <h5>OTHER LANGUAGES</h5>
+                   <ul class="other">
+                    <li class="lang">
+                      <font-awesome-icon icon="globe"/>
+                  <span>Urdu</span>
+                    </li>
+                    <li class="lang">
+                      <font-awesome-icon icon="globe"/>
+                  <span>Espanol</span>
+                    </li>
+                    <li class="lang">
+                      <font-awesome-icon icon="globe"/>
+                  <span>Spanish</span>
+                    </li>
+                </ul></div>
+               
+              
+  </div>
+  </div>
           </li>
           <li class="nav-item">
             <a
@@ -222,6 +253,11 @@ input:checked + .slider:before {
 nav.navbar {
   background-color: var(--bg-color) !important;
   padding: 0.688em 1.125em;
+}
+
+li.nav-item>a.fav {
+    font-size: 22px;
+    color: #000;
 }
 a.navbar-brand img {
   width: 100px;
@@ -318,6 +354,43 @@ select {
   color: #7f7f7f;
   right: 26px;
   position: absolute;
+}.dropdown-menu.lang {
+    width: 297px;
+    left: -250px;
+    top: 45px;
+}
+
+.otherlang {
+    padding: 14px;
+}
+
+.otherlang h5 {
+    font-size: 12px;
+    color: #36363678;
+    margin: 10px 0px 30px 0px;
+}
+
+ul.other {
+    list-style: none;
+    padding: 0px;
+}
+
+ul.other li.lang {
+    margin-left: 0px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+}
+
+ul.other li.lang svg {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+ul.other li.lang span {
+    font-size: 15px;
+    color: #363636;
+    font-weight: normal;
 }
 select,
 option {
@@ -328,7 +401,81 @@ option {
 
 
 /** Drop Down */
+.dropdown-menu.lang {
+    width: 297px;
+    left: -250px;
+    top: 45px;
+}
 
+.otherlang {
+    padding: 14px;
+}
+
+.otherlang h5 {
+    font-size: 12px;
+    color: #36363678;
+    margin: 10px 0px 30px 0px;
+}
+
+ul.other {
+    list-style: none;
+    padding: 0px;
+}
+
+ul.other li.lang {
+    margin-left: 0px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+}
+
+ul.other li.lang svg {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+ul.other li.lang span {
+    font-size: 15px;
+    color: #363636;
+    font-weight: normal;
+}
+.preferedLang {
+    border-bottom: 1px solid #36363624;
+    padding: 24px 16px;
+}
+
+.preferedLang p {
+    display: flex;
+    margin: 0px;
+    font-weight: 500;
+    color: #443688;
+    font-size: 15px;
+    align-items: center;
+}
+
+.preferedLang p svg {
+    margin-right: 26px;
+    font-size: 20px;
+}
+
+.dropdown-toggle::after {
+  border: none!important;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f107"!important; /* the desired FontAwesome icon */
+  vertical-align: 0; /* to center vertically */
+}
+.dropdown-menu::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    right: 15px;
+    top: -10px;
+    transform: rotate(45deg);
+    box-shadow: 0 -5px 5px -5px rgb(156 156 156), -5px 0 5px -5px rgb(156 156 156);
+    z-index: 1;
+}
 
 
 .dropdown-menu.notify h5,.dropdown-menu.chat h5 {
@@ -344,8 +491,13 @@ option {
 
 
 .dropdown-menu.notify {
-      left: -150px;
+         left: -255px;
     width: 291px;
+    top: 38px;
+}
+.dropdown-menu.chat {
+    left: -240px;
+    top: 40px;
 }
 
 .dropdown-menu.notify .illustration,.dropdown-menu.chat .illustration {
@@ -358,6 +510,8 @@ option {
     font-weight: 500;
     margin-bottom: 8px;
 }
+.dropdown>svg {font-size: 21px;}
+
 
 .illustration span {
     font-size: 8px;
@@ -370,8 +524,11 @@ option {
 
 
 .dropdown-menu.userprofile {
-    left: -150px;
+   
+    top: 63px;
+    left: -210px;
     position: absolute;
+
 }
 .dropdown-menu.userprofile {
     width: 290px;
