@@ -57,10 +57,87 @@
                <h5 class="headDropDown">
                  Recent Notification
                </h5>
-               <div class="illustration">
+               <!-- <div class="illustration">
                  <p>No Notification</p>
                  <span>Check back here for updates</span>
                  <img src="../../assets/IMG/notify.png" alt="">
+               </div> -->
+               <div class="recent">
+                 <div class="singleNotify">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentDet">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                     <span>21 Nov 2020</span>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="trash-can"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                  <div class="singleNotify">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentDet">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                     <span>21 Nov 2020</span>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="trash-can"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                  <div class="singleNotify">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentDet">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                     <span>21 Nov 2020</span>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="trash-can"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                  <div class="singleNotify">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentDet">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                     <span>21 Nov 2020</span>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="trash-can"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                  <div class="singleNotify">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentDet">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                     <span>21 Nov 2020</span>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="trash-can"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
                </div>
   </div>
   </div>
@@ -73,11 +150,98 @@
                <h5 class="headDropDown">
                  Chat
                </h5>
-               <div class="illustration">
+               <!-- <div class="illustration">
                  <p>No Chat</p>
                  <span>Check back here for updates</span>
                  <img src="../../assets/IMG/notify.png" alt="">
-               </div>
+               </div> -->
+                <div class="chat">
+                  <div class="singlechat">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentchat">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="circle-exclamation"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                 <div class="singlechat">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentchat">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="circle-exclamation"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                 <div class="singlechat">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentchat">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="circle-exclamation"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                 <div class="singlechat">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentchat">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="circle-exclamation"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                 <div class="singlechat">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentchat">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="circle-exclamation"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                 <div class="singlechat">
+                   <div class="img">
+                     <img src="https://picsum.photos/50/50" alt="">
+                     <div class="recentchat">
+                     <label>House updates</label>
+                     <p>Florida</p>
+                   </div>
+                   </div>
+                   
+                   <div class="notifyActioiin">
+                     <font-awesome-icon icon="circle-exclamation"/>
+                     <span class="time">23 : 54</span>
+                   </div>
+                 </div>
+                </div>
+               
   </div>
             </div>
           </li>
@@ -117,8 +281,7 @@
                   </li>
                   <li class="flexList">
                     <div>
-                                 <font-awesome-icon icon="moon"/>
-Dark Mode
+                                 <font-awesome-icon icon="moon"/>Dark Mode
                     </div>
       <label class="switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
@@ -401,6 +564,56 @@ option {
 
 
 /** Drop Down */
+.singleNotify .img,.singlechat .img {
+    display: flex;
+    align-items: center;
+}
+.singleNotify ,.singlechat{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 14px;
+}
+
+.singleNotify .img img ,.singlechat .img img {
+    border-radius: 100px;
+    width: 50px;
+    margin-right: 19px;
+    height: 50px;
+}
+.singlechat .img img{
+   margin-right: 5px;
+}
+.notifyActioiin {
+    display: grid;
+    justify-items: end;
+    align-content: space-between;
+}
+
+.notifyActioiin svg {
+    color: #FC6748;
+}
+
+.notifyActioiin span.time {
+    color: #36363682;
+    font-size: 8px;
+}
+
+.recentDet label ,.recentchat label{
+    font-size: 11px;
+    font-weight: 500;
+    color: #363636;
+}
+
+.recentDet p,.recentchat p {
+    color: #36363682;
+    margin-bottom: 4px;
+    font-size: 8px;
+}
+
+.recentDet span,.recentchat span {
+    font-size: 8px;
+    color: #36363678;
+}
 .dropdown-menu.lang {
     width: 297px;
     left: -250px;
@@ -491,13 +704,19 @@ ul.other li.lang span {
 
 
 .dropdown-menu.notify {
-         left: -255px;
+      overflow: auto;
+    left: -255px;
     width: 291px;
+    height: 290px;
     top: 38px;
-}
+} 
 .dropdown-menu.chat {
     left: -240px;
     top: 40px;
+    width: 266px;
+    overflow: auto;
+    height: 383px;
+
 }
 
 .dropdown-menu.notify .illustration,.dropdown-menu.chat .illustration {

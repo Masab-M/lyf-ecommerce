@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg 	d-none d-sm-none d-md-none d-lg-block">
+  <nav class="navbar navbar-expand-lg d-none d-sm-none d-md-none d-lg-block">
     <div class="container-fluid">
       <button
         class="navbar-toggler"
@@ -34,8 +34,13 @@
             </ul>
           </li>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="specificCat">
-            <li class="nav-item" v-for="item in items" :key="item.cat">
-              <a class="nav-link" href="#"> {{ item.cat }}</a>
+            <li class="nav-item dropdown" v-for="item in items" :key="item.cat">
+              <a class="nav-link dropbtn" href="#"> {{ item.cat }}</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             </li>
           </ul>
         </ul>
@@ -52,11 +57,56 @@ export default {
   data() {
     return {
       items: [
-        { cat: "REAL ESTATE" },
-        { cat: "ELECTRONICS" },
-        { cat: "PETS" },
-        { cat: "VEHICLES" },
-        { cat: "HOUSEHOLD" },
+        {
+          cat: "REAL ESTATE",
+          subcat: [
+            { title: "Bare lands", icon: "" },
+            { title: "Houses", icon: "" },
+            { title: "Estate", icon: "" },
+            { title: "Appartments", icon: "" },
+            { title: "Commercial", icon: "" },
+          ],
+        },
+        {
+          cat: "ELECTRONICS",
+          subcat: [
+            { title: "Bare lands", icon: "" },
+            { title: "Houses", icon: "" },
+            { title: "Estate", icon: "" },
+            { title: "Appartments", icon: "" },
+            { title: "Commercial", icon: "" },
+          ],
+        },
+        {
+          cat: "PETS",
+          subcat: [
+            { title: "Bare lands", icon: "" },
+            { title: "Houses", icon: "" },
+            { title: "Estate", icon: "" },
+            { title: "Appartments", icon: "" },
+            { title: "Commercial", icon: "" },
+          ],
+        },
+        {
+          cat: "VEHICLES",
+          subcat: [
+            { title: "Bare lands", icon: "" },
+            { title: "Houses", icon: "" },
+            { title: "Estate", icon: "" },
+            { title: "Appartments", icon: "" },
+            { title: "Commercial", icon: "" },
+          ],
+        },
+        {
+          cat: "HOUSEHOLD",
+          subcat: [
+            { title: "Bare lands" },
+            { title: "Houses", icon: "" },
+            { title: "Estate", icon: "" },
+            { title: "Appartments", icon: "" },
+            { title: "Commercial", icon: "" },
+          ],
+        },
       ],
     };
   },
@@ -65,21 +115,56 @@ export default {
 
 <style scoped>
 a#navbarDropdown {
-    color: var(--black);
-    font-size: 17px;
-    font-weight: 400;
-    text-transform: uppercase;
+  color: var(--black);
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 nav.navbar.navbar-expand-lg {
-    padding: 9px 16px;
+  padding: 9px 16px;
 }
 
 ul li a.nav-link {
-    font-size: 14px;
-    font-weight: normal;
-    color: var(--black);
-    padding: 0;
-    margin-right: 32px;
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--black);
+  padding: 0;
+  margin-right: 32px;
+}
+
+/** Drop Down */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
