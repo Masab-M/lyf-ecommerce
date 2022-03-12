@@ -45,264 +45,218 @@
         </form>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link  class="fav" :to="'/wishlist'"
-        >  <font-awesome-icon :icon="['far', 'heart']" />
-        </router-link>
-          
+            <router-link class="fav" :to="'/wishlist'">
+              <font-awesome-icon :icon="['far', 'heart']" />
+            </router-link>
           </li>
           <li class="nav-item">
             <div class="dropdown">
-            <font-awesome-icon :icon="['far', 'bell']" id="Notification" data-bs-toggle="dropdown" aria-expanded="false"/>
-             <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start notify" aria-labelledby="Notification">
-               <h5 class="headDropDown">
-                 Recent Notification
-               </h5>
-               <!-- <div class="illustration">
+              <font-awesome-icon
+                :icon="['far', 'bell']"
+                id="Notification"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              />
+              <span class="light">0</span>
+              <div
+                class="
+                  dropdown-menu dropdown-menu-end dropdown-menu-lg-start
+                  notify
+                "
+                aria-labelledby="Notification"
+              >
+                <h5 class="headDropDown">Recent Notification</h5>
+                <!-- <div class="illustration">
                  <p>No Notification</p>
                  <span>Check back here for updates</span>
                  <img src="../../assets/IMG/notify.png" alt="">
                </div> -->
-               <div class="recent">
-                 <div class="singleNotify">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentDet">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                     <span>21 Nov 2020</span>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="trash-can"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
+                <div class="recent">
                   <div class="singleNotify">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentDet">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                     <span>21 Nov 2020</span>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="trash-can"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
+                    <div class="img">
+                      <img src="https://picsum.photos/50/50" alt="" />
+                      <div class="recentDet">
+                        <label>House updates</label>
+                        <p>Florida</p>
+                        <span>21 Nov 2020</span>
+                      </div>
+                    </div>
+
+                    <div class="notifyActioiin">
+                      <font-awesome-icon icon="trash-can" />
+                      <span class="time">23 : 54</span>
+                    </div>
+                  </div>
                   <div class="singleNotify">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentDet">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                     <span>21 Nov 2020</span>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="trash-can"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
+                    <div class="img">
+                      <img src="https://picsum.photos/50/50" alt="" />
+                      <div class="recentDet">
+                        <label>House updates</label>
+                        <p>Florida</p>
+                        <span>21 Nov 2020</span>
+                      </div>
+                    </div>
+
+                    <div class="notifyActioiin">
+                      <font-awesome-icon icon="trash-can" />
+                      <span class="time">23 : 54</span>
+                    </div>
+                  </div>
                   <div class="singleNotify">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentDet">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                     <span>21 Nov 2020</span>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="trash-can"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
+                    <div class="img">
+                      <img src="https://picsum.photos/50/50" alt="" />
+                      <div class="recentDet">
+                        <label>House updates</label>
+                        <p>Florida</p>
+                        <span>21 Nov 2020</span>
+                      </div>
+                    </div>
+
+                    <div class="notifyActioiin">
+                      <font-awesome-icon icon="trash-can" />
+                      <span class="time">23 : 54</span>
+                    </div>
+                  </div>
                   <div class="singleNotify">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentDet">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                     <span>21 Nov 2020</span>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="trash-can"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
-               </div>
-  </div>
-  </div>
+                    <div class="img">
+                      <img src="https://picsum.photos/50/50" alt="" />
+                      <div class="recentDet">
+                        <label>House updates</label>
+                        <p>Florida</p>
+                        <span>21 Nov 2020</span>
+                      </div>
+                    </div>
+
+                    <div class="notifyActioiin">
+                      <font-awesome-icon icon="trash-can" />
+                      <span class="time">23 : 54</span>
+                    </div>
+                  </div>
+                  <div class="singleNotify">
+                    <div class="img">
+                      <img src="https://picsum.photos/50/50" alt="" />
+                      <div class="recentDet">
+                        <label>House updates</label>
+                        <p>Florida</p>
+                        <span>21 Nov 2020</span>
+                      </div>
+                    </div>
+
+                    <div class="notifyActioiin">
+                      <font-awesome-icon icon="trash-can" />
+                      <span class="time">23 : 54</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
             <div class="dropdown">
-
-            <font-awesome-icon :icon="['far', 'comment']"  id="chatdropDown" data-bs-toggle="dropdown" aria-expanded="false" />
-                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start chat" aria-labelledby="chatdropDown">
-               <h5 class="headDropDown">
-                 Chat
-               </h5>
-               <!-- <div class="illustration">
+              <font-awesome-icon
+                :icon="['far', 'comment']"
+                id="chatdropDown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              />
+              <span class="light">0</span>
+              <div
+                class="
+                  dropdown-menu dropdown-menu-end dropdown-menu-lg-start
+                  chat
+                "
+                aria-labelledby="chatdropDown"
+              >
+                <h5 class="headDropDown">Chat</h5>
+                <!-- <div class="illustration">
                  <p>No Chat</p>
                  <span>Check back here for updates</span>
                  <img src="../../assets/IMG/notify.png" alt="">
                </div> -->
                 <div class="chat">
-                  <div class="singlechat">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentchat">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="circle-exclamation"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
-                 <div class="singlechat">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentchat">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="circle-exclamation"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
-                 <div class="singlechat">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentchat">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="circle-exclamation"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
-                 <div class="singlechat">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentchat">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="circle-exclamation"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
-                 <div class="singlechat">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentchat">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="circle-exclamation"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
-                 <div class="singlechat">
-                   <div class="img">
-                     <img src="https://picsum.photos/50/50" alt="">
-                     <div class="recentchat">
-                     <label>House updates</label>
-                     <p>Florida</p>
-                   </div>
-                   </div>
-                   
-                   <div class="notifyActioiin">
-                     <font-awesome-icon icon="circle-exclamation"/>
-                     <span class="time">23 : 54</span>
-                   </div>
-                 </div>
+                  <router-link to="/inbox">
+                    <div class="singlechat">
+                      <div class="img">
+                        <img src="https://picsum.photos/50/50" alt="" />
+                        <div class="recentchat">
+                          <label>House updates</label>
+                          <p>Florida</p>
+                        </div>
+                      </div>
+
+                      <div class="notifyActioiin">
+                        <font-awesome-icon icon="circle-exclamation" />
+                        <span class="time">23 : 54</span>
+                      </div>
+                    </div></router-link
+                  >
                 </div>
-               
-  </div>
+              </div>
             </div>
           </li>
           <li class="nav-item">
             <div class="dropdown userDetials" style="margin: 10px">
-              <div class=" dropdown-toggle"      data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img
-                src="https://picsum.photos/50/50"
-                alt=""
-                class="avatar"
-          
-              />
+              <div
+                class="dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="https://picsum.photos/50/50" alt="" class="avatar" />
               </div>
-              
+
               <div
                 class="dropdown-menu userprofile"
                 aria-labelledby="dropdownMenuButton1"
               >
-              <div class="userdetaill">
-                <img src="https://picsum.photos/86/86" alt="" class="user">
-                <h5>Keith</h5>
-                <p>Keith09@gmail.com</p>
-                <span>+912346734564</span>
-              </div>
-              <label for="">
-                <font-awesome-icon icon="list-check"/>
-                Manage Ads</label>
+                <div class="userdetaill">
+                  <img src="https://picsum.photos/86/86" alt="" class="user" />
+                  <h5>Keith</h5>
+                  <p>Keith09@gmail.com</p>
+                  <span>+912346734564</span>
+                </div>
+                <label for="">
+                  <router-link to="/item">
+                    <font-awesome-icon icon="list-check" />
+                    Manage Ads
+                  </router-link>
+                </label>
                 <ul class="useractions">
                   <li>
-                <font-awesome-icon icon="user"/>
-                    View Profile
+                    <router-link to="/user/5">
+                      <font-awesome-icon icon="user" />
+                      View Profile</router-link
+                    >
                   </li>
                   <li>
-                <font-awesome-icon icon="credit-card"/>
+                    <font-awesome-icon icon="credit-card" />
                     Membership
                   </li>
                   <li class="flexList">
-                    <div>
-                                 <font-awesome-icon icon="moon"/>Dark Mode
-                    </div>
-      <label class="switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-                  </label>
+                    <div><font-awesome-icon icon="moon" />Dark Mode</div>
+                    <label class="switch" for="checkbox">
+                      <input type="checkbox" id="checkbox" />
+                      <div class="slider round"></div>
+                    </label>
                   </li>
                   <li>
-                <font-awesome-icon icon="phone"/>
+                    <font-awesome-icon icon="phone" />
                     Contact us
                   </li>
-                  
+
                   <li>
-                <font-awesome-icon icon="circle-question"/>
-                    Faq
+                    <router-link to="/faqs">
+                      <font-awesome-icon icon="circle-question" />
+                      Faq</router-link
+                    >
                   </li>
                   <li>
-                <font-awesome-icon icon="gear"/>
-                    Settings
+                    <router-link to="/edit/5">
+                      <font-awesome-icon icon="gear" />
+                      Settings
+                    </router-link>
                   </li>
                   <li>
-                <font-awesome-icon icon="arrow-right-from-bracket"/>
+                    <font-awesome-icon icon="arrow-right-from-bracket" />
                     Logout
                   </li>
                 </ul>
@@ -310,37 +264,50 @@
             </div>
           </li>
           <li class="nav-item">
-             <div class="dropdown">
-            <font-awesome-icon icon="globe" id="language" data-bs-toggle="dropdown" aria-expanded="false"  />
-            <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start lang" aria-labelledby="language">
-              <div class="preferedLang">
-                <p>
-                  <font-awesome-icon icon="globe"/>
-                  <span>Language</span>
-                </p>
+            <div class="dropdown">
+              <font-awesome-icon
+                icon="globe"
+                id="language"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              />
+              <div
+                class="
+                  dropdown-menu dropdown-menu-end dropdown-menu-lg-start
+                  lang
+                "
+                aria-labelledby="language"
+              >
+                <div class="preferedLang">
+                  <p>
+                    <font-awesome-icon icon="globe" />
+                    <span>Language</span>
+                  </p>
                 </div>
                 <div class="otherlang">
                   <h5>OTHER LANGUAGES</h5>
-                   <ul class="other">
+                  <ul class="other">
                     <li class="lang">
-                      <font-awesome-icon icon="globe"/>
-                  <span>Urdu</span>
+                      <font-awesome-icon icon="globe" />
+                      <span>Urdu</span>
                     </li>
                     <li class="lang">
-                      <font-awesome-icon icon="globe"/>
-                  <span>Espanol</span>
+                      <font-awesome-icon icon="globe" />
+                      <span>Espanol</span>
                     </li>
                     <li class="lang">
-                      <font-awesome-icon icon="globe"/>
-                  <span>Spanish</span>
+                      <font-awesome-icon icon="globe" />
+                      <span>Spanish</span>
                     </li>
-                </ul></div>
-               
-              
-  </div>
-  </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="nav-item">
+        
+        </ul>
+        <ul class="navbar-nav">
+  <li class="nav-item">
             <a
               class="sell signup"
               data-bs-toggle="modal"
@@ -364,7 +331,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-  /* checkbox slider */
+/* checkbox slider */
 .switch {
   display: inline-block;
   height: 23px;
@@ -418,9 +385,9 @@ nav.navbar {
   padding: 0.688em 1.125em;
 }
 
-li.nav-item>a.fav {
-    font-size: 22px;
-    color: #000;
+li.nav-item > a.fav {
+  font-size: 22px;
+  color: #000;
 }
 a.navbar-brand img {
   width: 100px;
@@ -517,43 +484,44 @@ select {
   color: #7f7f7f;
   right: 26px;
   position: absolute;
-}.dropdown-menu.lang {
-    width: 297px;
-    left: -250px;
-    top: 45px;
+}
+.dropdown-menu.lang {
+  width: 297px;
+  left: -250px;
+  top: 45px;
 }
 
 .otherlang {
-    padding: 14px;
+  padding: 14px;
 }
 
 .otherlang h5 {
-    font-size: 12px;
-    color: #36363678;
-    margin: 10px 0px 30px 0px;
+  font-size: 12px;
+  color: #36363678;
+  margin: 10px 0px 30px 0px;
 }
 
 ul.other {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 
 ul.other li.lang {
-    margin-left: 0px;
-    margin-bottom: 28px;
-    display: flex;
-    align-items: center;
+  margin-left: 0px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
 }
 
 ul.other li.lang svg {
-    font-size: 20px;
-    margin-right: 20px;
+  font-size: 20px;
+  margin-right: 20px;
 }
 
 ul.other li.lang span {
-    font-size: 15px;
-    color: #363636;
-    font-weight: normal;
+  font-size: 15px;
+  color: #363636;
+  font-weight: normal;
 }
 select,
 option {
@@ -562,262 +530,280 @@ option {
   color: #7f7f7f;
 }
 
-
 /** Drop Down */
-.singleNotify .img,.singlechat .img {
-    display: flex;
-    align-items: center;
+span.light {
+  border-radius: 100px;
+  left: 10px;
+  position: absolute;
+  padding: 5px 8px;
+  font-size: 8px;
+  color: #fff;
+  top: -16px;
+  background: #ff4d4d;
 }
-.singleNotify ,.singlechat{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 14px;
+.chat a {
+  text-decoration: none;
 }
 
-.singleNotify .img img ,.singlechat .img img {
-    border-radius: 100px;
-    width: 50px;
-    margin-right: 19px;
-    height: 50px;
+.singleNotify .img,
+.singlechat .img {
+  display: flex;
+  align-items: center;
 }
-.singlechat .img img{
-   margin-right: 5px;
+.singleNotify,
+.singlechat {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 14px;
+}
+
+ul.useractions li a,
+.dropdown-menu.userprofile > label a {
+  text-decoration: none;
+  color: #363636;
+}
+.singleNotify .img img,
+.singlechat .img img {
+  border-radius: 100px;
+  width: 50px;
+  margin-right: 19px;
+  height: 50px;
+}
+.singlechat .img img {
+  margin-right: 5px;
 }
 .notifyActioiin {
-    display: grid;
-    justify-items: end;
-    align-content: space-between;
+  display: grid;
+  justify-items: end;
+  align-content: space-between;
 }
 
 .notifyActioiin svg {
-    color: #FC6748;
+  color: #fc6748;
 }
 
 .notifyActioiin span.time {
-    color: #36363682;
-    font-size: 8px;
+  color: #36363682;
+  font-size: 8px;
 }
 
-.recentDet label ,.recentchat label{
-    font-size: 11px;
-    font-weight: 500;
-    color: #363636;
+.recentDet label,
+.recentchat label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #363636;
 }
 
-.recentDet p,.recentchat p {
-    color: #36363682;
-    margin-bottom: 4px;
-    font-size: 8px;
+.recentDet p,
+.recentchat p {
+  color: #36363682;
+  margin-bottom: 4px;
+  font-size: 8px;
 }
 
-.recentDet span,.recentchat span {
-    font-size: 8px;
-    color: #36363678;
+.recentDet span,
+.recentchat span {
+  font-size: 8px;
+  color: #36363678;
 }
 .dropdown-menu.lang {
-    width: 297px;
-    left: -250px;
-    top: 45px;
+  width: 297px;
+  left: -250px;
+  top: 45px;
 }
 
 .otherlang {
-    padding: 14px;
+  padding: 14px;
 }
 
 .otherlang h5 {
-    font-size: 12px;
-    color: #36363678;
-    margin: 10px 0px 30px 0px;
+  font-size: 12px;
+  color: #36363678;
+  margin: 10px 0px 30px 0px;
 }
 
 ul.other {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 
 ul.other li.lang {
-    margin-left: 0px;
-    margin-bottom: 28px;
-    display: flex;
-    align-items: center;
+  margin-left: 0px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
 }
 
 ul.other li.lang svg {
-    font-size: 20px;
-    margin-right: 20px;
+  font-size: 20px;
+  margin-right: 20px;
 }
 
 ul.other li.lang span {
-    font-size: 15px;
-    color: #363636;
-    font-weight: normal;
+  font-size: 15px;
+  color: #363636;
+  font-weight: normal;
 }
 .preferedLang {
-    border-bottom: 1px solid #36363624;
-    padding: 24px 16px;
+  border-bottom: 1px solid #36363624;
+  padding: 24px 16px;
 }
 
 .preferedLang p {
-    display: flex;
-    margin: 0px;
-    font-weight: 500;
-    color: #443688;
-    font-size: 15px;
-    align-items: center;
+  display: flex;
+  margin: 0px;
+  font-weight: 500;
+  color: #443688;
+  font-size: 15px;
+  align-items: center;
 }
 
 .preferedLang p svg {
-    margin-right: 26px;
-    font-size: 20px;
+  margin-right: 26px;
+  font-size: 20px;
 }
 
 .dropdown-toggle::after {
-  border: none!important;
+  border: none !important;
   font: normal normal normal 14px/1 FontAwesome;
-  content: "\f107"!important; /* the desired FontAwesome icon */
+  content: "\f107" !important; /* the desired FontAwesome icon */
   vertical-align: 0; /* to center vertically */
 }
 .dropdown-menu::before {
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    right: 15px;
-    top: -10px;
-    transform: rotate(45deg);
-    box-shadow: 0 -5px 5px -5px rgb(156 156 156), -5px 0 5px -5px rgb(156 156 156);
-    z-index: 1;
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  right: 15px;
+  top: -10px;
+  transform: rotate(45deg);
+  box-shadow: 0 -5px 5px -5px rgb(156 156 156), -5px 0 5px -5px rgb(156 156 156);
+  z-index: 1;
 }
 
-
-.dropdown-menu.notify h5,.dropdown-menu.chat h5 {
-    font-size: 17px;
-    padding: 24px 19px;
-       font-weight: 500;
-    border-bottom: 1px solid #0000001c;
-    padding: 18px 14px;
-    color: #000000;
+.dropdown-menu.notify h5,
+.dropdown-menu.chat h5 {
+  font-size: 17px;
+  padding: 24px 19px;
+  font-weight: 500;
+  border-bottom: 1px solid #0000001c;
+  padding: 18px 14px;
+  color: #000000;
 }
-
-
-
 
 .dropdown-menu.notify {
-      overflow: auto;
-    left: -255px;
-    width: 291px;
-    height: 290px;
-    top: 38px;
-} 
+  overflow: auto;
+  left: -255px;
+  width: 291px;
+  height: 290px;
+  top: 38px;
+}
 .dropdown-menu.chat {
-    left: -240px;
-    top: 40px;
-    width: 266px;
-    overflow: auto;
-    height: 383px;
-
+  left: -240px;
+  top: 40px;
+  width: 266px;
+  overflow: auto;
+  height: 383px;
 }
 
-.dropdown-menu.notify .illustration,.dropdown-menu.chat .illustration {
-    text-align: center;
-    padding: 14px 24px;
+.dropdown-menu.notify .illustration,
+.dropdown-menu.chat .illustration {
+  text-align: center;
+  padding: 14px 24px;
 }
 
 .illustration p {
-    font-size: 11px;
-    font-weight: 500;
-    margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
-.dropdown>svg {font-size: 21px;}
-
+.dropdown > svg {
+  font-size: 21px;
+}
 
 .illustration span {
-    font-size: 8px;
-    color: #36363694;
+  font-size: 8px;
+  color: #36363694;
 }
 
-
-
-
-
-
 .dropdown-menu.userprofile {
-   
-    top: 63px;
-    left: -210px;
-    position: absolute;
-
+  top: 63px;
+  left: -210px;
+  position: absolute;
 }
 .dropdown-menu.userprofile {
-    width: 290px;
-    position: absolute;
+  width: 290px;
+  position: absolute;
 }
 
 .userdetaill {
-    text-align: center;
+  text-align: center;
 }
 
 .userdetaill img {
-    margin-bottom: 24px;
-    outline: none;
-    width: 86px;
-    height: 86px;
-    padding: 2px;
-    border-radius: 100px;
-    border: 3px solid #fc6748;
+  margin-bottom: 24px;
+  outline: none;
+  width: 86px;
+  height: 86px;
+  padding: 2px;
+  border-radius: 100px;
+  border: 3px solid #fc6748;
 }
 
 .userdetaill h5 {
-    margin-bottom: 12px;
-    font-size: 21px;
-    font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .userdetaill p {
-    font-size: 14px;
-    color: #1d1d1d7a;
-    margin-bottom: 13px;
+  font-size: 14px;
+  color: #1d1d1d7a;
+  margin-bottom: 13px;
 }
 
 .userdetaill span {
-    font-size: 14px;
-    color: #1d1d1d57;
+  font-size: 14px;
+  color: #1d1d1d57;
 }
 
-.dropdown-menu.userprofile>label {
-    border-bottom: 1px solid #1d1d1d12;
-    font-size: 17px;
-    padding: 15px 23px;
-    width: 100%;
-    color: #363636;
-    margin-top: 20px;
-    font-weight: 500;
+.dropdown-menu.userprofile > label {
+  border-bottom: 1px solid #1d1d1d12;
+  font-size: 17px;
+  padding: 15px 23px;
+  width: 100%;
+  color: #363636;
+  margin-top: 20px;
+  font-weight: 500;
 }
 
-.dropdown-menu.userprofile>label svg {color: #FF0000;margin-right: 13px;}
+.dropdown-menu.userprofile > label svg {
+  color: #ff0000;
+  margin-right: 13px;
+}
 
 ul.useractions {
-    padding: 24px;
-    list-style: none;
+  padding: 24px;
+  list-style: none;
 }
 
 ul.useractions li {
-    margin-bottom: 32px;
-    font-size: 17px;
-    padding: 0;
-    margin-left: 0 !important;
+  margin-bottom: 32px;
+  font-size: 17px;
+  padding: 0;
+  margin-left: 0 !important;
 }
 
 ul.useractions li svg {
-    color: #FF0000;
-    width: 17px;
-    margin-right: 15px;
+  color: #ff0000;
+  width: 17px;
+  margin-right: 15px;
 }
 
 li.flexList {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 320px) {
   form.d-flex {

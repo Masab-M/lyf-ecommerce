@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="cntctBtn">
-        <a href="#" class="btn">Chat with seller</a>
+        <router-link  to="/inbox" class="btn">Chat with seller</router-link>
     </div>
     <div class="cntctNo">
         <div class="nmbr">

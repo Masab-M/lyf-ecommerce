@@ -3,7 +3,7 @@
     <div class="metadata">
         <div class="contactBtn">
             <a href="#" class="btn follow" >Follow</a>
-            <a href="#" class="btn contact">Chat with Company</a>
+            <router-link to="/inbox" class="btn contact">Chat with Company</router-link>
         </div>
 <MetaDetails/>
        <CompanyLocation/>

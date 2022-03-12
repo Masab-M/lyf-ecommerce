@@ -78,7 +78,9 @@ section.relatedItems {
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #00000029;
 }
-
+section.relatedItems a{
+text-decoration: none;
+}
 section.relatedItems h5 {
     font-weight: 400;
     font-size: 18px;

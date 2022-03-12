@@ -37,9 +37,11 @@
               placeholder="Search"
               aria-label="Search"
             />
+            <router-link to="/search?s=4">
             <button class="btn" type="submit">
               <font-awesome-icon :icon="['fas', 'search']" />
-            </button>
+            </button></router-link>
+            
           </div>
         </form>
         <ul class="navbar-nav">

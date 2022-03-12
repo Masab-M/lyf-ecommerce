@@ -14,7 +14,7 @@
         </select>
       </div>
     </div>
-    <div class="row container-fluid" style="padding: 0px">
+    <div class="row container-fluid searchItem" style="padding: 0px">
       <div
         class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"
         v-for="index in 6"
@@ -33,7 +33,7 @@
     <div class="related">
         <h5>Most Recent Ads</h5>
     </div>
-     <div class="row container-fluid" style="padding: 0px">
+     <div class="row container-fluid searchItems" style="padding: 0px">
       <div
         class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"
         v-for="index in 3"
@@ -72,6 +72,9 @@ select {
 }
 .sort {
   position: relative;
+}
+.searchItem a{
+  text-decoration: none;
 }
 .searchTitle {
   display: flex;

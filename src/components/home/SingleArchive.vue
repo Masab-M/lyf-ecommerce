@@ -1,4 +1,5 @@
 <template>
+<router-link to="/item/5">
 <div class="archiveProduct">
 <div class="pImg">
     <img src="../../assets/IMG/product.png"  alt="">
@@ -23,6 +24,8 @@
     </div>
 </div>
 </div>
+</router-link>
+
 </template>
 
 <script>

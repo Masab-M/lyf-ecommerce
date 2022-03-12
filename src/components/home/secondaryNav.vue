@@ -37,9 +37,10 @@
             <li class="nav-item dropdown" v-for="item in items" :key="item.cat">
               <a class="nav-link dropbtn" href="#"> {{ item.cat }}</a>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a v-for="sub in item.subcat" :key="sub.title" href="#">
+                  <font-awesome-icon :icon="sub.icon" />
+                  {{ sub.title }}</a
+                >
               </div>
             </li>
           </ul>
@@ -60,51 +61,73 @@ export default {
         {
           cat: "REAL ESTATE",
           subcat: [
-            { title: "Bare lands", icon: "" },
-            { title: "Houses", icon: "" },
-            { title: "Estate", icon: "" },
-            { title: "Appartments", icon: "" },
-            { title: "Commercial", icon: "" },
+            { title: "Bare lands", icon: "mountain" },
+            { title: "Houses", icon: "house" },
+            { title: "Estate", icon: "sign-hanging" },
+            { title: "Appartments", icon: "sign-hanging" },
+            { title: "Commercial", icon: "city" },
           ],
         },
         {
           cat: "ELECTRONICS",
           subcat: [
-            { title: "Bare lands", icon: "" },
-            { title: "Houses", icon: "" },
-            { title: "Estate", icon: "" },
-            { title: "Appartments", icon: "" },
-            { title: "Commercial", icon: "" },
+            {
+              title: "Mobile",
+              icon: "mobile-screen-button",
+            },
+            {
+              title: "Mobile phone accessories",
+              icon: "microchip",
+            },
+            {
+              title: "Laptop",
+              icon: "laptop",
+            },
+            {
+              title: "Tv",
+              icon: "tv",
+            },
+            {
+              title: "Gaming Consoles",
+              icon: "gamepad",
+            },
+            {
+              title: "Camera",
+              icon: "camera",
+            },
           ],
         },
         {
           cat: "PETS",
           subcat: [
-            { title: "Bare lands", icon: "" },
-            { title: "Houses", icon: "" },
-            { title: "Estate", icon: "" },
-            { title: "Appartments", icon: "" },
-            { title: "Commercial", icon: "" },
+            { title: "Dogs", icon: "dog" },
+            { title: "Cats", icon: "cat" },
+            { title: "Birds", icon: "crow" },
+            { title: "Fish", icon: "fish" },
+            { title: "Other", icon: "circle-notch" },
           ],
         },
         {
           cat: "VEHICLES",
           subcat: [
-            { title: "Bare lands", icon: "" },
-            { title: "Houses", icon: "" },
-            { title: "Estate", icon: "" },
-            { title: "Appartments", icon: "" },
-            { title: "Commercial", icon: "" },
+            { title: "Cars" ,icon:"car"},
+            { title: "SUV", icon: "truck-monster" },
+            { title: "Trucks", icon: "truck" },
+            { title: "Bikes", icon: "person-biking" },
+            { title: "Spares", icon: "screwdriver-wrench" },
+            { title: "Other", icon: "circle-notch" },
           ],
+        
         },
         {
           cat: "HOUSEHOLD",
-          subcat: [
-            { title: "Bare lands" },
-            { title: "Houses", icon: "" },
-            { title: "Estate", icon: "" },
-            { title: "Appartments", icon: "" },
-            { title: "Commercial", icon: "" },
+            subcat: [
+            { title: "Living room", icon: "chair" },
+            { title: "Bed room", icon: "bed" },
+            { title: "Dining", icon: "utensils" },
+            { title: "Plastic products", icon: "wine-bottle" },
+            { title: "Appliances", icon: "lightbulb" },
+            { title: "Office furniture", icon: "couch" },
           ],
         },
       ],
@@ -144,6 +167,7 @@ ul li a.nav-link {
 .dropdown-content {
   display: none;
   position: absolute;
+  width: 237px;
   background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -153,9 +177,14 @@ ul li a.nav-link {
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
 }
 
 /* Change color of dropdown links on hover */

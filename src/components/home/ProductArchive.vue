@@ -129,6 +129,9 @@ h2.head {
 .ProductArcive {
     padding: 50px;
 }
+.ProductArcive a {
+    text-decoration: none;
+}
 .loadBtn {
     text-align: center;
     margin-top: 50px;
