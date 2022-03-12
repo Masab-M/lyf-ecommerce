@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .chats {
-    height: 230px;
+   height: calc(100vh - 400px);
     overflow: auto;
 }
 </style>

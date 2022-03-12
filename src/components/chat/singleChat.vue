@@ -1,5 +1,6 @@
 <template>
-    <router-link  v-for="chat in chats" :key="chat"  v-bind:to="'/inbox/'+chat.id">
+<div class="chat" v-for="chat in chats" :key="chat">
+    <router-link    v-bind:to="'/inbox/'+chat.id">
 
   <div class="singleChat">
         <div class="left">
@@ -19,11 +20,13 @@
       </div>
       <div class="moreDetails">
         <span>23:43</span>
-        <font-awesome-icon icon="ellipsis-vertical" />
+
       </div>
     </div>
   </div>
       </router-link>  
+              <font-awesome-icon class="moreOpt" icon="ellipsis-vertical" />
+              </div>  
 </template>
 
 <script>
@@ -65,7 +68,15 @@ export default {
   justify-content: space-between;
   margin-bottom: 60px;
 }
+.chat {
+    position: relative;
+}
 
+svg.moreOpt {
+    position: absolute;
+    top: 34px;
+    right: 25px;
+}
 .left img {
   border-radius: 6px;
   width: 60px;

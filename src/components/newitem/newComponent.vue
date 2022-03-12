@@ -26,17 +26,22 @@
                   :key="cat"
                 >
                   <a
-                    class="nav-link signup"  @click="offer=cat.id;catname=cat.title"
-                    data-bs-toggle="modal" data-bs-target="#subcat"
+                    class="nav-link signup"
+                    @click="
+                      offer = cat.id;
+                      catname = cat.title;
+                    "
+                    data-bs-toggle="modal"
+                    data-bs-target="#subcat"
                   >
                     <div class="singleOffer">
                       <div class="icon">
-                        <div class="bgIcon">
-  <font-awesome-icon
-                          :icon="['fas', cat.iconName]"
-                        />
+                        <div
+                          class="bgIcon"
+                          v-bind:style="'background-color:' + cat.color + ';'"
+                        >
+                          <font-awesome-icon :icon="['fas', cat.iconName]" />
                         </div>
-                      
                       </div>
                       <div class="text">
                         <h5>{{ cat.title }}</h5>
@@ -65,18 +70,17 @@
             <div class="row head">
               <div class="col-md-12">
                 <div class="headtext">
-                    
                   <h4>post your ads</h4>
-                   <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <font-awesome-icon icon="arrow-left"
-                /></a>
+                  <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <font-awesome-icon icon="arrow-left"
+                  /></a>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="prntCat">
-                  <h5>{{catname}}</h5>
+                  <h5>{{ catname }}</h5>
                 </div>
 
                 <ul class="row subcategories">
@@ -108,77 +112,62 @@
 export default {
   data() {
     return {
-        offer:0
-        ,
-        catname:"",
-            Subcategory:[
-                    {id:1,
-                    title:'Mobile',
-                    iconName:'mobile-screen-button',
-                    iconClass:''
-                    },
-                     {id:2,
-                    title:'Mobile phone accessories',
-                    iconName:'microchip',
-                    iconClass:''
-                    },
-                     {id:3,
-                    title:'Laptop',
-                    iconName:'laptop',
-                    iconClass:''
-                    }
-                    ,{id:4,
-                    title:'Tv',
-                    iconName:'tv',
-                    iconClass:''
-                    },
-                    {id:5,
-                    title:'Gaming Consoles',
-                    iconName:'gamepad',
-                    iconClass:''
-                    },
-                    {id:5,
-                    title:'Camera',
-                    iconName:'camera',
-                    iconClass:''
-                    }
-                ],
-      category: [
+      offer: 0,
+      catname: "",
+      Subcategory: [
         {
           id: 1,
-          title: "Electronics",
+          title: "Mobile",
           iconName: "mobile-screen-button",
           iconClass: "",
         },
         {
           id: 2,
+          title: "Mobile phone accessories",
+          iconName: "microchip",
+          iconClass: "",
+        },
+        { id: 3, title: "Laptop", iconName: "laptop", iconClass: "" },
+        { id: 4, title: "Tv", iconName: "tv", iconClass: "" },
+        { id: 5, title: "Gaming Consoles", iconName: "gamepad", iconClass: "" },
+        { id: 5, title: "Camera", iconName: "camera", iconClass: "" },
+      ],
+      category: [
+        {
+          id: 1,
+          title: "Electronics",
+          iconName: "mobile-screen-button",
+          color: "",
+        },
+        {
+          id: 2,
           title: "VEHICLES",
           iconName: "car-side",
-          iconClass: "",
+          color: "#F60353",
         },
         {
           id: 3,
           title: "REAL ESTATE",
           iconName: "sign-hanging",
-          iconClass: "",
+          color: "#FF1500",
         },
         {
           id: 4,
           title: "SPORTS",
           iconName: "basketball",
-          iconClass: "",
+          color: "#51D5C3",
         },
         {
           id: 5,
           title: "PETS",
           iconName: "paw",
-          iconClass: "",
+          color: "#FFC837",
         },
         {
           id: 5,
           title: "MORE CATEGORIES",
           iconName: "grip",
-          iconClass: "",
+          color: "#BE0399",
         },
       ],
     };
@@ -219,26 +208,26 @@ button.btn-close {
   text-align: center;
 }
 .headtext svg {
-    left: 0px;
-    position: absolute;
-    top: 10px;
+  left: 0px;
+  position: absolute;
+  top: 10px;
 }
 .icon svg {
   padding: 18px 0px;
-    display: flex;
-    border-radius: 100px;
-    margin: auto;
-    color: var(--white);
-    align-items: center;
+  display: flex;
+  border-radius: 100px;
+  margin: auto;
+  color: var(--white);
+  align-items: center;
 }
 .bgIcon {
-    width: 52px;
-    text-align: center;
-    height: 52px;
-    border-radius: 100px;
-    display: block;
-    margin: auto;
-    background: #443688;
+  width: 52px;
+  text-align: center;
+  height: 52px;
+  border-radius: 100px;
+  display: block;
+  margin: auto;
+  background: #443688;
 }
 .text h5 {
   font-size: 11px;
@@ -251,56 +240,54 @@ button.btn-close {
   background-color: transparent;
 }
 section.subcat {
-    padding: 50px 0px;
+  padding: 50px 0px;
 }
 
 .centerDiv {
-    width: 700px;
-    padding: 65px 45px;
-    margin: 0px auto;
-    border-radius: 10px;
-    background-color: var(--white);
+  width: 700px;
+  padding: 65px 45px;
+  margin: 0px auto;
+  border-radius: 10px;
+  background-color: var(--white);
 }
 .headtext {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 .headtext h4 {
-    text-transform: capitalize;
-    font-size: 28px;
-    font-weight: normal;
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: normal;
 }
 
-
 .row.head {
-    margin-bottom: 43px;
+  margin-bottom: 43px;
 }
 
 .prntCat h5 {
-    font-size: 23px;
-    font-weight: 400;
+  font-size: 23px;
+  font-weight: 400;
 }
 
 .prntCat {
-    margin-bottom: 41px;
+  margin-bottom: 41px;
 }
 
 ul.row.subcategories {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 
-
 ul.row.subcategories li a {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom:20px;
-    color: #000;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #000;
 }
 
 .singleCat span {
-    margin-left: 29px;
-    font-size: 19px;
+  margin-left: 29px;
+  font-size: 19px;
 }
 @media (min-width: 320px) {
   section.offer .ad[data-v-15bce2a9] {

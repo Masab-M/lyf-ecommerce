@@ -184,9 +184,9 @@ export default {
 }
 
 .messages {
-    overflow: auto;
+   overflow: auto;
     padding: 12px;
-    height: 300px;
+    height: calc(100vh - 315px);
 }
 .sendBtn {
     color: #fff;
@@ -219,6 +219,7 @@ span.time {
     padding: 15px 34px 15px 21px;
     margin: 0;
     margin-right: 10px;
+    margin-left: 10px;
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
 }
 ul.headIcons li {

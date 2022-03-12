@@ -63,7 +63,7 @@ const router = createRouter({
       component: settingVue,
       children:[
         {
-          path: "/",
+          path: "",
           redirect: {
             name: "Profile"
           }

@@ -30,7 +30,9 @@ export default {
 <style scoped>
 
 
-
+.img {
+    text-align: center;
+}
 .mobileChat {
     width: 100%;
     height: 100%;

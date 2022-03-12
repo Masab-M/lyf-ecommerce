@@ -2,7 +2,7 @@
 <nav-home></nav-home>
 <section class="chat">
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-4 rightChat">
       <div :class="{ mobileChat: params.hasOwnProperty('id')}">
 
        <chats/>
@@ -10,7 +10,7 @@
       </div>
 </div>
  
-    <div class="col-md-7 leftpad">
+    <div class="col-md-8 leftpad">
     <router-view name="message"/>
     </div>
   </div>
@@ -76,5 +76,7 @@ section.chat {
     border-radius: 5px;
     border: 1px solid #70707066;
 }
-
+.rightChat{
+    border-right: 1px solid #00000017;
+}
 </style>
