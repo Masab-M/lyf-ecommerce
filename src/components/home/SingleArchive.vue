@@ -73,8 +73,8 @@ font-size: 13px;
     color:#000;
 }
 .pImg img {
-    width: -webkit-fill-available;
-    height: 158px;
+   height: 158px;
+    width: 100%;
     border-radius: 5px 5px 0px 0px;
 }
 .metaData span:first-child {

@@ -16,7 +16,7 @@
     </div>
     <div class="row container-fluid searchItem" style="padding: 0px">
       <div
-        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-6"
+        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"
         v-for="index in 6"
         :key="index"
       >
@@ -137,9 +137,10 @@ select {
 }
 
 .headSearch {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #bebebe;
+     display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #bebebe;
+    flex-wrap: wrap;
 }
 
 .searchTitle h5 {

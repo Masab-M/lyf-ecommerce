@@ -24,12 +24,43 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <form class="d-flex me-auto mb-2 mb-lg-0">
-          <div class="form-group select-Country">
+          <!-- <div class="form-group select-Country">
             <select name="" id="">
               <option value="fa-map-marker">&#xf041; Srilanka</option>
               <option value="fa-map-marker">&#xf041; Srilanka</option>
               <option value="fa-map-marker">&#xf041; Srilanka</option>
             </select>
+          </div> -->
+          <div class="form-group dropdown searchDropDown">
+            
+            <input
+              type="text"
+              name=""
+              placeholder="Search"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            />
+            <font-awesome-icon icon="magnifying-glass"/>
+            <font-awesome-icon icon="angle-down"/>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <label for="">RECENT LOCATIONS</label>
+              <ul class="recentLocation">
+                <li>
+                  <font-awesome-icon icon="location-dot"/>
+                  Colombo</li>
+              </ul>
+              <label for="" class="popularHead">POPULAR LOCATIONS</label>
+              <ul class="locations">
+                <li>
+                  <font-awesome-icon icon="location-dot"/>
+                  Galle</li>
+                  <li>
+                  <font-awesome-icon icon="location-dot"/>
+                  Jaffna</li>  
+              </ul>
+            </div>
           </div>
           <div class="form-group search">
             <input
@@ -353,7 +384,12 @@ export default {
   top: 0;
   transition: 0.4s;
 }
-
+.form-group.dropdown.searchDropDown svg.fa-angle-down {
+    position: absolute;
+    right: 10px;
+        color: #36363666;
+    top: 20px;
+}
 .slider:before {
   background-color: #fff;
   bottom: 2px;
@@ -364,7 +400,69 @@ export default {
   transition: 0.4s;
   width: 19px;
 }
+.form-group.searchDropDown {
+    position: relative;
+}
 
+.form-group.searchDropDown input {
+    padding: 17px;
+    width: 100%;
+    border: none;
+    outline:none;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.form-group.dropdown.searchDropDown svg.fa-magnifying-glass {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.form-group.searchDropDown .dropdown-menu {
+      width: 100%;
+    height: 321px;
+    border: none;
+    overflow: auto;
+}
+
+.form-group.searchDropDown .dropdown-menu label {
+    padding: 25px 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #36363678;
+}
+
+ul.recentLocation {
+    list-style: none;
+    padding: 12px 15px;
+    border-bottom: 1px solid #3636362b;
+}
+
+ul.recentLocation li {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+ul.recentLocation li svg {color: #443688;margin-right: 16px;}
+
+ul.locations {
+    list-style: none;
+    padding: 12px 15px;
+}
+
+ul.locations li {
+    padding: 15px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+ul.locations li svg {
+    color: #443688;
+    margin-right: 16px;
+}
+
+s {}
 input:checked + .slider {
   background-color: var(--primary);
 }
@@ -431,6 +529,7 @@ a.navbar-brand img {
 }
 form.d-flex {
   width: 70%;
+  gap: 10px;
 }
 .sell {
   background-color: #fff;
