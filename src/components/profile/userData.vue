@@ -19,7 +19,12 @@
     <Link/>
 </div>
 </template>
-
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 <script>
 import metaDetails from "../company/meta_Details.vue"
 import Link from "../company/link.vue";
@@ -63,8 +68,10 @@ a.contact {
 }
 .profilImg
 {
+      display: block;
+    margin: auto;
     position: relative;
-text-align: center;
+    width: fit-content;
 }
 .status {
     width: 40px;
@@ -84,8 +91,6 @@ border-radius: 0px 0px 100px 100px;
     position: absolute;
     bottom: 0px;
     width: 196px;
-    left: 16%;
-    right: 16%;
     background: #0000005c;
     justify-content: space-around;
     align-items: center;
@@ -94,4 +99,36 @@ border-radius: 0px 0px 100px 100px;
     font-size: 40px;
     color: #fff;
 }
+@media (min-width:320px)  { 
+    .profilImg .editImg{
+        width: 196px;
+    }
+    /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+    .profilImg .editImg{
+        width: 196px;
+    }
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+    .profilImg .editImg{
+        width: 155px;
+    }
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+    .profilImg .editImg{
+        width: 196px;
+    }
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    .profilImg .editImg{
+        width: 196px;
+    }
+    /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+    
+    .profilImg .editImg{
+        width: 196px;
+
+    }
+    /* hi-res laptops and desktops */ }
 </style>

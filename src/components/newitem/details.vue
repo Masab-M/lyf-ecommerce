@@ -127,13 +127,28 @@
               </div>
             </div>
             <div class="submitBtn">
-              <a href="#" class="postNow">Post Now</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#previewAd" class="postNow">Post Now</a>
             </div>
           </form>
         </div>
       </div>
     </div>
   </section>
+  <!-- Modal -->
+<div class="modal fade" id="previewAd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+     <section class="adPosted">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+     </section>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>

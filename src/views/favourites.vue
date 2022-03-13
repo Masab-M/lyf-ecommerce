@@ -41,6 +41,11 @@ export default {
 .wishlist{
     padding: 45px;
 }
+.wishlist a{
+    text-decoration: none;
+
+}
+
 .readmore a.more {
 font-size: 16px;
     padding: 13px 52px;

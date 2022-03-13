@@ -114,6 +114,7 @@ export default {
 <style scoped>
 ul {
     padding: 0;
+    display: initial;
     list-style: none;
 }
 
@@ -171,4 +172,62 @@ ul a {
     border: 2px solid;
     font-weight: 500;
 }
+@media (min-width:320px)  { 
+  ul {
+       display: flex;
+    flex-wrap: wrap;
+
+}
+ul a{
+  margin-right: 4px;
+  flex: 10%;
+}
+
+  
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+   ul {
+    display: initial;
+}
+ul a{
+  margin-right: 4px;
+}
+  
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+   ul {
+    display: initial;
+}
+ul a{
+  margin-right: 4px;
+}
+  
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+   ul {
+    display: initial;
+}
+ul a{
+  margin-right: 4px;
+}
+  
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+   ul {
+    display: initial;
+}
+ul a{
+  margin-right: 4px;
+}
+  
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+   ul {
+    display: initial;
+}
+ul a{
+  margin-right: 4px;
+}
+  
+  /* hi-res laptops and desktops */ }
 </style>

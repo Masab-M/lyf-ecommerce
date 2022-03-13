@@ -43,7 +43,7 @@
             </button>
           </div>
         </form>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav  navaction">
           <li class="nav-item">
             <router-link class="fav" :to="'/wishlist'">
               <font-awesome-icon :icon="['far', 'heart']" />
@@ -306,7 +306,7 @@
           </li>
         
         </ul>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav sellBtn">
   <li class="nav-item">
             <a
               class="sell signup"
@@ -384,7 +384,10 @@ nav.navbar {
   background-color: var(--bg-color) !important;
   padding: 0.688em 1.125em;
 }
-
+.sellBtn{
+  display: flex;
+    align-items: flex-start;
+}
 li.nav-item > a.fav {
   font-size: 22px;
   color: #000;
@@ -487,6 +490,7 @@ select {
 }
 .dropdown-menu.lang {
   width: 297px;
+  position: absolute;
   left: -250px;
   top: 45px;
 }
@@ -609,6 +613,7 @@ ul.useractions li a,
 .dropdown-menu.lang {
   width: 297px;
   left: -250px;
+  position: absolute;
   top: 45px;
 }
 
@@ -694,6 +699,7 @@ ul.other li.lang span {
 
 .dropdown-menu.notify {
   overflow: auto;
+  position:absolute;
   left: -255px;
   width: 291px;
   height: 290px;
@@ -701,6 +707,7 @@ ul.other li.lang span {
 }
 .dropdown-menu.chat {
   left: -240px;
+  position: absolute;
   top: 40px;
   width: 266px;
   overflow: auto;
@@ -805,7 +812,27 @@ li.flexList {
   display: flex;
   justify-content: space-between;
 }
+.sellBtn
+{
+      align-items: flex-start;
+}
 @media (min-width: 320px) {
+.dropdown-menu.userprofile{
+
+    left: -170px;
+
+}
+  .dropdown-menu.notify
+  {
+    left: -80px;
+  }
+  .dropdown-menu.chat{
+    left:-135px;
+  }
+  .navaction{
+    flex-direction: row;
+        justify-content: space-between;
+  }
   form.d-flex {
     flex-direction: column;
   }
@@ -820,8 +847,27 @@ li.flexList {
   /* smartphones, iPhone, portrait 480x320 phones */
 }
 @media (min-width: 481px) {
-  form.d-flex {
+.dropdown-menu.userprofile{
+
+    left: -210px;
+
+}
+  .dropdown-menu.notify
+  {
+    left: -255px;
+  }
+ .dropdown-menu.chat{
+    left: -240px;
+  }
+  .navaction{
+    flex-direction: row;
+        justify-content: space-between;
+  }
+form.d-flex {
     flex-direction: column;
+  }
+   .dropdown-menu.chat{
+    left: -240px;
   }
   .form-group.select-Country {
     width: 100%;
@@ -832,6 +878,22 @@ li.flexList {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width: 641px) {
+.dropdown-menu.userprofile{
+
+    left: -210px;
+
+}
+  .dropdown-menu.notify
+  {
+    left: -255px;
+  }
+   .dropdown-menu.chat{
+    left: -240px;
+  }
+    .navaction{
+    flex-direction: row;
+        justify-content: space-between;
+  }
   form.d-flex {
     flex-direction: column;
   }
@@ -844,7 +906,19 @@ li.flexList {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 @media (min-width: 961px) {
-  form.d-flex {
+.dropdown-menu.userprofile{
+
+    left: -210px;
+
+}
+  .dropdown-menu.notify
+  {
+    left: -255px;
+  }
+ .dropdown-menu.chat{
+    left: -240px;
+  }
+form.d-flex {
     flex-direction: row;
   }
   .form-group.search {
@@ -856,7 +930,19 @@ li.flexList {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
-  form.d-flex {
+.dropdown-menu.userprofile{
+
+    left: -210px;
+
+}
+  .dropdown-menu.notify
+  {
+    left: -255px;
+  }
+ .dropdown-menu.chat{
+    left: -240px;
+  }
+form.d-flex {
     flex-direction: row;
   }
   .form-group.search {
@@ -868,6 +954,19 @@ li.flexList {
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1281px) {
+.dropdown-menu.userprofile{
+
+    left: -210px;
+
+}
+  .dropdown-menu.notify
+  {
+    left: -255px;
+  }
+
+   .dropdown-menu.chat{
+    left: -240px;
+  }
   form.d-flex {
     flex-direction: row;
   }

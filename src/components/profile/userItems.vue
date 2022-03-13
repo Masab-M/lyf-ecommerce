@@ -41,6 +41,9 @@ export default {
     margin-right: 60px;
     color: #363636;
 }
+.username a{
+    text-decoration: none;
+}
 .readmore a.more {
 font-size: 16px;
     padding: 13px 52px;
@@ -63,4 +66,5 @@ text-align: center;
     border: 1px solid;
     color: #443688;
 }
+
 </style>
