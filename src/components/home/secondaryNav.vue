@@ -16,22 +16,22 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
+              class="nav-link dropbtn"
               href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
             >
               All Categories
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Category</a></li>
-              <li><a class="dropdown-item" href="#">Category</a></li>
-              <li><a class="dropdown-item" href="#">Category</a></li>
-              <li><a class="dropdown-item" href="#">Category</a></li>
-              <li><a class="dropdown-item" href="#">Category</a></li>
-            </ul>
+            <div class="dropdown-content">
+            <a class="" href="#">
+               <img src="../../assets/IMG/Classifiedicon.png" alt="">
+               CLASSIFIEDS</a>
+            <a class="" href="#">
+               <img src="../../assets/IMG/Iconawesome-car-side.png" alt="">
+               Vehicles</a>
+            <a class="" href="#">
+               <img src="../../assets/IMG/RealState icon.png" alt="">
+               Real Estate</a>
+            </div>
           </li>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="specificCat">
             <li class="nav-item dropdown" v-for="item in items" :key="item.cat">

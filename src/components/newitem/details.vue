@@ -142,7 +142,25 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="row">
           <div class="col-md-12">
-            
+            <div class="imgicon">
+              <img src="../../assets/IMG/Iconawesome-check-circle.png" alt="">
+            </div>
+            <h5>Congratulations!</h5>
+            <p>Your Ad will go live shortly...</p>
+            <span>
+              <font-awesome-icon icon="circle-exclamation"/>
+              LYF allows 3 free ad in 1 day for Mobiles</span>
+              <div class="tagImg">
+                <img src="../../assets/IMG/Group3.png" alt="" class="img-fluid">
+              </div>
+              <div class="sellBoast">
+                <h5>Reach more buyers and sell faster</h5>
+                <p>Upgrade your Ad to a top position</p>
+                <div class="sellbtn">
+                  <a href="#" class="btn sellFast">Sell Fast</a>
+                  <a href="#" class="btn pAd">Preview Ad</a>
+                </div>
+              </div>
           </div>
         </div>
      </section>
@@ -238,7 +256,85 @@ form.postDetails {
   border: 1px solid #bbb;
   border-radius: 5px;
 }
+section.adPosted {padding: 28px 26px;}
 
+.modal-content {
+    width: -webkit-fill-available;
+}
+
+.modal-dialog.modal-dialog-centered {
+}
+
+section button.btn-close {float: right;}
+
+.imgicon {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.imgicon img {
+    width: 47px;
+}
+
+section.adPosted p {
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    color: #002F34;
+}
+
+section.adPosted h5 {
+    text-align: center;
+    font-size: 15px;
+    color: #002F34;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+section.adPosted {
+    text-align: center;
+}
+
+section.adPosted span {
+    font-size: 10px;
+    color: #002f3473;
+}
+
+.tagImg img {
+    width: 121px;
+    margin-top: 38px;
+}
+
+.sellBoast h5 {
+    margin-top: 10px;
+}
+
+.sellbtn {
+    display: grid;
+    margin-top: 30px;
+}
+
+a.btn.sellFast {
+    width: fit-content;
+    padding: 9px 100px;
+    background-color: #fc6748;
+    font-size: 12px;
+    color: #fff;
+    margin: auto;
+    font-weight: 500;
+}
+
+a.btn.pAd {
+    border: 2px solid;
+    width: fit-content;
+    padding: 9px 92px;
+    color: #443688;
+    font-size: 12px;
+    background: #fff;
+    margin: auto;
+    font-weight: 500;
+    margin-top: 8px;
+}
 .formHead h2 {
   font-weight: 500;
   font-size: 21px;
