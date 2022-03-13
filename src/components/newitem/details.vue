@@ -119,8 +119,8 @@
               <div class="preDetails">
                 <span class="title"> Show my phone number on my ads </span>
                 <span class="data">
-                  <label class="switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
+                  <label class="switch" for="checkboxnewItem">
+                    <input type="checkbox" id="checkboxnewItem" />
                     <div class="slider round"></div>
                   </label>
                 </span>
