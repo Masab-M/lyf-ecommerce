@@ -53,10 +53,10 @@
                                 <label for>or register by</label>
                                 <ul class="opt">
                                     <li>
-                                        <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                                        <img src="../assets/IMG/facebook.png" alt="">
                                     </li>
                                     <li>
-                                        <font-awesome-icon :icon="['fab', 'google']" />
+                                        <img src="../assets/IMG/google.png" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -86,10 +86,10 @@
                                 <label for>or register by</label>
                                 <ul class="opt">
                                     <li>
-                                        <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                                        <img src="../assets/IMG/facebook.png" alt="">
                                     </li>
                                     <li>
-                                        <font-awesome-icon :icon="['fab', 'google']" />
+                                        <img src="../assets/IMG/google.png" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -165,6 +165,9 @@ section .signupSection{
     
 
 }
+ul.opt img {
+    width: 28px;
+}
 div#nav-tab {
     margin-bottom: 27px;
     justify-content: space-around;
@@ -237,5 +240,36 @@ form .form-group input {
 }
 .otherSignUp .opt li{
     margin:  0px 10px;
+}
+.otherSignUp label {
+    margin: 13px 0px  20px 0px;
+}
+
+.otherSignUp label:before {
+       content: "";
+    right: 0px;
+    display: block;
+    z-index: 0;
+    width: 85px;
+    position: absolute;
+    height: 1px;
+    background: #F4F4F4;
+    top: 47px;
+}
+
+.otherSignUp {
+    position: relative;
+}
+
+.otherSignUp label::after {
+      content: "";
+    left: 0px;
+    display: block;
+    z-index: 0;
+    width: 85px;
+    position: absolute;
+    height: 1px;
+    background: #F4F4F4;
+    top: 47px;
 }
 </style>

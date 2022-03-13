@@ -52,10 +52,10 @@
                                 <label for> or login by</label>
                                 <ul class="opt">
                                     <li>
-                                        <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                                        <img src="../assets/IMG/facebook.png" alt="">
                                     </li>
                                     <li>
-                                        <font-awesome-icon :icon="['fab', 'google']" />
+                                        <img src="../assets/IMG/google.png" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -81,11 +81,11 @@
                                 <h5>Have an account login here</h5>
                                 <label for>or register by</label>
                                 <ul class="opt">
-                                    <li>
-                                        <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                                     <li>
+                                        <img src="../assets/IMG/facebook.png" alt="">
                                     </li>
                                     <li>
-                                        <font-awesome-icon :icon="['fab', 'google']" />
+                                        <img src="../assets/IMG/google.png" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -195,7 +195,9 @@ form .form-group input {
     border-bottom: 1px solid #c5c5c5;
     margin-bottom: 10px;
 }
-
+ul.opt img {
+    width: 28px;
+}
 .regBtn {
     background-color: var(--secondary);
     text-align: center;
@@ -242,5 +244,35 @@ form .form-group input {
     color: #a1a1a1;
     text-decoration: none;
 }
+.otherSignUp label {
+    margin: 13px 0px  20px 0px;
+}
 
+.otherSignUp label:before {
+    content: "";
+    right: 0px;
+    display: block;
+    z-index: 0;
+    width: 85px;
+    position: absolute;
+    height: 1px;
+    background: #F4F4F4;
+    top: 22px;
+}
+
+.otherSignUp {
+    position: relative;
+}
+
+.otherSignUp label::after {
+    content: "";
+    left: 0px;
+    display: block;
+    z-index: 0;
+    width: 85px;
+    position: absolute;
+    height: 1px;
+    background: #F4F4F4;
+    top: 22px;
+}
 </style>

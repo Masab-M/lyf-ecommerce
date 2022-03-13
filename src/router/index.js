@@ -3,6 +3,7 @@ import Home from "../views/home.vue";
 import home2Vue from "../views/home2.vue";
 import signinVue from "../views/signin.vue";
 import signupVue from "../views/signup.vue";
+import otp from "../views/otp.vue";
 import UploadAdVue from "../views/UploadAd.vue";
 import adDetailVue from "../components/newitem/details.vue";
 import chatVue from "../views/chat.vue";
@@ -104,6 +105,11 @@ const router = createRouter({
       path: "/signin",
       name: "signin",
       component: signinVue,
+    },
+    {
+      path: "/otp",
+      name: "OTP",
+      component: otp,
     },
     {
       path: "/signup",
