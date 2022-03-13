@@ -3,14 +3,14 @@
 <NavHome/>
 
 <section class="faqs">
-    <div class="row container-fluid">
+    <div class="row">
         <div class="col-md-6">
             <div class="illustration d-none d-sm-none d-md-none d-lg-block" >
             <img src="../assets/IMG/FaQ.png" alt="">
             </div>
         </div>
         <div class="col-md-6">
-            <h1>F .A .Q</h1>
+            <h1>F.A.Q</h1>
         </div>
     </div>
 </section>
