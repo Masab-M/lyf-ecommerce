@@ -262,8 +262,7 @@ section.adPosted {padding: 28px 26px;}
     width: -webkit-fill-available;
 }
 
-.modal-dialog.modal-dialog-centered {
-}
+
 
 section button.btn-close {float: right;}
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="row itemNav">
+  <div class="row container-fluid itemNav">
     <div class="col-md-12">
       <ul class="itemSections">
         <router-link tag="li" active-class="active"  to="/item">live</router-link>

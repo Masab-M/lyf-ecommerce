@@ -1,18 +1,20 @@
 <template>
 <NavHome/>
-<div class="row itemHead">
+<div class="row container-fluid itemHead">
 <div class="col-md-12">
     <h4>My Ads</h4>
 </div>
 </div>
 <item-nav/>
+<Footer/>
 </template>
 
 <script>
 import itemNav from '../components/Item/itemNav.vue'
 import NavHome from '../components/home/NavHome.vue'
+import Footer from '../components/home/footer.vue'
 export default {
-  components: { itemNav, NavHome },
+  components: { itemNav, NavHome, Footer },
     setup () {
         
 

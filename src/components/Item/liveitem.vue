@@ -1,5 +1,5 @@
 <template>
-  <div class="row archiveItems itemslive">
+  <div class="row container-fluid archiveItems itemslive">
 <ArchiveItem :cat="'live'" v-if="noitems"/>
 <div class="row">
         <div class="col-md-12">
