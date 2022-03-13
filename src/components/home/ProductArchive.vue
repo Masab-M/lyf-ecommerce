@@ -18,11 +18,7 @@
     </template>
   </Carousel>
   </div>
-  <div class="col-md-12">
-            <div class="loadBtn">
-            <a href="#" class="btn loadmore">Load More</a>
-            </div>
-        </div>
+
     </div>
 </div>
   </div>

@@ -49,8 +49,9 @@ li.active {
 }
 
 .pages {
-    display: flex;
+ display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .number ul {
@@ -84,4 +85,83 @@ span.totalNumber {
     color: #707070;
     font-size: 20px;
 }
+@media (min-width:320px)  { 
+    .number ul li {
+    margin-right: 5px;
+}
+    span.totalNumber {
+    margin-right: 15px;
+    margin-left: 30px;
+}
+.number ul
+{
+    padding-left:15px;
+}
+    /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+     span.totalNumber {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+       .number ul li {
+    margin-right: 30px;
+}
+.number ul
+{
+    padding-left:30px;
+}
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+     span.totalNumber {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+       .number ul li {
+    margin-right: 30px;
+    
+}
+.number ul
+{
+    padding-left:30px;
+}
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+     span.totalNumber {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+       .number ul li {
+    margin-right: 30px;
+}
+.number ul
+{
+    padding-left:30px;
+}
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+     span.totalNumber {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+   .number ul li {
+    margin-right: 30px;
+}
+    .number ul
+{
+    padding-left:30px;
+}
+    /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+     span.totalNumber {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+       .number ul li {
+    margin-right: 30px;
+}
+.number ul
+{
+    padding-left:30px;
+}
+    /* hi-res laptops and desktops */ }
 </style>

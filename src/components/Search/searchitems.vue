@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="searchItemsSections">
     <div class="headSearch">
       <div class="searchTitle">
         <h5>Iphone 12 Pro Max</h5>
@@ -16,7 +16,7 @@
     </div>
     <div class="row container-fluid searchItem" style="padding: 0px">
       <div
-        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"
+        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-6"
         v-for="index in 6"
         :key="index"
       >
@@ -79,7 +79,9 @@ select {
 .searchTitle {
   display: flex;
 }
-
+.searchItems a{
+  text-decoration: none;
+}
 .headSearch {
   display: flex;
   justify-content: space-between;
@@ -126,6 +128,9 @@ select {
 .sort label {
   font-size: 17px;
   text-transform: uppercase;
+}
+.searchItemsSections{
+  padding: 0px 20px;
 }
 .searchTitle {
   display: flex;
