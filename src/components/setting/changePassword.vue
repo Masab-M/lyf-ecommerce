@@ -5,8 +5,8 @@
     </div>
     <div class="showAds">
         <label for="">Show My Phone Number In Ads</label>
-           <label class="switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
+           <label class="switch" for="checkboxsetting">
+                    <input type="checkbox" id="checkboxsetting" />
                     <div class="slider round"></div>
                   </label>
     </div>

@@ -15,7 +15,7 @@
  
 
          <router-link tag="li" active-class="active"  :to="{ name: 'Privacy', params: { id: $route.params.id } }">
-        <font-awesome-icon icon="fingerprint"/>
+        <font-awesome-icon icon="bell"/>
         Notification</router-link>
  
 
