@@ -414,9 +414,11 @@ export default {
 }
 
 .form-group.dropdown.searchDropDown svg.fa-magnifying-glass {
-    position: absolute;
+       position: absolute;
     left: 10px;
     top: 20px;
+    color: #00000061;
+    font-size: 17px;
 }
 
 .form-group.searchDropDown .dropdown-menu {

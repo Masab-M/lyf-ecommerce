@@ -19,7 +19,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
+import { Carousel, Navigation, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import  slide1 from '../../assets/IMG/headeSlide.png';
     export default defineComponent({
@@ -66,6 +66,7 @@ img.headerCarousel{
 }
 .carousel__prev{
   left:30px !important;
+  background-color: #443688 !important;
 }
 ol.carousel__pagination {
     padding-bottom: 0px;
@@ -76,5 +77,12 @@ ol.carousel__pagination {
     box-shadow:none;
     width: auto;
     margin: 0px;
+}
+</style>
+<style>
+.carousel__prev,
+.carousel__next {
+  background-color: #443688 !important;
+
 }
 </style>

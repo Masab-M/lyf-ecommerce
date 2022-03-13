@@ -1,11 +1,9 @@
 <template>
-<router-link to="/item/5">
+<div class="itemLike">
+    <router-link to="/item/5">
 <div class="archiveProduct">
 <div class="pImg">
     <img src="../../assets/IMG/product.png"  alt="">
-    <div class="like" @click="active = !active" :aria-pressed="active ? 'true' : 'false'">
-          <font-awesome-icon icon="heart" :class="{ red: active }"/>
-    </div>
 </div>
 <div class="details">
     <h4 class="price">
@@ -25,6 +23,11 @@
 </div>
 </div>
 </router-link>
+<div class="like" @click="active = !active" :aria-pressed="active ? 'true' : 'false'">
+          <font-awesome-icon icon="heart" :class="{ red: active }"/>
+    </div>
+</div>
+
 
 </template>
 
@@ -88,7 +91,7 @@ font-size: 13px;
     font-weight: 500;
 }
 .like {
-    color: #adadad;
+        color: #adadad;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -112,5 +115,12 @@ font-size: 13px;
 .like .red {
     color: red;
     transition: color 0.6 ease;
+}
+.itemLike {
+    
+    position: relative;
+}
+.itemLike a{
+    text-decoration: none;
 }
 </style>
