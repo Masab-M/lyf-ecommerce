@@ -133,4 +133,17 @@ export default {
     font-size: 14px;
     color: #363636;
 }
+.status .light {
+    border-radius: 100px;
+    width: 12px;
+    background: #00CF15;
+    height: 12px;
+    margin-right: 10px;
+    display: block;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
 </style>

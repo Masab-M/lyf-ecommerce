@@ -63,10 +63,11 @@ export default {
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 .ratings {
-    display: flex;
+       display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 section.ratingstar {

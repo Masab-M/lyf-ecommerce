@@ -41,6 +41,7 @@ export default {
 .details {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .details .singleDetail {display: flex;flex: 1 1 auto;justify-content: flex-start;}
