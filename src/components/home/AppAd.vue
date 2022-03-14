@@ -76,6 +76,9 @@
 a.more.btn {
     color: var(--secondary);
 }
+.adtext {
+    text-align: center;
+}
 .storeImg {
     display: flex;
     flex-wrap: wrap;
