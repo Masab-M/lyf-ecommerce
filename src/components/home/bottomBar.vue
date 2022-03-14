@@ -1,12 +1,12 @@
 <template>
 <section class="bottomBar">
    <div class="row container-fluid">
-        <div class="col-md-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
             <span class="location">
                 Srilanka
             </span>
         </div>
-        <div class="col-md-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
             <div class="copyright">
 
             <span class="copyright">
@@ -39,8 +39,9 @@ span.location {
 }
 
 span.copyright {
-    color: var(--white);
+       color: var(--white);
     float: right;
+    font-size: 11px;
 }
 .copyright
 {

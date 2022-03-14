@@ -46,7 +46,7 @@ section.postReview {
     width: 100%;
     outline: none;
     padding: 20px 25px;
-    border: 1px solid #70707070;
+    border: 1px solid #7070705c;
     border-radius: 5px;
     font-size: 14px;
 }

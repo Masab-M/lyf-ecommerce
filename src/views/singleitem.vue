@@ -1,7 +1,7 @@
 <template>
 <NavHome/>
 <SecondaryNav/>
-<div class="row singleItem container-fluid">
+<div class="row singleItem container-fluid details1">
 <div class="col-md-8">
 <ItemGallery/>
 <DetailItem/>
@@ -12,7 +12,7 @@
 <Location/>
 </div>
 </div>
-<div class="row container-fluid">
+<div class="row container-fluid details2">
   <div class="col-md-8">
 <ItemDesc/>
 <Related/>  
@@ -52,5 +52,11 @@ export default {
 <style scoped>
 .row.singleItem.container-fluid {
     margin: 0px;
+}
+.details2,.details2{
+  margin: 0;
+}
+.details2{
+  margin-bottom:20px;
 }
 </style>

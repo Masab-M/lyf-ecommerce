@@ -88,10 +88,12 @@ a.more.btn {
 
 }
 span.more.btn {
-    font-size: 18px;
+      font-size: 18px;
     display: flex;
     color: var(--secondary);
+    padding: 0px;
     align-items: center;
+
 }
 
 span.more.btn svg {
