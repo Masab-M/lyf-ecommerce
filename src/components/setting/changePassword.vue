@@ -167,6 +167,7 @@ section.setting {
     padding: 38px 24px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 section.chngepass {
     margin-top: 27px;

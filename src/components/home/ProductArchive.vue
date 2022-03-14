@@ -6,7 +6,7 @@
         </div>
     <div class="col-md-12">
         <div class="row">
- <Carousel  :settings="settings" :breakpoints="breakpoints">
+ <Carousel  :settings="settings" :breakpoints="breakpoints" :wrap-around="true">
     <Slide v-for="index in 10" :key="index">
         
       <div class="carousel__item">
@@ -50,31 +50,23 @@ props: ["archiveHeader"],
     // any settings not specified will fallback to the carousel settings
     breakpoints: {
       // 700px and up
-       375: {
-        itemsToShow: 1,
-        snapAlign: 'start',
-      },
-      425: {
-        itemsToShow: 1,
-        snapAlign: 'start',
-      },
-      768: {
+     700: {
         itemsToShow: 2,
-        snapAlign: 'start',
+        snapAlign: 'center',
       },
       // 1024 and up
       1024: {
-        itemsToShow: 4.2,
+        itemsToShow: 4,
         snapAlign: 'start',
       },
-      1440:{
+       1440: {
         itemsToShow: 4.5,
         snapAlign: 'start',
       },
-            2560:{
-        itemsToShow: 7.5,
+      2560: {
+        itemsToShow: 7,
         snapAlign: 'start',
-      }
+      },
     },
   }
 }

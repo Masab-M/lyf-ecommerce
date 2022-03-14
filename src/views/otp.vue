@@ -94,7 +94,6 @@ export default {
 section.signupSection{
     background-color: var(--bg-color);
     padding-top:26px;
-    padding-bottom: 77px;
 }
 section .signupSection{
  

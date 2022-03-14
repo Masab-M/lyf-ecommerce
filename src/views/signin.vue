@@ -39,11 +39,13 @@
                             <div class="form-group">
                                 <input type="email" name id placeholder="Email" />
                             </div>
-                            <div class="form-group">
-                                <input type="password" name id  placeholder="Password"/>
+                            <div class="form-group passwordView">
+                                <input :type="type" name id  placeholder="Password"/>
+                                <font-awesome-icon v-if="!show" @click="showPassword" icon="eye-slash"/>
+                                <font-awesome-icon v-if="show" @click="showPassword" icon="eye"/>
                             </div>
                             <div class="forget">
-                                <a href="#" class="forget">Forget Password</a>
+                                <a href="#" class="forget">Forget Password ?</a>
                             </div>
                             <div class="regBtn">
                                 <a href="#" class="regBtn">Login</a>
@@ -110,7 +112,25 @@ import Nav from "../components/home/Nav.vue";
 import '/src/assets/base.css';
 import Footer from "../components/home/footer.vue";
     export default {
-    components: { RegForm, SideCarousel, Nav, Footer }
+    components: { RegForm, SideCarousel, Nav, Footer },
+     data() {
+    return {
+        type:'password',
+     show:false
+    }
+  },
+   
+   methods: {
+     showPassword() {
+       if(this.type ==='password') {
+          this.type ='text'
+          this.show =true
+       } else {
+          this.type ='password'
+          this.show =false
+       }
+     }
+   }
 }
 </script>
 
@@ -118,8 +138,6 @@ import Footer from "../components/home/footer.vue";
 section.signupSection{
     background-color: var(--bg-color);
     padding-top:26px;
-
-    padding-bottom: 77px;
 }
 @media (min-width:320px)  { 
     section .signupSection{
@@ -216,7 +234,19 @@ ul.opt img {
     margin-top: 30px;
     font-weight: 400;
 }
+.form-group.passwordView {
+    position: relative;
+}
 
+.form-group.passwordView svg {
+    position: absolute;
+    right: 6px;
+    top: 11px;
+    font-size: 14px;
+    color: rgba(54, 54, 54, 0.45);
+}
+
+.form-group.passwordView input {padding-right: 30px !important;}
 .otherSignUp {
     text-align: center;
     text-transform: capitalize;
@@ -253,7 +283,7 @@ ul.opt img {
     right: 0px;
     display: block;
     z-index: 0;
-    width: 85px;
+    width: 30%;
     position: absolute;
     height: 1px;
     background: #F4F4F4;
@@ -269,7 +299,7 @@ ul.opt img {
     left: 0px;
     display: block;
     z-index: 0;
-    width: 85px;
+    width: 30%;
     position: absolute;
     height: 1px;
     background: #F4F4F4;

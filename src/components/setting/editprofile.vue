@@ -129,9 +129,11 @@
     <div class="submitBtn">
       <div class="row">
         <div class="col-md-12">
-
+<div class="saveBtn">
       <a href="#" class="btn secondary">Discard</a>
       <a href="#" class="btn primary">Save Changes</a>
+</div>
+
         </div>
       </div>
     </div>
@@ -198,14 +200,14 @@ a.btn.connect.active {
 }
 
 .submitBtn .secondary {
-  padding: 13px 60px;
-  font-size: 16px;
-  color: #443688;
-  border: 1px solid;
-  font-weight: 500;
-
+     padding: 13px 60px;
+    font-size: 16px;
+    color: #443688;
+    border: 1px solid;
+    margin-bottom: 10px;
+    font-weight: 500;
     margin-right: 10px;
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .submitBtn .primary {
@@ -324,6 +326,7 @@ section.profilesetting {
   margin-right: 25px;
 }
 @media (min-width: 320px) {
+  
   .profilImg .editImg {
     width: 170px;
   }

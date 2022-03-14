@@ -42,8 +42,9 @@
                             <div class="form-group">
                                 <input type="email" name id placeholder="Email"/>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group passwordView">
                                 <input type="password" name id placeholder="Password"/>
+                                <font-awesome-icon icon="eye-slash"/>
                             </div>
                             <div class="regBtn">
                                 <a href="#" class="regBtn">register</a>
@@ -154,7 +155,6 @@ export default {
 section.signupSection{
     background-color: var(--bg-color);
     padding-top:26px;
-    padding-bottom: 77px;
 }
 section .signupSection{
  
@@ -193,6 +193,19 @@ button#nav-home-tab {
     color: var(--secondary) !important;
     border-bottom: 2px solid var(--secondary) !important;
 }
+.form-group.passwordView {
+    position: relative;
+}
+
+.form-group.passwordView svg {
+    position: absolute;
+    right: 6px;
+    top: 11px;
+    font-size: 14px;
+    color: rgba(54, 54, 54, 0.45);
+}
+
+.form-group.passwordView input {padding-right: 30px !important;}
 form .form-group input {
     padding: 0px 6px 16px 0px;
     font-size: 12px;
@@ -243,18 +256,21 @@ form .form-group input {
 }
 .otherSignUp label {
     margin: 13px 0px  20px 0px;
+    position: relative;
 }
 
 .otherSignUp label:before {
-       content: "";
-    right: 0px;
+        content: "";
+    left: 90px;
     display: block;
     z-index: 0;
-    width: 85px;
+    width: 52%;
     position: absolute;
     height: 1px;
+    top: 8px;
+     
     background: #F4F4F4;
-    top: 47px;
+   
 }
 
 .otherSignUp {
@@ -262,14 +278,14 @@ form .form-group input {
 }
 
 .otherSignUp label::after {
-      content: "";
-    left: 0px;
+          content: "";
+    right: 90px;
     display: block;
     z-index: 0;
-    width: 85px;
+    width: 52%;
     position: absolute;
     height: 1px;
-    background: #F4F4F4;
-    top: 47px;
+    top: 8px;
+    background: #F4F4F4
 }
 </style>

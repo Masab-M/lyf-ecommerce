@@ -127,6 +127,7 @@ ul  a.active {
 }
 .row.container-fluid.setting {
     padding: 42px 55px;
+    margin: 0px;
 }
 ul a {
     display: block;
@@ -173,9 +174,11 @@ ul a {
     font-weight: 500;
 }
 @media (min-width:320px)  { 
+  .row.container-fluid.setting {
+    padding: 42px 10px;
+}
   ul {
-       display: flex;
-    flex-wrap: wrap;
+      display: initial;
 
 }
 ul a{
@@ -186,6 +189,9 @@ ul a{
   
   /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { 
+    .row.container-fluid.setting {
+    padding: 42px 10px;
+}
    ul {
     display: initial;
 }
@@ -195,6 +201,9 @@ ul a{
   
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px)  { 
+    .row.container-fluid.setting {
+    padding: 42px 30px;
+}
    ul {
     display: initial;
 }
@@ -204,6 +213,9 @@ ul a{
   
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { 
+    .row.container-fluid.setting {
+    padding: 42px 40px;
+}
    ul {
     display: initial;
 }
@@ -213,6 +225,9 @@ ul a{
   
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { 
+    .row.container-fluid.setting {
+    padding: 42px 55px;
+}
    ul {
     display: initial;
 }
@@ -222,6 +237,9 @@ ul a{
   
   /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { 
+    .row.container-fluid.setting {
+    padding: 42px 55px;
+}
    ul {
     display: initial;
 }

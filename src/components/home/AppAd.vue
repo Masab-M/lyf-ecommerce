@@ -82,8 +82,10 @@ a.more.btn {
 }
 
 .storeImg img {
-    width: 140px;
+      width: 140px;
     margin: 0px 10px;
+    margin-bottom: 10px;
+
 }
 span.more.btn {
     font-size: 18px;

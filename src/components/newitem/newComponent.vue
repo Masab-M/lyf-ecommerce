@@ -193,6 +193,7 @@ button.btn-close {
 .row.ad h4 {
   text-align: center;
   font-size: 29px;
+  padding: 0px;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 48px;
@@ -289,7 +290,15 @@ ul.row.subcategories li a {
   font-size: 19px;
 }
 @media (min-width: 320px) {
+  .row.ad h4{
+    padding: 0px 20px;
+  }
+  .singleCat span {
+
+  margin-left: 8px;
+}
   section.offer .ad{
+       padding: 26px 10px 75px 10px;
     width: 300px;
   }
   .centerDiv{
@@ -298,48 +307,79 @@ ul.row.subcategories li a {
   /* smartphones, iPhone, portrait 480x320 phones */
 }
 @media (min-width: 481px) {
+  .row.ad h4{
+    padding: 0px;
+  }
   section.offer .ad{
+ 
     width: 700px;
   }
+    .singleCat span {
+  margin-left: 12px;
+}
    .centerDiv{
     width: 700px;
   }
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width: 641px) {
+    .row.ad h4{
+    padding: 0px;
+  }
   section.offer .ad{
     width: 700px;
   }
+    .singleCat span {
+  margin-left: 24px;
+}
      .centerDiv{
     width: 700px;
   }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 @media (min-width: 961px) {
+    .row.ad h4{
+    padding: 0px;
+  }
      .centerDiv{
     width: 700px;
   }
+    .singleCat span {
+  margin-left: 29px;
+}
     section.offer .ad{
     width: 700px;
   }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
+    .row.ad h4{
+    padding: 0px;
+  }
   section.offer .ad{
     width: 700px;
   }
+     .singleCat span {
+  margin-left: 29px;
+}
      .centerDiv{
     width: 700px;
   }
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1281px) {
+    .row.ad h4{
+    padding: 0px;
+  }
   section.offer .ad{
     width: 700px;
   }
       .centerDiv{
     width: 700px;
   }
+     .singleCat span {
+  margin-left: 29px;
+}
   /* hi-res laptops and desktops */
 }
 </style>
