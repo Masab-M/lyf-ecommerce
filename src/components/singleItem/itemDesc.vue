@@ -1,5 +1,5 @@
 <template>
-<div class="itemDesc">
+<div class="itemDesc mt-0 mt-sm-0">
     <h5 class="head">
        Description
     </h5>

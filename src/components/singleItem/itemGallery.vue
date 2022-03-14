@@ -174,4 +174,8 @@ section.Gallery {
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #00000029;
 }
+.swiper-wrapper.swiper-slide img {
+    width: 866px;
+    height: 500px;
+}
 </style>
