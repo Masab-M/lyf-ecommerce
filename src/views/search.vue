@@ -28,6 +28,7 @@ export default {
 
 <style scoped>
 .row.search {
-    padding: 46px 0px;
+   padding: 46px 0px;
+    margin: 0px;
 }
 </style>

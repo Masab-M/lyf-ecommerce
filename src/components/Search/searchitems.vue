@@ -1,5 +1,5 @@
 <template>
-  <section class="searchItemsSections">
+  <section class="searchItemsSections pr-0">
     <div class="headSearch">
       <div class="searchTitle">
         <h5>Iphone 12 Pro Max</h5>
@@ -16,7 +16,7 @@
     </div>
     <div class="row container-fluid searchItem" style="padding: 0px">
       <div
-        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"
+        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 rightPadding"
         v-for="index in 6"
         :key="index"
       >
@@ -35,7 +35,7 @@
     </div>
      <div class="row container-fluid searchItems" style="padding: 0px">
       <div
-        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"
+        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 rightPadding"
         v-for="index in 3"
         :key="index"
       >
@@ -152,5 +152,8 @@ select {
 .searchTitle svg {
   font-size: 25px;
   color: #fc6748;
+}
+.rightPadding{
+  padding-right: 0px;
 }
 </style>
