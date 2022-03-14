@@ -58,7 +58,7 @@ export default {
 
 @media (min-width:320px)  { 
     section .signupSection{
-    padding: 26px 28px 45px 10px;
+    padding:26px 10px 45px 10px;
     }
     /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { 

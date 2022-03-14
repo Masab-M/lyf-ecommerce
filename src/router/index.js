@@ -26,6 +26,10 @@ import search from "../views/search.vue";
 import faqVue from "../views/faq.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
   routes: [
     {
       path: "/",

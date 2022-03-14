@@ -27,6 +27,7 @@ export default {
 
 <style scoped>
 .row.page {
-    padding: 34px 27px 80px 27px;
+        padding: 33px 27px 80px 27px;
+    margin: 0px;
 }
 </style>

@@ -6,11 +6,11 @@
         </div>
     <div class="col-md-12">
         <div class="row">
- <Carousel  :settings="settings" :breakpoints="breakpoints" :wrap-around="true">
+ <Carousel  :settings="settings" :breakpoints="breakpoints" :wrap-around="false">
     <Slide v-for="index in 10" :key="index">
         
       <div class="carousel__item">
-          <SingleArchive :image="'@/assets/IMG/product.png'" :like="0" :price="300" :pname="'Iphone'" :location="'pakistan'" :date="'FEB 25'" ></SingleArchive>
+          <SingleArchive :image="'@/assets/IMG/product.png'" :like="0" :price="index" :pname="'Iphone'" :location="'pakistan'" :date="'FEB 25'" ></SingleArchive>
     </div>
     </Slide>
     <template #addons>
@@ -26,7 +26,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
+import { Carousel, Navigation, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import  slide1 from '../../assets/IMG/headeSlide.png';
 import SingleArchive from './SingleArchive.vue';
@@ -50,6 +50,10 @@ props: ["archiveHeader"],
     // any settings not specified will fallback to the carousel settings
     breakpoints: {
       // 700px and up
+      300: {
+        itemsToShow: 1,
+        snapAlign: 'center',
+      },
      700: {
         itemsToShow: 2,
         snapAlign: 'center',

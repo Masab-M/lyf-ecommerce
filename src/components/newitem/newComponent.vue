@@ -213,6 +213,9 @@ button.btn-close {
   position: absolute;
   top: 10px;
 }
+.row.ad .nav-link {
+    padding: 0px;
+}
 .icon svg {
   padding: 18px 0px;
   display: flex;
