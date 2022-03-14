@@ -89,6 +89,8 @@ export default {
 </script>
 
 <style>
+
+
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
   right: 0px;
   left: auto;
@@ -134,18 +136,13 @@ left: 0px;
   margin-left: auto;
   margin-right: auto;
 }
-.swiper-slide 
-{
-  /* width:866px !important; */
-  height: 500px !important;
-}
+
 .swiper-slide {
   background-size: cover;
   background-position: center;
 }
 
 .mySwiper2 {
-  height: 500px;
   width: 100%;
 }
 
@@ -177,5 +174,4 @@ section.Gallery {
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #00000029;
 }
-
 </style>

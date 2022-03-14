@@ -50,5 +50,7 @@ export default {
 </script>
 
 <style scoped>
-
+.row.singleItem.container-fluid {
+    margin: 0px;
+}
 </style>
