@@ -928,7 +928,7 @@ li.flexList {
     left: -80px;
   }
   .dropdown-menu.chat{
-    left:-135px;
+    left:-118px;
   }
   .navaction{
     flex-direction: row;

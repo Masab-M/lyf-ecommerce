@@ -290,19 +290,19 @@ ul.row.subcategories li a {
   font-size: 19px;
 }
 @media (min-width: 320px) {
-  section.offer .ad[data-v-15bce2a9] {
+  section.offer .ad{
     width: 300px;
   }
   /* smartphones, iPhone, portrait 480x320 phones */
 }
 @media (min-width: 481px) {
-  section.offer .ad[data-v-15bce2a9] {
+  section.offer .ad{
     width: 700px;
   }
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width: 641px) {
-  section.offer .ad[data-v-15bce2a9] {
+  section.offer .ad{
     width: 700px;
   }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -311,13 +311,13 @@ ul.row.subcategories li a {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
-  section.offer .ad[data-v-15bce2a9] {
+  section.offer .ad{
     width: 700px;
   }
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1281px) {
-  section.offer .ad[data-v-15bce2a9] {
+  section.offer .ad{
     width: 700px;
   }
   /* hi-res laptops and desktops */

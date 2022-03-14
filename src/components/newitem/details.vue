@@ -401,8 +401,12 @@ a.btn.pAd {
 }
 
 .form-group .ins span {
-  font-size: 11px;
-  color: #9b9b9b;
+      font-size: 11px;
+    color: #9b9b9b;
+    flex: 1;
+}
+.form-group .ins span:last-child{
+  text-align: right;
 }
 
 .form-group {
@@ -513,11 +517,11 @@ label.loc {
 .preDetails span {
   font-size: 13px;
   color: #9d9d9d;
+  margin-bottom: 5px;
 }
 
 .preDetails span.data {
   position: relative;
-  left: 100px;
 }
 
 .submitBtn {
@@ -538,7 +542,12 @@ label.loc {
   display: table;
   color: #000;
 }
-
+.preDetails {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
 input[type="file"] {
   display: none;
 }
@@ -548,11 +557,12 @@ input[type="file"] {
   width: fit-content;
 }
 .button {
-  float: left;
-  margin: 0 5px 0 0;
-  width: 100px;
-  height: 40px;
-  position: relative;
+     float: left;
+    margin: 0 5px 0 0;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    position: relative;;
 }
 
 .button label,
@@ -575,7 +585,7 @@ input[type="file"] {
     border-radius: 20px;
     color: var(--white);
 }
-.form-group {width: 60%;}
+
 .button label {
  cursor: pointer;
     z-index: 90;
@@ -604,5 +614,45 @@ select {
     right: 26px;
     position: absolute;
 }
-
+@media (min-width:320px)  {
+  
+  .centerDiv {
+  width: 90%;
+}
+.form-group {width: 95%;}
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+  
+  .centerDiv {
+  width: 80%;
+}
+.form-group {width: 60%;}
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+  
+  .centerDiv {
+  width: 80%;
+}
+.form-group {width: 60%;}
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+  
+  .centerDiv {
+  width: 60%;
+}
+.form-group {width: 60%;}
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+  
+  .centerDiv {
+  width: 60%;
+}
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+  
+  .centerDiv {
+  width: 60%;
+}
+.form-group {width: 60%;}
+  /* hi-res laptops and desktops */ }
 </style>

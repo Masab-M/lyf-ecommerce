@@ -100,49 +100,7 @@ export default {
 
 <style scoped>
 
-@media (min-width:320px)  { 
-  .mobileChat{
-    display:none;
-  }
-   .mobileChatback{
-    display:block;
-  }
-  /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { 
-  
-   .mobileChatback{
-    display:block;
-  }  .mobileChat{
-    display:none;
-  }/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { 
-  .mobileChat{
-    display:block;
-  }
-    .mobileChatback{
-    display:none;
-  }
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { 
-       .mobileChatback{
-    display:none;
-  }
-  .mobileChat{
-    display:block;
-  }/* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { 
-   .mobileChatback{
-    display:none;
-  }  .mobileChat{
-    display:block;
-  }/* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { 
-      .mobileChatback{
-    display:none;
-  } 
-  .mobileChat{
-    display:block;
-  }/* hi-res laptops and desktops */ }
+
 .userDetail svg {
     margin-right: 12px;
     font-size: 26px;
@@ -246,9 +204,10 @@ ul.headIcons {
     font-weight: 600;
 }
 .form-group {
-    padding: 13px 30px;
+ padding: 13px 30px;
     position: relative;
     border-radius: 100px;
+    margin-left: 10px;
     border: 1px solid #CECECE;
 }
 
@@ -270,10 +229,101 @@ ul.headIcons {
 }
 
 .othercontent svg:first-child {
-    right: 30px;
+    right: 32px;
 }
 
 .othercontent svg:last-child {
-    right: 5px;
+    right: 10px;
 }
+@media (min-width:320px)  { 
+.send.msg p,.recieve.msg p{
+    font-size: 14px;
+    padding: 15px 12px 15px 12px;
+}
+.msg img {
+    width: 32px;
+    height: auto;
+}
+  .mobileChat{
+    display:none;
+  }
+   .mobileChatback{
+    display:block;
+  }
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+    .send.msg p,.recieve.msg p{
+    font-size: 14px;
+    padding: 15px 12px 15px 12px;
+
+}
+  .msg img {
+    width: 32px;
+    height: auto;
+}
+   .mobileChatback{
+    display:block;
+  }  .mobileChat{
+    display:none;
+  }/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+    .send.msg p,.recieve.msg p{
+    font-size: 16px;
+    padding: 15px 34px 15px 21px;
+}
+    .msg img {
+    width: 54px;
+    height: auto;
+}  .mobileChat{
+    display:block;
+  }
+    .mobileChatback{
+    display:none;
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+    .send.msg p,.recieve.msg p{
+    font-size: 18px;
+    padding:15px 34px 15px 21px;
+}
+        .msg img {
+    width: 54px;
+    height: auto;
+}
+       .mobileChatback{
+    display:none;
+  }
+  .mobileChat{
+    display:block;
+  }/* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    .send.msg p,.recieve.msg p{
+    font-size: 18px;
+    padding:15px 34px 15px 21px;
+
+}
+        .msg img {
+    width: 54px;
+    height: auto;
+}
+   .mobileChatback{
+    display:none;
+  }  .mobileChat{
+    display:block;
+  }/* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+    .send.msg p,.recieve.msg p{
+    padding:15px 34px 15px 21px;
+    font-size: 14px;
+}
+        .msg img {
+    width: 54px;
+    height: auto;
+}
+      .mobileChatback{
+    display:none;
+  } 
+  .mobileChat{
+    display:block;
+  }/* hi-res laptops and desktops */ }
 </style>
