@@ -173,9 +173,10 @@ form .form-group {display: flex;
 }
 
 ul.socialL {
-    list-style: none;
+      list-style: none;
     display: flex;
     margin-top: 30px;
+    padding: 0px;
     font-size: 24px;
     justify-content: space-between;
     color: var(--primary);

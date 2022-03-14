@@ -560,7 +560,9 @@ ul li a.signup svg {
 ul.navbar-nav li > svg {
   font-size: 25px;
 }
-
+ul.navbar-nav.sellBtn{
+      align-items: flex-start;
+}
 ul.navbar-nav {
   display: flex;
   align-items: center;

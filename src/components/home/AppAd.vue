@@ -82,9 +82,10 @@ a.more.btn {
 }
 
 .storeImg img {
-      width: 140px;
-    margin: 0px 10px;
+   width: 140px;
+    margin: 0px;
     margin-bottom: 10px;
+    margin-right: 10px;
 
 }
 span.more.btn {
