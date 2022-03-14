@@ -73,6 +73,9 @@ li.active {
     font-size: 22px;
     padding: 2px 14px;
 }
+section.itemPagination {
+    margin-top: 12px;
+}
 
 span.totalNumber {
     margin-right: 30px;
@@ -90,8 +93,9 @@ span.totalNumber {
     margin-right: 5px;
 }
     span.totalNumber {
-    margin-right: 15px;
-    margin-left: 30px;
+      margin-right: 15px;
+    margin-left: 15px;
+
 }
 .number ul
 {
@@ -100,8 +104,9 @@ span.totalNumber {
     /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { 
      span.totalNumber {
-    margin-right: 30px;
-    margin-left: 30px;
+  margin-right: 15px;
+    margin-left: 15px;
+
 }
        .number ul li {
     margin-right: 30px;
