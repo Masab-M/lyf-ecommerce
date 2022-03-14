@@ -26,6 +26,7 @@ export default {
 
 <style scoped>
 .itemdetails {
+  margin-top: 22px;
     padding: 24px 17px;
     border-radius: 5px;
     margin-bottom: 22px;

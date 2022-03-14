@@ -51,10 +51,7 @@ export default {
 </script>
 
 <style scoped>
-.rightpad
-{
-  padding-right: 0px !important;
-}
+
 .lessadd {
   display: none;
 }
@@ -91,4 +88,46 @@ export default {
   color: #363636;
   font-size: 20px;
 }
+@media (min-width:320px)  { 
+  
+  .rightpad{
+    padding-right: auto;
+  }
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+  
+  .rightpad{
+    padding-right: auto;
+  }
+  
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+  .rightpad{
+    padding-right: 0px;
+  }
+  
+  
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+  
+  .rightpad{
+    padding-right: 0px;
+  }
+  
+  
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+  .rightpad{
+    padding-right: 0px;
+  }
+  
+  
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+  .rightpad{
+    padding-right: 0px;
+  }
+  
+  
+  /* hi-res laptops and desktops */ }
 </style>
