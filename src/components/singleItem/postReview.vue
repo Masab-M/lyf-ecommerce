@@ -37,7 +37,7 @@ export default {
 }
 section.postReview {
     padding: 24px 17px;
-    margin-top: 20px;
+    margin-top: 22px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #00000029;
 }

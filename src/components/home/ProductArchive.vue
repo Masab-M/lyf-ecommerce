@@ -5,8 +5,7 @@
             <h2 class="head">{{archiveHeader}}</h2>
         </div>
     <div class="col-md-12">
-        <div class="row">
- <Carousel  :settings="settings" :breakpoints="breakpoints" :wrap-around="false">
+ <Carousel  :settings="settings" :breakpoints="breakpoints">
     <Slide v-for="index in 10" :key="index">
         
       <div class="carousel__item">
@@ -17,7 +16,6 @@
       <Navigation />
     </template>
   </Carousel>
-  </div>
 
     </div>
 </div>
@@ -52,11 +50,19 @@ props: ["archiveHeader"],
       // 700px and up
       300: {
         itemsToShow: 1,
-        snapAlign: 'center',
+        snapAlign: 'start',
+      },
+       375: {
+        itemsToShow: 1,
+        snapAlign: 'start',
+      },
+       400: {
+        itemsToShow:1,
+        snapAlign: 'start',
       },
      700: {
-        itemsToShow: 2,
-        snapAlign: 'center',
+        itemsToShow: 2.2,
+        snapAlign: 'start',
       },
       // 1024 and up
       1024: {
@@ -78,6 +84,7 @@ props: ["archiveHeader"],
 </script>
 
 <style scoped>
+
 /* img.headerCarousel{
   width: 100vw !important;
 }
@@ -108,6 +115,7 @@ props: ["archiveHeader"],
 .carousel__prev{
   left:30px !important;
 } */
+
 .carousel__prev--in-active,
 .carousel__next--in-active {
   display: none;
@@ -119,7 +127,7 @@ h2.head {
 }
 
 .ProductArcive {
-    padding: 50px;
+        padding: 20px 50px;
 }
 .ProductArcive a {
     text-decoration: none;

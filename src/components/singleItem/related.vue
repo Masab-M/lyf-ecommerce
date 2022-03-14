@@ -73,8 +73,8 @@ export default defineComponent({
 <style scoped>
 section.relatedItems {
    padding: 24px 17px;
-    margin-bottom: 46px;
-    margin-top: 20px;
+    margin-bottom: 22px;
+    margin-top: 22px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #00000029;
 }

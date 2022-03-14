@@ -30,6 +30,7 @@ export default {
 <style scoped>
 .row.archiveItems {
   padding: 0px 41px;
+  margin: 0px;
 }
 
 .center {
@@ -48,4 +49,40 @@ export default {
     color: #36363675;
     font-weight: normal;
 }
+
+@media (min-width:320px)  { 
+  .row.archiveItems {
+     padding-left: 29px;
+    padding-right: 0px
+  }
+  
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { 
+    .row.archiveItems {
+     padding-left: 29px;
+    padding-right: 0px
+  }
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+    .row.archiveItems {
+      padding: 0px 41px;
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+  
+    .row.archiveItems {
+      padding: 0px 41px;
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    .row.archiveItems {
+      padding: 0px 41px;
+  }
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+  
+    .row.archiveItems {
+      padding: 0px 41px;
+  }
+  /* hi-res laptops and desktops */ }
 </style>

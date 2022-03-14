@@ -169,12 +169,14 @@ section.contactInfo {
   border-bottom: 1px solid #70707066;
 }
 section.optSocial {
-  padding: 46px 23px;
+      padding: 46px 23px;
+    padding-bottom: 8px;
 }
 
 .links label {
-  font-size: 17px;
-  color: #363636;
+ font-size: 17px;
+    color: #363636;
+    margin-bottom: 10px;
 }
 
 .links a {

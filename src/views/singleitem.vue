@@ -51,12 +51,14 @@ export default {
 
 <style scoped>
 .row.singleItem.container-fluid {
-    margin: 25px 0px;
+  margin: 0;
+    margin-top: 25px;
 }
 .details2,.details2{
   margin: 0;
 }
 .details2{
-  margin-bottom:20px;
+      margin-bottom: 20px;
+    margin-top: 22px;
 }
 </style>

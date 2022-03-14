@@ -256,7 +256,7 @@ form.postDetails {
   border: 1px solid #bbb;
   border-radius: 5px;
 }
-section.adPosted {padding: 28px 26px;}
+section.adPosted {padding: 28px 16px;}
 
 .modal-content {
     width: -webkit-fill-available;
@@ -309,8 +309,9 @@ section.adPosted span {
 }
 
 .sellbtn {
-    display: grid;
+      display: grid;
     margin-top: 30px;
+    justify-items: center;
 }
 
 a.btn.sellFast {
