@@ -15,7 +15,7 @@
     </div>
 </section>
 <section class="singleFaqs">
-    <div class="row container-fluid">
+    <div class="row container-fluid questions">
         <div class="col-md-12">
             <SingleFaqs :Question="'What Is This For ?'" :Anwsers="'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet'" :id="1"/>
             <SingleFaqs :Question="'What Is This For ?'" :Anwsers="'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet'" :id="2"/>
@@ -41,7 +41,7 @@ export default {
 <style scoped>
 section.faqs {
     background: #443688;
-    padding: 64px;
+    padding: 55px;
 }
 .illustration {
     text-align: center;
@@ -59,5 +59,8 @@ section.faqs img {
 }
 section.singleFaqs{
 margin-top:55px;
+}
+.questions{
+    margin: 0px;
 }
 </style>
