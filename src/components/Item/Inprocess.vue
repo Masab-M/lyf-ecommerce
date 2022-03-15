@@ -49,7 +49,9 @@ export default {
     color: #36363675;
     font-weight: normal;
 }
-
+.row.container-fluid.archiveItems{
+    margin-bottom: 22px;
+}
 @media (min-width:320px)  { 
   .row.archiveItems {
      padding-left: 29px;

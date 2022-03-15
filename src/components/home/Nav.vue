@@ -99,6 +99,7 @@ export default {};
   }
   ul.navbar-nav {
     width: fit-content;
+    flex-direction: row;
   }
   .form-group.select-Country {
     width: 100%;
@@ -117,6 +118,7 @@ export default {};
   }
   ul.navbar-nav {
     width: fit-content;
+    flex-direction: row;
   }
   .form-group.select-Country {
     width: 100%;
@@ -132,6 +134,7 @@ export default {};
   }
   ul.navbar-nav {
     width: fit-content;
+    flex-direction: row;
   }
   .form-group.select-Country {
     width: 100%;
@@ -147,6 +150,8 @@ export default {};
   }
   ul.navbar-nav {
     width: 30%;
+    flex-direction: row;
+
   }
   .form-group.search {
     width: 60%;
@@ -162,6 +167,8 @@ export default {};
   }
   ul.navbar-nav {
     width: fit-content;
+    flex-direction: row;
+
   }
   .form-group.search {
     width: 70%;
@@ -177,6 +184,8 @@ export default {};
   }
   ul.navbar-nav {
     width: fit-content;
+    flex-direction: row;
+
   }
   .form-group.select-Country {
     width: 30%;
@@ -336,7 +345,6 @@ ul.locations li svg {
     margin-right: 16px;
 }
 
-s {}
 /* form.d-flex .form-group {
   padding: 1em 0.813em;
   margin-right: 0.813em;

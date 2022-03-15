@@ -44,6 +44,9 @@ export default {
     height: 100vh;
     border: 1px solid #0000001f;
 }
+.row.container-fluid.archiveItems{
+    margin-bottom: 22px;
+}
 .notItems h5 {
     font-size: 35px;
     margin-top: 50px;

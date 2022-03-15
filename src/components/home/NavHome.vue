@@ -684,6 +684,11 @@ ul.useractions li a,
   justify-items: end;
   align-content: space-between;
 }
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow:none !important;
+}
 
 .notifyActioiin svg {
   color: #fc6748;

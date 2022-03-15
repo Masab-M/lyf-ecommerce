@@ -1,5 +1,5 @@
 <template>
-<section class="footer">
+<section class="footer text-xl-start text-lg-start text-md-start text-sm-center text-center">
 <div class="row">
 <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
     <div class="logo">
@@ -36,7 +36,7 @@
     <div class="contactDetail">
         <h5>Contact Us!</h5>
         <form action="">
-            <div class="form-group">
+            <div class="form-group mx-sm-auto mx-auto">
                 <input type="text" name="" placeholder="Email" id="">
                 <a href="#" class="sendEmail">Send</a>
             </div>
@@ -81,31 +81,52 @@ import logo1 from '/src/assets/IMG/logo.png'
 
 <style scoped>
 @media (min-width:320px)  { 
+    ul.socialL {
+    justify-content: space-evenly;
+}
     section.footer {
     padding: 45px 3.438em;
 }
     /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  {
+        ul.socialL {
+    justify-content: space-evenly;
+}
      section.footer {
     padding: 45px 3.438em;
 }
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px)  {
+            ul.socialL {
+    justify-content: space-between;
+}
      section.footer {
     padding: 45px 5.438em;
 }
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { 
+                ul.socialL {
+    justify-content: space-between;
+}
+
      section.footer {
     padding: 45px 45px 5.438em;
 }
     /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { 
+                ul.socialL {
+    justify-content: space-between;
+}
+
     section.footer {
     padding: 45px 11.438em;
 }
     /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { 
+                ul.socialL {
+    justify-content: space-between;
+}
+
     section.footer {
     padding: 45px 11.438em;
 }
@@ -178,7 +199,6 @@ ul.socialL {
     margin-top: 30px;
     padding: 0px;
     font-size: 24px;
-    justify-content: space-between;
     color: var(--primary);
 }
 </style>
