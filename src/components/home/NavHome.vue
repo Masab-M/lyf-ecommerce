@@ -530,7 +530,6 @@ a.navbar-brand img {
   width: 95%;
 }
 form.d-flex {
-  width: 70%;
   gap: 10px;
 }
 .sell {
@@ -942,6 +941,7 @@ li.flexList {
         justify-content: space-between;
   }
   form.d-flex {
+    width: 100%;
     flex-direction: column;
   }
 
@@ -972,6 +972,8 @@ li.flexList {
         justify-content: space-between;
   }
 form.d-flex {
+    width: 100%;
+
     flex-direction: column;
   }
    .dropdown-menu.chat{
@@ -1003,6 +1005,8 @@ form.d-flex {
         justify-content: space-between;
   }
   form.d-flex {
+    width: 70%;
+
     flex-direction: column;
   }
   .form-group.select-Country {
@@ -1027,6 +1031,7 @@ form.d-flex {
     left: -240px;
   }
 form.d-flex {
+    width: 70%;
     flex-direction: row;
   }
   .form-group.search {
@@ -1051,6 +1056,7 @@ form.d-flex {
     left: -240px;
   }
 form.d-flex {
+    width: 70%;
     flex-direction: row;
   }
   .form-group.search {
@@ -1076,6 +1082,7 @@ form.d-flex {
     left: -240px;
   }
   form.d-flex {
+    width: 70%;
     flex-direction: row;
   }
 

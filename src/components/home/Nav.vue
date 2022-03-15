@@ -95,6 +95,7 @@ export default {};
 <style lang="css" scoped>
 @media (min-width: 320px) {
   form.d-flex {
+    width: 100%;
     flex-direction: column;
   }
   ul.navbar-nav {
@@ -114,6 +115,8 @@ export default {};
 }
 @media (min-width: 481px) {
   form.d-flex {
+    width: 100%;
+
     flex-direction: column;
   }
   ul.navbar-nav {
@@ -130,6 +133,8 @@ export default {};
 }
 @media (min-width: 641px) {
   form.d-flex {
+    width: 80%;
+
     flex-direction: column;
   }
   ul.navbar-nav {
@@ -146,6 +151,7 @@ export default {};
 }
 @media (min-width: 961px) {
   form.d-flex {
+    width: 80%;
     flex-direction: row;
   }
   ul.navbar-nav {
@@ -180,6 +186,7 @@ export default {};
 }
 @media (min-width: 1281px) {
   form.d-flex {
+    width:80%;
     flex-direction: row;
   }
   ul.navbar-nav {
@@ -256,7 +263,6 @@ button.navbar-toggler.collapsed {
   outline: none;
 }
 form.d-flex {
-  width: 80%;
   gap: 10px;
 }
 ul li a.login {
