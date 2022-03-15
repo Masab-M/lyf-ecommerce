@@ -118,16 +118,18 @@ section.notification {
 }
 
 .showAds {
-    padding: 38px 24px;
+      padding: 38px 24px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .notify {
-    display: flex;
+      display: flex;
     padding: 31px 0px;
     margin: 0px 19px;
     border-bottom: 1px solid #70707066;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .data span {

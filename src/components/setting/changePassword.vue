@@ -34,7 +34,7 @@
         </div>
         
     </div>
-    <div class="btn changebtn">
+    <div class="changebtn">
         <a href="#" class="btn">Change Password</a>
     </div>
     </form>
@@ -90,7 +90,9 @@ form.changePassword {
     top: 14px;
     color: #36363669;
 }
-
+.changebtn {
+    padding: 0px;
+}
 .input input {
     padding-right: 40px;
 }
@@ -104,7 +106,7 @@ form.changePassword {
     outline: none;
 }
 
-.btn.changebtn a {
+.changebtn a {
     padding: 14px 22px;
     font-size: 15px;
     font-weight: 500;
