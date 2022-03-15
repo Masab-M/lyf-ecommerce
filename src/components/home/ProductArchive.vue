@@ -5,7 +5,7 @@
             <h2 class="head">{{archiveHeader}}</h2>
         </div>
     <div class="col-md-12">
- <Carousel  :settings="settings" :breakpoints="breakpoints">
+ <Carousel  :settings="settings" :breakpoints="breakpoints" >
     <Slide v-for="index in 10" :key="index">
         
       <div class="carousel__item">
@@ -82,7 +82,12 @@ props: ["archiveHeader"],
 }
 });
 </script>
-
+<style>
+.carousel__prev--in-active,
+.carousel__next--in-active {
+  display: none;
+}
+</style>
 <style scoped>
 
 /* img.headerCarousel{

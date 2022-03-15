@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <h1>F.A.Q</h1>
+            <h1 class="text-xl-start text-lg-start text-md-start text-sm-center text-center">F.A.Q</h1>
         </div>
     </div>
 </section>
@@ -52,6 +52,7 @@ section.faqs {
 section.faqs .row {
     display: flex;
     align-items: center;
+        margin: 0px;
 }
 section.faqs img {
     width: 319px;

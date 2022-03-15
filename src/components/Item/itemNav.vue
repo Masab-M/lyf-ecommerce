@@ -44,6 +44,12 @@ export default {
 
 <style scoped>
 @media (min-width:320px)  {
+  .sort{
+    justify-content: start;
+  }
+  .sort::after{
+  right: 45px;
+}
   .row.filter input {
     width: 238px;
 }
@@ -51,15 +57,56 @@ ul.itemSections a {
   padding: 0px;
 }
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media (min-width:480px)  { 
+  @media (min-width:375px)  { 
     .row.filter input {
     width: 300px;
 }
+.sort::after{
+  right: 85px;
+}
+.sort{
+    justify-content: start;
+  }
 ul.itemSections a {
   padding: 0px 12px;
 }
   /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px)  { 
+@media (min-width:425px)  { 
+    .row.filter input {
+    width: 300px;
+}
+.sort::after{
+  right: 128px;
+}
+.sort{
+    justify-content: start;
+  }
+ul.itemSections a {
+  padding: 0px 12px;
+}
+  /* smartphones, Android phones, landscape iPhone */ }
+
+@media (min-width:481px)  { 
+    .row.filter input {
+    width: 300px;
+}
+.sort::after{
+  right: 65px;
+}
+.sort{
+    justify-content: start;
+  }
+ul.itemSections a {
+  padding: 0px 12px;
+}
+  /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:641px)  { 
+  .sort{
+    justify-content: flex-end;
+  }
+  .sort::after{
+  right: 0px;
+}
     .row.filter input {
     width: 300px;
 }
@@ -67,7 +114,13 @@ ul.itemSections a {
   padding: 0px 12px;
 }
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px)  { 
+@media (min-width:961px)  { 
+  .sort::after{
+  right: 0px;
+}
+  .sort{
+    justify-content: flex-end;
+  }
     .row.filter input {
     width: 300px;
 }ul.itemSections a {
@@ -75,6 +128,12 @@ ul.itemSections a {
 }
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { 
+  .sort::after{
+  right: 0px;
+}
+  .sort{
+    justify-content: flex-end;
+  }
     .row.filter input {
     width: 300px;
 }ul.itemSections a {
@@ -82,6 +141,12 @@ ul.itemSections a {
 }
   /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { 
+  .sort::after{
+  right: 0px;
+}
+  .sort{
+    justify-content: flex-end;
+  }
     .row.filter input {
     width: 300px;
 }
@@ -100,12 +165,10 @@ select {
     font-family: "fontAwesome";
     top: 7px;
     color: #7f7f7f;
-    right: 0px;
     position: absolute;
 }
 .sort {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 

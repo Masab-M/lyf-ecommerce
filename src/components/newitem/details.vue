@@ -140,9 +140,8 @@
     <div class="modal-content">
      <section class="adPosted">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="imgicon">
+<div class="Content">
+<div class="imgicon">
               <img src="../../assets/IMG/Iconawesome-check-circle.png" alt="">
             </div>
             <h5>Congratulations!</h5>
@@ -161,8 +160,8 @@
                   <a href="#" class="btn pAd">Preview Ad</a>
                 </div>
               </div>
-          </div>
-        </div>
+</div>
+            
      </section>
     </div>
   </div>
